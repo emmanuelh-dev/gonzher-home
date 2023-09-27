@@ -36,7 +36,7 @@ const FAQs = [
 
 const FAQ = () => {
   return (
-    <section className="bg-[#f3f4ff] pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
+    <section className="bg-[#b2eced] pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
@@ -54,7 +54,7 @@ const FAQ = () => {
           {FAQs.map((question, index) => (
             <div
               key={index}
-              className="w-full bg-white border border-[#F3F4FE] rounded-lg p-5 sm:p-8 mb-8 h-min"
+              className="w-full bg-white border border-[#89ecda] rounded-lg p-5 sm:p-8 mb-8 h-min"
             >
               <Accordion type="single" collapsible>
                 <AccordionItem value={`item-${index}`}>

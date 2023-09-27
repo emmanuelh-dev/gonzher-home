@@ -5,7 +5,7 @@ const About = () => {
     <div>
       <section
         id="about"
-        className="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-[#f3f4fe]"
+        className="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-[#89ecda]"
       >
         <div className="container mx-auto">
           <div className="bg-white wow fadeInUp" data-wow-delay=".2s">
