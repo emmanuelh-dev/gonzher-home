@@ -27,7 +27,7 @@ class Header extends Component<{}, HeaderState> {
   handleScroll = () => {
     // Verifica la posición del scroll para determinar si se ha desplazado cierta cantidad
     const scrollY = window.scrollY;
-    const scrollThreshold = 800; // Cambia este valor según tu necesidad
+    const scrollThreshold = 600; // Cambia este valor según tu necesidad
 
     if (scrollY >= scrollThreshold) {
       this.setState({ scrolled: true });
