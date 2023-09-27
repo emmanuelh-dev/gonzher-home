@@ -30,7 +30,7 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-6">Nuestra Ubicación</h5>
+                    <h5 className="text-lg font-semibold mb-6 text-white">Nuestra Ubicación</h5>
                     <p className="text-base text-body-color">
                       401 Broadway, Piso 24, Orchard Cloud View, Londres
                     </p>
@@ -48,7 +48,7 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-6">
+                    <h5 className="text-lg font-semibold mb-6 text-white">
                       ¿Cómo podemos ayudarte?
                     </h5>
                     <p className="text-base text-body-color">
