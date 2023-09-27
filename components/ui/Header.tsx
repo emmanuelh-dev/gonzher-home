@@ -2,9 +2,12 @@
 import Link from "next/link";
 import React, { Component } from "react";
 import { BiSolidMap } from "react-icons/bi";
+interface HeaderState {
+  scrolled: boolean;
+}
 
-class Header extends Component {
-  constructor(props) {
+class Header extends Component<{}, HeaderState> {
+  constructor(props:{}) {
     super(props);
     this.state = {
       scrolled: false, // Inicialmente, no se ha desplazado
