@@ -1,7 +1,7 @@
 export const headerNavLinks = [
-  { href: "#home", title: "Home" },
-  { href: "#about", title: "About" },
-  { href: "#pricing", title: "Pricing" },
-  { href: "#team", title: "Team" },
-  { href: "#contact", title: "Contact" },
+  { href: "#home", title: "Inicio" },
+  { href: "#about", title: "Nosotros" },
+  { href: "#pricing", title: "Precios" },
+  { href: "#contact", title: "Contactanos" },
+  { href: "https://dashboard.gonzher.com/", title: "Iniciar Sesión" },
 ];

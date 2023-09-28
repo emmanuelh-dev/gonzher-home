@@ -2,8 +2,8 @@
 import Link from "next/link";
 import React, { Component } from "react";
 import { BiSolidMap } from "react-icons/bi";
-import Mobile from "./Header/mobile";
 import MobileNav from "./MobileNav";
+import { headerNavLinks } from "@/data/headerNavLinks";
 interface HeaderState {
   scrolled: boolean;
 }
@@ -61,68 +61,18 @@ class Header extends Component<{}, HeaderState> {
                     className="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none"
                   >
                     <ul className="block lg:flex">
-                      {[
-                        { href: "#home", text: "Home" },
-                        { href: "#about", text: "About" },
-                        { href: "#pricing", text: "Pricing" },
-                        { href: "#team", text: "Team" },
-                        { href: "#contact", text: "Contact" },
-                      ].map((item, index) => (
+                      {headerNavLinks.map((item, index) => (
                         <li className="relative group" key={index}>
                           <a
                             href={item.href}
                             className="ud-menu-scroll text-base lg lg:group-hover:opacity-70 lg:group-hover:group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12"
                           >
-                            {item.text}
+                            {item.title}
                           </a>
                         </li>
                       ))}
-                      <li className="relative group submenu-item">
-                        <a
-                          href="javascript:void(0)"
-                          className="text-base lg lg:group-hover:opacity-70 lg:group-hover:group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:pl-0 lg:pr-4 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]"
-                        >
-                          Pages
-                        </a>
-                        <div className="submenu hidden relative lg:absolute w-[250px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300">
-                          {[
-                            "About Page",
-                            "Pricing Page",
-                            "Contact Page",
-                            "Blog Grid Page",
-                            "Blog Details Page",
-                            "Sign Up Page",
-                            "Sign In Page",
-                            "404 Page",
-                          ].map((item, index) => (
-                            <a
-                              href={`${item
-                                .toLowerCase()
-                                .replace(/\s+/g, "-")}.html`}
-                              className="block text-sm text-body-color rounded hover:text-primary py-[10px] px-4"
-                              key={index}
-                            >
-                              {item}
-                            </a>
-                          ))}
-                        </div>
-                      </li>
                     </ul>
                   </nav>
-                </div>
-                <div className="sm:flex justify-end hidden pr-16 lg:pr-0">
-                  <a
-                    href="signin.html"
-                    className="text-base font-medium hover:opacity-70 py-3 px-7 loginBtn"
-                  >
-                    Sign In
-                  </a>
-                  <a
-                    href="signup.html"
-                    className="text-base font-medium bg-white bg-opacity-20 rounded-lg py-3 px-6 hover:bg-opacity-100 hover:text-dark signUpBtn duration-300 ease-in-out"
-                  >
-                    Sign Up
-                  </a>
                 </div>
               </div>
             </div>
