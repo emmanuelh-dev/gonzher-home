@@ -3,6 +3,7 @@ import Contact from "@/components/sections/contact";
 import FAQ from "@/components/sections/faq";
 import Features from "@/components/sections/features";
 import Pricing from "@/components/sections/pricing";
+import Services from "@/components/sections/services";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -30,7 +31,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://dashboard.gonzher.com"
+                    href="https://system.gonzher.com"
                     target="_blank"
                     className="text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white"
                   >
@@ -69,6 +70,7 @@ export default function Home() {
         </div>
       </div>
       <Features/>
+      <Services/>
       <About/>
       <Pricing/>
       <FAQ/>

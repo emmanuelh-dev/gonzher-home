@@ -3,5 +3,5 @@ export const headerNavLinks = [
   { href: "#about", title: "Nosotros" },
   { href: "#pricing", title: "Precios" },
   { href: "#contact", title: "Contactanos" },
-  { href: "https://dashboard.gonzher.com/", title: "Iniciar Sesión" },
+  { href: "https://system.gonzher.com/", title: "Iniciar Sesión" },
 ];
