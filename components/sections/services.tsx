@@ -8,35 +8,36 @@ const Services = () => {
   const SERVICES = [
     {
       titulo: "Facturación Electrónica",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icono: <AiOutlineFileText className="text-7xl text-blue-500" />, // Puedes cambiar esto al icono específico que desees
+      descripcion: "Transforma tu gestión financiera con nuestra Facturación Electrónica. Simplifica el proceso de facturación y mantén un registro preciso de todas tus transacciones. ¡La eficiencia nunca fue tan elegante!",
+      icono: <AiOutlineFileText className="text-7xl text-blue-500" />,
     },
     {
       titulo: "Rastreo Satélital",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icono: <BiMap className="text-7xl text-green-500" />, // Puedes cambiar esto al icono específico que desees
+      descripcion: "Control total en tus manos con nuestro servicio de Rastreo Satelital. Mantén un ojo en tus activos en tiempo real y toma decisiones informadas. La seguridad y la eficacia en cada movimiento.",
+      icono: <BiMap className="text-7xl text-green-500" />,
     },
     {
       titulo: "Control de Combustible",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icono: <FaGasPump className="text-7xl text-yellow-500" />, // Puedes cambiar esto al icono específico que desees
+      descripcion: "Optimiza tu consumo de combustible con nuestro sistema de Control de Combustible. Reduzca costos, maximice la eficiencia y mantén tus operaciones en marcha.",
+      icono: <FaGasPump className="text-7xl text-yellow-500" />,
     },
     {
       titulo: "Control de Viajes",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icono: <HiOutlineLocationMarker className="text-7xl text-red-500" />, // Puedes cambiar esto al icono específico que desees
+      descripcion: "Navega hacia la eficiencia con nuestro servicio de Control de Viajes. Desde la planificación hasta la ejecución, cada viaje es una oportunidad para la perfección operativa.",
+      icono: <HiOutlineLocationMarker className="text-7xl text-red-500" />,
     },
     {
       titulo: "App para Operadores",
-      descripcion: "Compatible con IOS y Android",
-      icono: <IoLogoApple className="text-7xl text-purple-500" />, // Puedes cambiar esto al icono específico que desees para IOS
+      descripcion: "Empodera a tus operadores con nuestra App para IOS y Android. La movilidad se encuentra con la eficiencia en la palma de sus manos. ¡Dondequiera que vayan, tu negocio prospera!",
+      icono: <IoLogoApple className="text-7xl text-purple-500" />,
     },
     {
       titulo: "Control de Mantenimientos",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      icono: <AiFillTool className="text-7xl text-gray-500" />, // Puedes cambiar esto al icono específico que desees
+      descripcion: "Alarga la vida útil de tus activos con nuestro sistema de Control de Mantenimientos. Programa, sigue y gestiona cada aspecto del mantenimiento para un rendimiento óptimo. La confiabilidad comienza aquí.",
+      icono: <AiFillTool className="text-7xl text-gray-500" />,
     },
   ];
+  
 
   return (
 <section className="pt-16 lg:pt-24 pb-8 lg:pb-16 container mx-auto px-8">

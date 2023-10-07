@@ -70,7 +70,6 @@ export default function Home() {
         </div>
       </div>
       <Features/>
-      <Services/>
       <About/>
       <Pricing/>
       <FAQ/>
