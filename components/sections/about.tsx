@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -37,7 +38,9 @@ const About = () => {
                   </div>
                   <div className="text-center">
                     <div className="relative inline-block z-10">
-                      <img
+                      <Image
+                        width={300}
+                        height={300}
                         src="/about-image.svg"
                         alt="imagen"
                         className="mx-auto lg:ml-auto"
