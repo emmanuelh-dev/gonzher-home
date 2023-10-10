@@ -31,7 +31,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="https://system.gonzher.com"
+                    href="https://system.gonzher.com/login"
                     target="_blank"
                     className="text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white"
                   >
