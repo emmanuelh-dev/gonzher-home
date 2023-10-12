@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { BiSolidMap } from "react-icons/bi";
 import MobileNav from "./MobileNav";
 import { headerNavLinks } from "@/data/headerNavLinks";
+import { buttonVariants } from "./button";
 interface HeaderState {
   scrolled: boolean;
 }
@@ -29,7 +30,7 @@ class Header extends Component<{}, HeaderState> {
   handleScroll = () => {
     // Verifica la posición del scroll para determinar si se ha desplazado cierta cantidad
     const scrollY = window.scrollY;
-    const scrollThreshold = 600; // Cambia este valor según tu necesidad
+    const scrollThreshold = 100; // Actualiza la altura para cambiar el fondo
 
     if (scrollY >= scrollThreshold) {
       this.setState({ scrolled: true });
@@ -60,16 +61,17 @@ class Header extends Component<{}, HeaderState> {
                     id="navbarCollapse"
                     className="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none"
                   >
-                    <ul className="block lg:flex">
+                    <ul className="block lg:flex gap-8">
                       {headerNavLinks.map((item, index) => (
-                        <li className="relative group" key={index}>
-                          <a
-                            href={item.href}
-                            className="ud-menu-scroll text-base lg lg:group-hover:opacity-70 lg:group-hover:group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12"
-                          >
-                            {item.title}
-                          </a>
-                        </li>
+                        <a
+                          key={index}
+                          href={item.href}
+                          className={`buttonVariants ${buttonVariants({
+                            variant: "link",
+                          })} ${!this.state.scrolled && 'text-white'}`}
+                        >
+                          {item.title}
+                        </a>
                       ))}
                     </ul>
                   </nav>
