@@ -52,8 +52,7 @@ const Features = () => {
               <span className="font-semibold text-lg text-primary mb-2 block">
                 Caracteristicas
               </span>
-              <h2 className=" font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4"
-              >
+              <h2 className=" font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4">
                 Características Destacadas de Nuestra Plataforma
               </h2>
             </div>
@@ -67,7 +66,7 @@ const Features = () => {
                 data-wow-delay=".1s"
               >
                 <div className=" w-[70px] h-[70px] flex items-center justify-center bg-primary rounded-2xl mb-8 relative z-10">
-{service.icon}
+                  {service.icon}
                 </div>
                 <h4 className="font-bold text-xl text-dark mb-3 ">
                   {service.titulo}

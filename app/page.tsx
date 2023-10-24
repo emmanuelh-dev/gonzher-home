@@ -15,16 +15,20 @@ export default function Home() {
           <div className="flex flex-wrap items-center mx-4">
             <div className="text-center max-w-[780px] mx-auto">
               <h1 className="font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white">
-                Soluciones de Software para la Industria de Logística y Transporte
+                Soluciones de Software para la Industria de Logística y
+                Transporte
               </h1>
-              <p className="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]">Potencie su eficiencia operativa con nuestras innovadoras Soluciones de Software para la Industria de Logística y Transporte
+              <p className="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]">
+                Potencie su eficiencia operativa con nuestras innovadoras
+                Soluciones de Software para la Industria de Logística y
+                Transporte
               </p>
 
               <ul className="flex flex-wrap items-center justify-center mb-10">
                 <li>
                   <a
                     href="/#contact"
-                    className={buttonVariants({variant:"default"})}
+                    className={buttonVariants({ variant: "default" })}
                   >
                     Contactanos
                   </a>
@@ -69,11 +73,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Features/>
-      <About/>
-      <Pricing/>
-      <FAQ/>
-      <Contact/>
+      <Features />
+      <About />
+      <Pricing />
+      <FAQ />
+      <Contact />
+
+
     </div>
   );
 }
