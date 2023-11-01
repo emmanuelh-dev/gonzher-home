@@ -7,8 +7,8 @@ function OurMarkers(){
             <div>
                 <div className="flex items-center">
                     <Image
-                        width={45}
-                        height={45}
+                        width={30}
+                        height={30}
                         objectFit="cover"
                         src="/icons/default.png"
                         alt=""
@@ -17,8 +17,8 @@ function OurMarkers(){
                 </div>
                 <div className="flex items-center">
                     <Image
-                        width={45}
-                        height={45}
+                        width={30}
+                        height={30}
                         objectFit="cover"
                         src="/icons/red.png"
                         alt=""
@@ -27,8 +27,8 @@ function OurMarkers(){
                 </div>
                 <div className="flex items-center">
                     <Image
-                        width={45}
-                        height={45}
+                        width={30}
+                        height={30}
                         objectFit="cover"
                         src="/icons/yellow.png"
                         alt=""
