@@ -12,10 +12,10 @@ const Pricing = () => {
             <div className="w-full px-4">
               <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
                 <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
-                  Lista de precios
+                  Conoce nuestros planes
                 </h2>
                 <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
-                  . Si tiene alguna pregunta o necesita más información sobre
+                  Si tiene alguna pregunta o necesita más información sobre
                   nuestros costos unitarios, no dude en ponerse en contacto con
                   nuestro equipo de atención al cliente. Estamos aquí para
                   ayudarle a optimizar sus operaciones logísticas y de

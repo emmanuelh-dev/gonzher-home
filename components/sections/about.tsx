@@ -41,7 +41,7 @@ const About = () => {
                       <Image
                         width={300}
                         height={300}
-                        src="/about-image.svg"
+                        src="/about.png"
                         alt="imagen"
                         className="mx-auto lg:ml-auto"
                       />

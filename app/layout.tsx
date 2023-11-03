@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
-    "Gonzher - Soluciones de Software para la Industria de Logística y Transporte",
+    "Gonzher -  Tu asistente virutal",
   description:
     "Potencie su eficiencia operativa con nuestras innovadoras Soluciones de Software para la Industria de Logística y Transporte",
 };

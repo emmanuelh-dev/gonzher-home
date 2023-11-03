@@ -11,15 +11,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary">
+      <div className="relative pt-[120px] md:pt-[130px] lg:pt-[160px]">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center mx-4">
             <div className="text-center max-w-[780px] mx-auto">
-              <h1 className="font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white">
+              <h1 className="font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-primary">
                 Soluciones de Software para la Industria de Logística y
                 Transporte
               </h1>
-              <p className="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]">
+              <p className="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-500 max-w-[600px]">
                 Potencie su eficiencia operativa con nuestras innovadoras
                 Soluciones de Software para la Industria de Logística y
                 Transporte
@@ -31,7 +31,7 @@ export default function Home() {
                     href="/#contact"
                     className={buttonVariants({ variant: "default" })}
                   >
-                    Contactanos
+                    Contáctanos
                   </a>
                 </li>
                 <li>
@@ -62,10 +62,10 @@ export default function Home() {
               >
                 <div className="mt-16">
                   <Image
-                    src="/hero-image.jpg"
+                    src="/hero.png"
                     alt="hero"
-                    className="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
-                    width={845}
+                    className="max-w-full mx-auto rounded-t-xl rounded-tr-xl object-cover"
+                    width={1000}
                     height={560}
                   />
                 </div>
