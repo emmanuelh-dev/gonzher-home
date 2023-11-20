@@ -22,7 +22,7 @@ export const metadata = {
       "Optimiza tu logística con el software de Gonzher. Facturación en línea, seguimiento de pedidos y más para transportistas.",
     images: [
       {
-        url: "https://gonzher.com/og-image.jpg",
+        url: "https://gonzher.com/og-image.png",
         width: 800,
         height: 600,
         alt: "Gonzher",
