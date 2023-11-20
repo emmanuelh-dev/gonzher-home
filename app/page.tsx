@@ -16,19 +16,19 @@ export default function Home() {
           <div className="flex flex-wrap items-center mx-4">
             <div className="text-center max-w-[780px] mx-auto">
               <h1 className="font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title">
-                Soluciones de Software para la Industria de Logística y
-                Transporte
+                Software de Logística y Facturación para Transportistas
               </h1>
               <p className="text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]">
-                Potencie su eficiencia operativa con nuestras innovadoras
-                Soluciones de Software para la Industria de Logística y
-                Transporte
+                Optimiza tu logística con Gonzher. Descubre nuestro avanzado
+                software de facturación en línea y soluciones innovadoras para
+                el transporte. ¡Regístrate ahora!
               </p>
 
               <ul className="flex flex-wrap items-center justify-center mb-10">
                 <li>
                   <a
                     href="/#contact"
+                    title="Formulario de contacto"
                     className={buttonVariants({ variant: "default" })}
                   >
                     Contactanos
@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="mt-16">
                   <Image
                     src="/hero-image.jpg"
-                    alt="hero"
+                    alt="Software de logística para transportistas"
                     className="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
                     width={845}
                     height={560}
@@ -78,9 +78,8 @@ export default function Home() {
       <About />
       <Pricing />
       <FAQ />
-      <OurMarkers/>
+      <OurMarkers />
       <Contact />
-
     </div>
   );
 }

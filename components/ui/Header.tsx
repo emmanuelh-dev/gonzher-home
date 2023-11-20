@@ -69,6 +69,7 @@ class Header extends Component<{}, HeaderState> {
                           className={`buttonVariants ${buttonVariants({
                             variant: "link",
                           })} ${!this.state.scrolled && 'text-white'}`}
+                          title={item.title}
                         >
                           {item.title}
                         </a>
