@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center mx-4">
             <div className="text-center max-w-[780px] mx-auto">
-              <h1 className="font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white">
+              <h1 className="font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title">
                 Soluciones de Software para la Industria de Logística y
                 Transporte
               </h1>

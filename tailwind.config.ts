@@ -15,6 +15,7 @@ const config: Config = {
           fontVariationSettings: '"opsz" 32',
         },
       ],
+      title: ["Krona One", "sans-serif"],
     },
     screens: {
       sm: "540px",
