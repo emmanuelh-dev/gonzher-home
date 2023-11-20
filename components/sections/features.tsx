@@ -60,7 +60,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-4 text-center gap-8">
+        <div className="grid md:grid-cols-4 text-center gap-8">
           {SERVICES.map((service, index) => (
             <div
               className="mb-12 group wow fadeInUp p-8 bg-primary rounded-2xl"
