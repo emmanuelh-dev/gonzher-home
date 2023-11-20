@@ -131,7 +131,7 @@ const Pricing = () => {
                   </div>
                   <div className="w-full">
                     <a
-                      href="javascript:void(0)"
+                      href=""
                       className=" inline-block text-base font-medium text-primary bg-transparent border border-[#D4DEFF] rounded-full text-center py-4 px-11 hover:text-white hover:bg-primary hover:border-primary transition duration-300 ease-in-out "
                     >
                       Comprar Ahora

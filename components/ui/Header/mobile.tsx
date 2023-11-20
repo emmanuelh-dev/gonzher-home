@@ -44,7 +44,7 @@ const Mobile = () => {
               ))}
               <li className=" ">
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-base lg lg:group-hover:opacity-70 lg:hover:group-hover:text-primary py-2 lg:py-6 lg:inline-flex lg:pl-0 lg:pr-4 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12   after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]"
                 >
                   Pages

@@ -65,6 +65,7 @@ export default function Home() {
                     src="/hero-image.jpg"
                     alt="Software de logística para transportistas"
                     className="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
+                    priority
                     width={845}
                     height={560}
                   />

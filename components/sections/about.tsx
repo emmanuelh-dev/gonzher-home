@@ -33,7 +33,7 @@ const About = () => {
                       seguimiento.
                     </p>
                     <a
-                      href="javascript:void(0)"
+                      href=""
                       className=" inline-flex items-center justify-center py-4 px-6 rounded text-white bg-primary text-base font-medium hover:bg-opacity-90 hover:shadow-lg transition duration-300 ease-in-out   "
                     >
                       Más Información

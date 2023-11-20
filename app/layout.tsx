@@ -31,7 +31,7 @@ export const metadata = {
     twitter: {
       title: 'Gonzher - ',
       description: 'Optimiza procesos de transporte con nuestro software', 
-      image: 'https://example.com/og-image.jpg',
+      image: 'https://gonzher.com/og-image.png',
     },
   },
 };
