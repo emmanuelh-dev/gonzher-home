@@ -44,7 +44,7 @@ const FAQ = () => {
               <span className="font-semibold text-lg text-primary mb-2 block">
                 FAQ
               </span>
-              <h2 className="font-bold text-3xl sm:text-4xl md:text-[42px] text-gray-800 mb-4">
+              <h2 className="font-bold font-title text-3xl sm:text-4xl md:text-[42px] text-gray-800 mb-4">
                 ¿Alguna Pregunta?
               </h2>
             </div>
