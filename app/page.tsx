@@ -62,7 +62,7 @@ export default function Home() {
               >
                 <div className="mt-16">
                   <Image
-                    src="/hero-image.jpg"
+                    src="/about.png"
                     alt="Software de logística para transportistas"
                     className="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
                     priority
