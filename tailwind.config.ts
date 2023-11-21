@@ -7,6 +7,16 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: [
+        '"Inter var", sans-serif',
+        {
+          fontFeatureSettings: '"cv11", "ss01"',
+          fontVariationSettings: '"opsz" 32',
+        },
+      ],
+      title: ["Krona One", "sans-serif"],
+    },
     screens: {
       sm: "540px",
       // => @media (min-width: 576px) { ... }
@@ -47,7 +57,6 @@ const config: Config = {
         testimonial: "0px 60px 120px -20px #EBEFFD",
       },
     },
-    
   },
   variants: {
     extend: {

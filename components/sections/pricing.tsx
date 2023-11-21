@@ -1,4 +1,83 @@
 import React from "react";
+import { BiCheck } from "react-icons/bi";
+const PRECIOS = [
+  {
+    plan: "NÓMINA + CONTABLE",
+    precio: "$3,000",
+    descuento: "$2250",
+    moneda: "MXN",
+    frecuencia: "x mes",
+    folios: "ILIMITADOS",
+    funciones: [
+      "TODAS las funciones del plan BÁSICO",
+      "TODAS las funciones del plan NÓMINA",
+      "TODAS las funciones del plan CONTABLE",
+      "Gráficas comparativas en tiempo real",
+      "Soporte gratuito",
+    ],
+    masInformacion: "Más información",
+    iniciar: "INICIAR",
+  },
+  {
+    plan: "NÓMINA",
+    precio: "$1,850",
+    descuento: "$1390",
+    moneda: "MXN",
+    frecuencia: "x mes",
+    folios: "GRATIS*",
+    funciones: [
+      "TODAS las funciones del plan BÁSICO",
+      "Previsualiza los cálculos antes de generar",
+      "Reportes descargables en tiempo real",
+      "Cálculos automáticos",
+      "Reportes históricos de sueldos y asimilados",
+      "Importa y exporta información de empleados",
+      "Factura con fecha diferente",
+      "Soporte gratuito",
+    ],
+    masInformacion: "Más información",
+    iniciar: "INICIAR",
+    mejorOpcion: "MEJOR OPCIÓN",
+  },
+  {
+    plan: "CONTABLE",
+    precio: "$999",
+    descuento: "$749",
+    moneda: "MXN",
+    frecuencia: "x mes",
+    folios: "GRATIS*",
+    funciones: [
+      "TODAS las funciones del plan BÁSICO",
+      "Cálculo del impuesto según tu régimen",
+      "Amarre contable",
+      "Cierre de periodos automáticamente",
+      "Gráfica de gastos acorde a balanza",
+      "Póliza automática",
+      "Factura con fecha diferente",
+      "Soporte gratuito",
+    ],
+    masInformacion: "Más información",
+    iniciar: "INICIAR",
+    mejorOpcion: "MEJOR OPCIÓN",
+  },
+  {
+    plan: "BÁSICO",
+    seleccionaFolios: "Selecciona Folios",
+    precio: "100",
+    descuento: "99",
+    moneda: "MXN",
+    frecuencia: "x 12 meses",
+    funciones: [
+      "Emite CFDI (Factura, Carta Porte, Factura Comercio Exterior, Complemento de Pago)",
+      "Descarga SAT",
+      "Catálogos SAT precargados",
+      "Cancela CFDI's",
+      "Estadísticas básicas",
+      "Soporte gratuito",
+    ],
+    comprar: "COMPRAR",
+  },
+];
 
 const Pricing = () => {
   return (
@@ -24,117 +103,44 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap items-center justify-center">
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <div
-                className=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp "
-                data-wow-delay=".15s "
-              >
-                <span className="text-dark font-medium text-base uppercase block mb-2">
-                  Hasta 10 unidades
-                </span>
-                <h2 className="font-semibold text-primary mb-9 text-[28px]">
-                  $ 450/mes
-                </h2>
-                <div className="mb-10">
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    All UI components
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    Free updates
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    Use on 1 (one) project
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    3 Months support
-                  </p>
-                </div>
-                <div className="w-full">
-                  <a
-                    href="javascript:void(0)"
-                    className=" inline-block text-base font-medium text-primary bg-transparent border border-[#D4DEFF] rounded-full text-center py-4 px-11 hover:text-white hover:bg-primary hover:border-primary transition duration-300 ease-in-out "
-                  >
-                    Comprar Ahora
-                  </a>
-                </div>
-                <span className=" absolute left-0 bottom-0 z-[-1] w-14 h-14 rounded-tr-full block bg-primary "></span>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <div
-                className=" bg-primary bg-gradient-to-b from-primary to-[#179BEE] rounded-xl relative z-10 overflow-hidden shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp "
-                data-wow-delay=".1s "
-              >
-                <span className="text-white font-medium text-base uppercase block mb-2">
-                  Hasta 20 unidades
-                </span>
-                <h2 className="font-semibold text-white mb-9 text-[28px]">
-                  $ 350/mes
-                </h2>
-                <div className="mb-10">
-                  <p className="text-base font-medium text-white leading-loose mb-1">
-                    All UI components
-                  </p>
-                  <p className="text-base font-medium text-white leading-loose mb-1">
-                    Free updates
-                  </p>
-                  <p className="text-base font-medium text-white leading-loose mb-1">
-                    Use on 1 (one) project
-                  </p>
-                  <p className="text-base font-medium text-white leading-loose mb-1">
-                    4 Months support
-                  </p>
-                </div>
-                <div className="w-full">
-                  <a
-                    href="javascript:void(0)"
-                    className=" inline-block text-base font-medium text-dark bg-white border border-white rounded-full text-center py-4 px-11 hover:text-white hover:bg-dark hover:border-dark transition duration-300 ease-in-out "
-                  >
-                    Comprar Ahora
-                  </a>
+          <div className="grid gap-8 md:grid-cols-4">
+            {PRECIOS.map((precio, index) => (
+              <div className="w-full" key={index}>
+                <div
+                  className=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp "
+                  data-wow-delay=".15s "
+                >
+                  <span className="text-dark font-medium text-base uppercase block mb-2">
+                    {precio.plan}
+                  </span>
+                  <h2 className="font-semibold text-primary text-[20px] line-through">
+                    {precio.precio}/mes
+                  </h2>
+                  <h3 className="font-semibold text-red-400 mb-9 text-[28px]">
+                    {precio.descuento}/mes
+                  </h3>
+                  <div className="mb-10">
+                    {precio.funciones.map((funcion, index) => (
+                      <p
+                        className=" text-base font-medium text-body-color leading-loose mb-1 flex items-center gap-2 text-left"
+                        key={index}
+                      >
+                        <BiCheck />{funcion}
+                      </p>
+                    ))}
+                  </div>
+                  <div className="w-full">
+                    <a
+                      href=""
+                      className=" inline-block text-base font-medium text-primary bg-transparent border border-[#D4DEFF] rounded-full text-center py-4 px-11 hover:text-white hover:bg-primary hover:border-primary transition duration-300 ease-in-out "
+                    >
+                      Comprar Ahora
+                    </a>
+                  </div>
+                  <span className=" absolute left-0 bottom-0 z-[-1] w-14 h-14 rounded-tr-full block bg-primary "></span>
                 </div>
               </div>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <div
-                className=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp "
-                data-wow-delay=".15s "
-              >
-                <span className="text-dark font-medium text-base uppercase block mb-2">
-                  Mas de 30
-                </span>
-                <h2 className="font-semibold text-primary mb-9 text-[28px]">
-                  $ 300/mes
-                </h2>
-                <div className="mb-10">
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    1 User
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    All UI components
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    Free updates
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    Use on unlimited project
-                  </p>
-                  <p className=" text-base font-medium text-body-color leading-loose mb-1 ">
-                    4 Months support
-                  </p>
-                </div>
-                <div className="w-full">
-                  <a
-                    href="javascript:void(0)"
-                    className=" inline-block text-base font-medium text-primary bg-transparent border border-[#D4DEFF] rounded-full text-center py-4 px-11 hover:text-white hover:bg-primary hover:border-primary transition duration-300 ease-in-out "
-                  >
-                    Comprar Ahora
-                  </a>
-                </div>
-                <span className=" absolute right-0 top-0 z-[-1] w-14 h-14 rounded-bl-full block bg-secondary "></span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
