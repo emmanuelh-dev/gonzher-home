@@ -9,44 +9,44 @@ const SERVICES = [
     titulo: "Facturación Electrónica",
     descripcion:
       "Transforma tu gestión financiera con nuestra Facturación Electrónica. Simplifica el proceso de facturación y mantén un registro preciso de todas tus transacciones. ¡La eficiencia nunca fue tan elegante!",
-    icon: <AiOutlineFileText className="text-5xl text-white mb-8 mx-auto" />,
+    icon: <AiOutlineFileText alt='icono de factura' className="text-5xl text-white mb-8 mx-auto" />,
   },
   {
     titulo: "Rastreo Satélital",
     descripcion:
       "Control total en tus manos con nuestro servicio de Rastreo Satelital. Mantén un ojo en tus activos en tiempo real y toma decisiones informadas. La seguridad y la eficacia en cada movimiento.",
-    icon: <BiMap className="text-5xl text-white mb-8 mx-auto " />,
+    icon: <BiMap alt='icono de gps' className="text-5xl text-white mb-8 mx-auto " />,
   },
   {
     titulo: "Control de Combustible",
     descripcion:
       "Optimiza tu consumo de combustible con nuestro sistema de Control de Combustible. Reduzca costos, maximice la eficiencia y mantén tus operaciones en marcha.",
-    icon: <FaGasPump className="text-5xl text-white mb-8 mx-auto " />,
+    icon: <FaGasPump alt='icono de bomba de compustible' className="text-5xl text-white mb-8 mx-auto " />,
   },
   {
     titulo: "Control de Viajes",
     descripcion:
       "Navega hacia la eficiencia con nuestro servicio de Control de Viajes. Desde la planificación hasta la ejecución, cada viaje es una oportunidad para la perfección operativa.",
     icon: (
-      <HiOutlineLocationMarker className="text-5xl text-white mb-8 mx-auto" />
+      <HiOutlineLocationMarker alt='icono de gps' className="text-5xl text-white mb-8 mx-auto" />
     ),
   },
   {
     titulo: "App para Operadores",
     descripcion:
       "Empodera a tus operadores con nuestra App para IOS y Android. La movilidad se encuentra con la eficiencia en la palma de sus manos. ¡Dondequiera que vayan, tu negocio prospera!",
-    icon: <IoLogoApple className="text-5xl text-white mb-8 mx-auto" />,
+    icon: <IoLogoApple alt='icono del logo de apple' className="text-5xl text-white mb-8 mx-auto" />,
   },
   {
     titulo: "Control de Mantenimientos",
     descripcion:
       "Alarga la vida útil de tus activos con nuestro sistema de Control de Mantenimientos. Programa, sigue y gestiona cada aspecto del mantenimiento para un rendimiento óptimo. La confiabilidad comienza aquí.",
-    icon: <AiFillTool className="text-5xl text-white mb-8 mx-auto " />,
+    icon: <AiFillTool alt='icono de logo de mantenimiento' className="text-5xl text-white mb-8 mx-auto " />,
   },
 ];
 const Features = () => {
   return (
-    <section className="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px] container mx-auto">
+    <section className="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px] container mx-auto" id="caracteristicass">
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
@@ -64,7 +64,6 @@ const Features = () => {
           {SERVICES.map((service, index) => (
             <div
               className="mb-12 group wow fadeInUp p-8 bg-primary rounded-2xl"
-              data-wow-delay=".1s"
               key={index}
             >
               {service.icon}
@@ -76,6 +75,7 @@ const Features = () => {
                 </p> */}
               <a
                 href="#"
+                title={'Informacion sobre ' + service.titulo}
                 className="font-medium text-base text-white/80 hover:text-white"
               >
                 Descubra Más

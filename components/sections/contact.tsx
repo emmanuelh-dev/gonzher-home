@@ -9,7 +9,7 @@ const Contacto = () => {
           <div className="px-4 w-full lg:w-7/12 xl:w-8/12">
             <div className="ud-contact-content-wrapper">
               <div className="ud-contact-title mb-12 lg:mb-[150px]">
-                <span className="text-white font-semibold text-base mb-5">
+                <span className="text-gray-200 font-semibold text-base mb-5">
                   CONTÁCTANOS
                 </span>
                 <h2 className="text-[35px] font-semibold text-white">
