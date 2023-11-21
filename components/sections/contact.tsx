@@ -133,6 +133,7 @@ const Contacto = () => {
                 <div className="mb-0">
                   <button
                     type="submit"
+                    disabled
                     className=" inline-flex items-center justify-center py-4 px-6 rounded text-white bg-primary text-base font-medium hover:bg-dark transition duration-300 ease-in-out "
                   >
                     Enviar Mensaje
