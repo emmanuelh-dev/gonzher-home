@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <section
-        id="about"
+        id="acerca-de"
         className="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-primary"
       >
         <div className="container mx-auto">
@@ -21,16 +21,27 @@ const About = () => {
                       Acerca de Nosotros
                     </span>
                     <h2 className="font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
-                      Software para Empresas de Transporte y Logística.
+                      Líderes en software para transportistas
                     </h2>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      Nuestra misión es proporcionar a las empresas de
-                      transporte y logística una herramienta potente y versátil
-                      para potenciar sus actividades.
+                      En Gonzher desarrollamos software de gestión logística que
+                      optimiza procesos operativos de empresas de transporte,
+                      con soluciones todo-en-uno que incluyen rastreo en tiempo
+                      real, planificación de rutas, gestión de flotas, análisis
+                      de indicadores clave y facturación automatizada.
                     </p>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      Ofrecemos recursos como facturacion, desarrollo y
-                      seguimiento.
+                      Nos respaldan la administración exitosa de más de 5000
+                      vehículos alrededor del mundo, que mejoraron su
+                      productividad hasta 30% gracias a nuestras innovadoras
+                      apps móviles para conductores y nuestra integración
+                      avanzada con sistemas de contabilidad existentes.
+                    </p>
+                    <p className="text-base text-body-color mb-9 leading-relaxed">
+                      Operar con Gonzher significa control total sobre la
+                      rentabilidad de tu negocio, toma de decisiones basada en
+                      datos e incremento en la satisfacción del cliente. ¿Listo
+                      para llevar tu empresa de transporte al siguiente nivel?
                     </p>
                     <a
                       href=""

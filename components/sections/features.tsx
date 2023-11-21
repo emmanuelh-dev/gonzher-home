@@ -50,12 +50,12 @@ const Features = () => {
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
-            <div className="mb-12 lg:mb-20 max-w-[620px]">
+            <div className="mb-12 lg:mb-20 max-w-[800px]">
               <span className="font-semibold text-lg text-primary mb-2 block">
                 Caracteristicas
               </span>
               <h2 className=" font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4 font-title">
-                Características Destacadas de Nuestra Plataforma
+              Tu socio en el camino a la excelencia operativa
               </h2>
             </div>
           </div>

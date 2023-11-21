@@ -36,16 +36,16 @@ const FAQs = [
 
 const FAQ = () => {
   return (
-    <section className="bg-[#b2eced] pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
+    <section id="preguntas frecuentes" className="bg-[#b2eced] pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
-            <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[620px]">
+            <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[800px]">
               <span className="font-semibold text-lg text-primary mb-2 block">
                 FAQ
               </span>
               <h2 className="font-bold font-title text-3xl sm:text-4xl md:text-[42px] text-gray-800 mb-4">
-                ¿Alguna Pregunta?
+                ¿Preguntas frecuentes?
               </h2>
             </div>
           </div>
