@@ -49,7 +49,7 @@ class Header extends Component<{}, HeaderState> {
         <div className="container mx-auto">
           <div className="px-4 w-full flex items-center justify-between">
             <Link href="/" className="py-5 flex items-center font-title">
-              <BiSolidMap className="text-3xl" /> Gonzher
+              <BiSolidMap className="text-3xl" /> GONZHER
             </Link>
             <div className="md:hidden">
               <MobileNav />
