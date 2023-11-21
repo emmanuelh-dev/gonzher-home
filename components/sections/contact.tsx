@@ -13,7 +13,7 @@ const Contacto = () => {
                   CONTÁCTANOS
                 </span>
                 <h2 className="text-[35px] font-semibold text-white">
-                ¡Nos encantaría escucharte!
+                  ¡Nos encantaría escucharte!
                 </h2>
               </div>
               <div className="flex flex-wrap justify-between mb-12 lg:mb-0">
@@ -30,10 +30,24 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-6 text-white">Nuestra Ubicación</h5>
-                    <p className="text-base text-body-color">
-                      401 Broadway, Piso 24, Orchard Cloud View, Londres
-                    </p>
+                    <h5 className="text-lg font-semibold mb-6 text-black">
+                      Nuestra Ubicación
+                    </h5>
+                    <a
+                      href="https://maps.app.goo.gl/6Neskt5JVGdr2ndG8"
+                      className="text-base text-blue-500"
+                    >
+                      Sin Nombre de Col 31, 66470 Monterrey, N.L.
+                    </a>
+                    {/* <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.2409642865414!2d-100.2549795242162!3d25.729543809932398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662eba6c2ae6b91%3A0x66d4c4984784ddf1!2sGONZHER!5e0!3m2!1ses-419!2smx!4v1700583469482!5m2!1ses-419!2smx"
+                      width="300"
+                      height="200"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe> */}
                   </div>
                 </div>
                 <div className="flex max-w-full w-[330px] mb-8">
@@ -48,14 +62,16 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-6 text-white">
+                    <h5 className="text-lg font-semibold mb-6 text-black">
                       ¿Cómo podemos ayudarte?
                     </h5>
-                    <p className="text-base text-body-color">
-                      info@gonzher.com
+                    <p className="text-base text-blue-500">
+                      <a href="mailto:igonzalezme@gonzher.com">igonzalezme@gonzher.com</a>
                     </p>
-                    <p className="text-base text-body-color">
-                      contacto@gonzher.com
+                    <p className="text-base text-blue-500">
+                      <a href="mailto:administracion@gonzher.com">
+                      administracion@gonzher.com
+                      </a>
                     </p>
                   </div>
                 </div>
