@@ -83,7 +83,7 @@ const Pricing = () => {
   return (
     <div>
       <section
-        id="pricing"
+        id="precios"
         className=" bg-white pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden "
       >
         <div className="container mx-auto">
@@ -95,7 +95,7 @@ const Pricing = () => {
                 </h2>
                 <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
                   Si tiene alguna pregunta o necesita más información sobre
-                  nuestros costos unitarios, no dude en ponerse en contacto con
+                  nuestros costos unitarios, no dude en ponerse en contactanoso con
                   nuestro equipo de atención al cliente. Estamos aquí para
                   ayudarle a optimizar sus operaciones logísticas y de
                   transporte.

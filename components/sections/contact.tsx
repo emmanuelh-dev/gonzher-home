@@ -2,13 +2,13 @@ import React from "react";
 
 const Contacto = () => {
   return (
-    <section id="contact" className="py-20 md:py-[120px] relative">
+    <section id="contactanos" className="py-20 md:py-[120px] relative">
       <div className="  absolute  z-[-1]  w-full  h-1/2  lg:h-[45%]  xl:h-1/2  bg-primary  top-0  left-0  "></div>
       <div className="container px-4">
         <div className="flex flex-wrap items-center -mx-4">
           <div className="px-4 w-full lg:w-7/12 xl:w-8/12">
-            <div className="ud-contact-content-wrapper">
-              <div className="ud-contact-title mb-12 lg:mb-[150px]">
+            <div className="ud-contactanos-content-wrapper">
+              <div className="ud-contactanos-title mb-12 lg:mb-[150px]">
                 <span className="text-gray-200 font-semibold text-base mb-5">
                   CONTÁCTANOS
                 </span>

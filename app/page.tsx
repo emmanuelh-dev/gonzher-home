@@ -27,8 +27,8 @@ export default function Home() {
               <ul className="flex flex-wrap items-center justify-center mb-10">
                 <li>
                   <a
-                    href="/#contact"
-                    title="Formulario de contacto"
+                    href="/#contactanos"
+                    title="Formulario de contactanoso"
                     className={buttonVariants({ variant: "default" })}
                   >
                     Contactanos

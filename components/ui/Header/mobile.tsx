@@ -5,10 +5,10 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { buttonVariants } from "../button";
 const LINKS = [
   { href: "#home", text: "Home" },
-  { href: "#about", text: "About" },
-  { href: "#pricing", text: "Pricing" },
+  { href: "#acerca-de", text: "About" },
+  { href: "#precios", text: "Pricing" },
   { href: "#team", text: "Team" },
-  { href: "#contact", text: "Contact" },
+  { href: "#contactanos", text: "Contact" },
 ];
 const Mobile = () => {
   const [open, setOpen] = useState(false);
