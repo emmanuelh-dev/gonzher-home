@@ -50,17 +50,13 @@ const About = () => {
                       Más Información
                     </a>
                   </div>
-                  <div className="text-center">
-                    <div className="relative inline-block z-10">
                       <Image
                         width={300}
                         height={300}
-                        src="/about.png"
+                        src="/nav.png"
                         alt="imagen"
                         className="mx-auto lg:ml-auto"
                       />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

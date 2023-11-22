@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function OurMarkers(){
     return(
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 py-6 hidden">
             <h2 className="font-bold text-4xl ">Know our gps markers</h2>
             <div>
                 <div className="flex items-center">
