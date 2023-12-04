@@ -5,6 +5,7 @@ import { BiSolidMap } from "react-icons/bi";
 import MobileNav from "./MobileNav";
 import { headerNavLinks } from "@/data/headerNavLinks";
 import { buttonVariants } from "./button";
+import { FaPhoneAlt } from "react-icons/fa";
 interface HeaderState {
   scrolled: boolean;
 }
@@ -41,11 +42,18 @@ class Header extends Component<{}, HeaderState> {
 
   render() {
     const headerClasses = this.state.scrolled
-      ? "bg-white fixed top-0 left-0 z-40 w-screen flex items-center text-dark"
-      : "bg-transparent fixed top-0 left-0 z-40 w-screen flex items-center text-white";
+      ? "bg-white fixed top-0 left-0 z-40 w-screen text-dark"
+      : "bg-transparent fixed top-0 left-0 z-40 w-screen text-white";
 
     return (
       <div className={headerClasses}>
+        <div className="container">
+          <a href="tel:+528118806014" className="justify-end flex items-center py-4" title="Número de teléfono de Gonzher">
+            <FaPhoneAlt className="mr-2" title="Icono de teléfono"/> +52 81 1880 6014
+          </a>
+        </div>
+
+        <hr className="container"/>
         <div className="container mx-auto">
           <div className="px-4 w-full flex items-center justify-between">
             <Link href="/" className="py-5 flex items-center font-title">
