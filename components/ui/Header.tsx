@@ -44,13 +44,15 @@ class Header extends Component<{}, HeaderState> {
     const headerClasses = this.state.scrolled
       ? "bg-white fixed top-0 left-0 z-40 w-screen text-dark"
       : "bg-transparent fixed top-0 left-0 z-40 w-screen text-white";
-
+    const hiddePhone = this.state.scrolled ? "hidden" : "block";
     return (
       <div className={headerClasses}>
-        <div className="container">
+
+        <div className={`${hiddePhone} container justify-end flex items-center gap-4`}>
           <a href="tel:+528118806014" className="justify-end flex items-center py-4" title="Número de teléfono de Gonzher">
             <FaPhoneAlt className="mr-2" title="Icono de teléfono"/> +52 81 1880 6014
           </a>
+          <a href="https://system.gonzher.com/login" title="Sistemas Gonzher">Iniciar sesión</a>
         </div>
 
         <hr className="container"/>
