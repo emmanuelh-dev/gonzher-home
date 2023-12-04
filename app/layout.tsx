@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import WhatsAppIcon from "@/components/sections/wpp-icon";
 import { Analytics } from "@vercel/analytics/react";
-
+import GoogleAnalytics from "./GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -46,6 +46,7 @@ export default function RootLayout({
         <Header />
         {children}
         <WhatsAppIcon />
+        <GoogleAnalytics />
         <Analytics />
       </body>
     </html>
