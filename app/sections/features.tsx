@@ -62,7 +62,7 @@ const Features = () => {
         <div className="grid md:grid-cols-4 text-center gap-8">
           {SERVICES.map((service, index) => (
             <div
-              className="mb-12 group wow fadeInUp p-8 bg-primary rounded-2xl"
+              className="mb-12 p-8 bg-primary rounded-2xl text-white flex flex-col items-center justify-center"
               key={index}
             >
               {service.icon}
