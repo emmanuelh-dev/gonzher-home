@@ -1,10 +1,10 @@
-import About from "@/components/sections/about";
-import Contact from "@/components/sections/contact";
-import FAQ from "@/components/sections/faq";
-import Features from "@/components/sections/features";
-import OurMarkers from "@/components/sections/markers";
-import Pricing from "@/components/sections/pricing";
-import Services from "@/components/sections/services";
+import About from "@/app/sections/about";
+import Contact from "@/app/sections/contact";
+import FAQ from "@/app/sections/faq";
+import Features from "@/app/sections/features";
+import OurMarkers from "@/app/sections/markers";
+import Pricing from "@/app/sections/pricing";
+import Services from "@/app/sections/services";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 

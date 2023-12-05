@@ -2,7 +2,7 @@ import Header from "@/components/ui/Header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import WhatsAppIcon from "@/components/sections/wpp-icon";
+import WhatsAppIcon from "@/app/sections/wpp-icon";
 import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "./GoogleAnalytics";
 const inter = Inter({ subsets: ["latin"] });
