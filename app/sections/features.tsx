@@ -9,7 +9,7 @@ const SERVICES = [
   {
     titulo: "Facturación Electrónica",
     descripcion:
-      "Transforma tu gestión financiera con nuestra Facturación Electrónica. Simplifica el proceso de facturación y mantén un registro preciso de todas tus transacciones. ¡La eficiencia nunca fue tan elegante!",
+      "Sistema en la nube que facilita tu Facturación en Línea. Genera tus Comprobantes Fiscales Digitales por Internet (CFDI) de una forma fácil, rápida y segura. Emite facturas, notas de crédito, recibos de honorarios, complementos de pago, carta porte, cualquier tipo de CFDI.  Siempre estamos actualizándonos. ¡Conócenos!",
     icon: <AiOutlineFileText alt='icono de factura' className="text-5xl text-white mb-8 mx-auto" />,
   },
   {
@@ -21,7 +21,7 @@ const SERVICES = [
   {
     titulo: "Control de Combustible",
     descripcion:
-      "Optimiza tu consumo de combustible con nuestro sistema de Control de Combustible. Reduzca costos, maximice la eficiencia y mantén tus operaciones en marcha.",
+      "Sabemos que el combustible es uno de los rubros más costosos en la gestión de la flota, y por eso hemos desarrollado un módulo que te permitirá analizar detalladamente y desde diferentes puntos de vista su rendimiento y cos Analiza el rendimiento de tus usuarios con el paso del tiempo. Observa las tendencias importantes de cada usuario o de tu flota entera. Nuestro panel personalizable te facilita revisar tu progreso comparado con tu indicador KPI o tus presupuestos, con el análisis instantáneo que te ofrece nuestra app. ¡Conócenos!",
     icon: <FaGasPump alt='icono de bomba de compustible' className="text-5xl text-white mb-8 mx-auto " />,
   },
   {
@@ -39,7 +39,7 @@ const SERVICES = [
   },
   {
     titulo: "Control de Mantenimientos",
-    descripcion: "Sabemos que el combustible es uno de los rubros más costosos en la gestión de la flota, y por eso hemos desarrollado un módulo que te permitirá analizar detalladamente y desde diferentes puntos de vista su rendimiento y costo. Analiza el rendimiento de tus usuarios con el paso del tiempo. Observa las tendencias importantes de cada usuario o de tu flota entera. Nuestro panel personalizable te facilita revisar tu progreso comparado con tu indicador KPI o tus presupuestos, con el análisis instantáneo que te ofrece nuestra app. ¡Conócenos! ***Si usas el módulo  de viajes, integra la liquidación de Combustible con los gastos de viaje",
+    descripcion: "Conoce nuestro apartado para control de mantenimientos. Anticípate a las fallas y evita paradas no planificadas o accidentes.  Nuestro sistema esta diseñado para optimizar tus gastos y aumentar la productividad de tus vehículos. Crea y ejecuta tus propios planes de mantenimiento de acuerdo con tu operación.",
     icon: <AiFillTool alt='icono de logo de mantenimiento' className="text-5xl text-white mb-8 mx-auto " />,
   },
 ];
