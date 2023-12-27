@@ -136,7 +136,7 @@ class Header extends Component<{}, HeaderState> {
                           </NavigationMenuItem>
                           <NavigationMenuItem>
                             <NavigationMenuTrigger  className={this.state.scrolled ?  undefined : 'text-white'}>
-                              Components
+                              Secciones
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                               <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
