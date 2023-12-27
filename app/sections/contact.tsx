@@ -62,15 +62,25 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-6 text-black">
+                    <h5 className="text-lg font-semibold mb-2 text-black">
                       ¿Cómo podemos ayudarte?
                     </h5>
                     <p className="text-base text-blue-500">
-                      <a href="mailto:igonzalezme@gonzher.com">igonzalezme@gonzher.com</a>
+                      <a href="mailto:igonzalezme@gonzher.com">
+                        igonzalezme@gonzher.com
+                      </a>
                     </p>
                     <p className="text-base text-blue-500">
                       <a href="mailto:administracion@gonzher.com">
-                      administracion@gonzher.com
+                        administracion@gonzher.com
+                      </a>
+                    </p>
+                    <h5 className="text-lg font-semibold mb-2 text-black">
+                      ¿Tienes alguna sugerencia?
+                    </h5>
+                    <p className="text-base text-blue-500">
+                      <a href="mailto:sistemas@gonzher.com">
+                        sistemas@gonzher.com
                       </a>
                     </p>
                   </div>
