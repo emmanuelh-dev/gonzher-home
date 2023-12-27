@@ -1,4 +1,4 @@
-export const headerNavLinks : {title: string, href: string, description?: string} = [
+export const headerNavLinks = [
   { href: "#acerca-de", title: "Nosotros" },
   { href: "#precios", title: "Precios" },
   { href: "#contactanos", title: "Contáctanos" },

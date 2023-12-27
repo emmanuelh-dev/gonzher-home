@@ -6,7 +6,6 @@ import MobileNav from "./MobileNav";
 import { headerNavLinks } from "@/data/headerNavLinks";
 import { buttonVariants } from "./button";
 import { FaPhoneAlt } from "react-icons/fa";
-import { NavigationMenuDemo } from "./SectionsHeader";
 
 import { cn } from "@/lib/utils";
 import {
@@ -140,7 +139,7 @@ class Header extends Component<{}, HeaderState> {
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                               <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
-                                {headerNavLinks.map((link) => (
+                                {headerNavLinks.map(link => (
                                   <ListItem
                                     key={link.title}
                                     title={link.title}
@@ -149,7 +148,6 @@ class Header extends Component<{}, HeaderState> {
                                       variant: "link",
                                     })} text-white`}
                                   >
-                                    {link.description ? link.description : ""}
                                   </ListItem>
                                 ))}
                               </ul>
