@@ -13,7 +13,7 @@ export const ContactForm = () => {
     const company = document.querySelector('input[name="company"]').value;
 
     // Construye el enlace de WhatsApp con el mensaje predefinido
-    const whatsappLink = `https://wa.me/8111913676?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/8118806014?text=${encodeURIComponent(
       `Hola soy ${fullName},
 Telefono: ${phone}
 Company: ${company}
