@@ -1,6 +1,8 @@
 import React from "react";
+import { ContactForm } from "./ContactForm";
 
 const Contacto = () => {
+
   return (
     <section id="contactanos" className="py-20 md:py-[120px] relative">
       <div className="  absolute  z-[-1]  w-full  h-1/2  lg:h-[45%]  xl:h-1/2  bg-primary  top-0  left-0  "></div>
@@ -30,7 +32,7 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-6 text-black">
+                    <h5 className="text-white text-lg font-semibold mb-6 lg:text-black">
                       Nuestra Ubicación
                     </h5>
                     <a
@@ -62,7 +64,7 @@ const Contacto = () => {
                     </svg>
                   </div>
                   <div>
-                    <h5 className="text-lg font-semibold mb-2 text-black">
+                    <h5 className="text-white text-lg font-semibold mb-2 lg:text-black">
                       ¿Cómo podemos ayudarte?
                     </h5>
                     <p className="text-base text-blue-500">
@@ -75,7 +77,7 @@ const Contacto = () => {
                         administracion@gonzher.com
                       </a>
                     </p>
-                    <h5 className="text-lg font-semibold mb-2 text-black">
+                    <h5 className="text-white text-lg font-semibold mb-2 lg:text-black">
                       ¿Tienes alguna sugerencia?
                     </h5>
                     <p className="text-base text-blue-500">
@@ -96,60 +98,7 @@ const Contacto = () => {
               <h3 className="font-semibold mb-8 text-2xl md:text-[26px]">
                 Dejanos un Mensaje
               </h3>
-              <form>
-                <div className="mb-6">
-                  <label htmlFor="fullName" className="block text-xs text-dark">
-                    Nombre Completo*
-                  </label>
-                  <input
-                    type="text"
-                    name="fullName"
-                    placeholder="Adam Gelius"
-                    className=" w-full border-0 border-b border-[#f1f1f1] focus:border-primary focus:outline-none py-4 "
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="email" className="block text-xs text-dark">
-                    Correo Electrónico*
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="ejemplo@tucorreo.com"
-                    className=" w-full border-0 border-b border-[#f1f1f1] focus:border-primary focus:outline-none py-4 "
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="phone" className="block text-xs text-dark">
-                    Teléfono*
-                  </label>
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="+885 1254 5211 552"
-                    className=" w-full border-0 border-b border-[#f1f1f1] focus:border-primary focus:outline-none py-4 "
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="message" className="block text-xs text-dark">
-                    Mensaje*
-                  </label>
-                  <textarea
-                    name="message"
-                    placeholder="escribe tu mensaje aquí"
-                    className=" w-full border-0 border-b border-[#f1f1f1] focus:border-primary focus:outline-none py-4 resize-none "
-                  ></textarea>
-                </div>
-                <div className="mb-0">
-                  <button
-                    type="submit"
-                    disabled
-                    className=" inline-flex items-center justify-center py-4 px-6 rounded text-white bg-primary text-base font-medium hover:bg-dark transition duration-300 ease-in-out "
-                  >
-                    Enviar Mensaje
-                  </button>
-                </div>
-              </form>
+              <ContactForm/>
             </div>
           </div>
         </div>
