@@ -5,13 +5,8 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 
 export const ContactForm = () => {
-  const handleSendMessage = () => {
-    // Obtén los valores del formulario
-    const fullName = document.querySelector('input[name="fullName"]').value;
-    const phone = document.querySelector('input[name="phone"]').value;
-    const message = document.querySelector('textarea[name="message"]').value;
-    const company = document.querySelector('input[name="company"]').value;
-
+  const sendMessage = (formData:FormData) => {
+    const { fullName, phone, company, message } = Object.fromEntries(formData);
     // Construye el enlace de WhatsApp con el mensaje predefinido
     const whatsappLink = `https://wa.me/8118806014?text=${encodeURIComponent(
       `Hola soy ${fullName},
@@ -25,7 +20,7 @@ Mensaje: ${message}`
   };
 
   return (
-    <form className="space-y-4">
+    <form className="space-y-4" action={sendMessage}>
       <div>
         <Label htmlFor="fullName">Nombre Completo*</Label>
         <Input id="fullName" type="text" name="fullName" placeholder="Adam Gelius" />
@@ -52,7 +47,7 @@ Mensaje: ${message}`
         ></textarea>
       </div>
       <div>
-        <Button type="button" onClick={handleSendMessage} className="w-full">
+        <Button type="submit" className="w-full">
           Enviar Mensaje
         </Button>
       </div>
