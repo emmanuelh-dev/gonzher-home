@@ -4,7 +4,7 @@ import { IoLogoApple } from "react-icons/io";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaGasPump } from "react-icons/fa";
 import { BiMap } from "react-icons/bi";
-import ShowMore from '@/components/showMore'
+import ServiceCard from "@/components/ui/ServiceCard";
 const SERVICES = [
   {
     titulo: "Facturación Electrónica",
@@ -28,9 +28,7 @@ const SERVICES = [
     titulo: "Control de Viajes",
     descripcion:
       "De punto A a punto B tu entrega segura! Con nuestra app podrás monitorear en tiempo real el estatus de tus viajes. Podrás ahorrar tiempo, dinero y operación logística con nuestra tecnología. Además, notifica a tus clientes sobre el estatus de sus traslados hasta la entrega.",
-    icon: (
-      <HiOutlineLocationMarker alt='icono de gps' className="text-5xl text-white mb-8 mx-auto" />
-    ),
+    icon:  <HiOutlineLocationMarker alt='icono de gps' className="text-5xl text-white mb-8 mx-auto" />,
   },
   {
     titulo: "App para Operadores",
@@ -59,18 +57,9 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="grid md:grid-cols-4 text-center gap-8">
+        <div className="grid md:grid-cols-4 text-center gap-8 transition duration-700 ease-in-out transform">
           {SERVICES.map((service, index) => (
-            <div
-              className="mb-12 p-8 bg-primary rounded-2xl text-white flex flex-col items-center justify-center"
-              key={index}
-            >
-              {service.icon}
-              <h4 className="font-bold text-2xl text-dark mb-3 ">
-                {service.titulo}
-              </h4>
-              <ShowMore description={service.descripcion} title={service.titulo} />
-            </div>
+           <ServiceCard service={service} key={index} />
           ))}
         </div>
       </div>
