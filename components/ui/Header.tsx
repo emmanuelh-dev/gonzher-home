@@ -56,11 +56,11 @@ class Header extends Component<{}, HeaderState> {
     const headerClasses = this.state.scrolled
       ? "bg-white fixed top-0 left-0 z-40 w-screen text-dark"
       : "bg-transparent fixed top-0 left-0 z-40 w-screen text-white";
-    const hiddePhone = this.state.scrolled ? "hidden" : "block";
+    const hiddePhone = this.state.scrolled ? "h-0 overflow-hidden" : "h-auto";
     return (
-      <div className={headerClasses}>
+      <div className={`transition-all ${headerClasses}`}>
         <div
-          className={`${hiddePhone} container justify-end flex items-center gap-4`}
+          className={`${hiddePhone} container justify-end flex items-center gap-4 transition-all duration-300`}
         >
           <a
             href="tel:+528118806014"
