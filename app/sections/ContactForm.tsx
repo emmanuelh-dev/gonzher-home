@@ -8,7 +8,7 @@ export const ContactForm = () => {
   const sendMessage = (formData:FormData) => {
     const { fullName, phone, company, message } = Object.fromEntries(formData);
     // Construye el enlace de WhatsApp con el mensaje predefinido
-    const whatsappLink = `https://wa.me/8118806014?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/8128938412?text=${encodeURIComponent(
       `Hola soy ${fullName},
 Telefono: ${phone}
 Company: ${company}
