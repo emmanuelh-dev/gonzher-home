@@ -163,7 +163,7 @@ class Header extends Component<{}, HeaderState> {
                             </NavigationMenuContent>
                           </NavigationMenuItem>
                           <NavigationMenuItem>
-                            <Link href='/docs' legacyBehavior passHref>
+                            <a href='https://docs.gonzher.com/docs/intro'>
                               <NavigationMenuLink
                                 className={`buttonVariants ${buttonVariants({
                                   variant: 'link',
@@ -171,7 +171,7 @@ class Header extends Component<{}, HeaderState> {
                               >
                                 Documentación
                               </NavigationMenuLink>
-                            </Link>
+                            </a>
                           </NavigationMenuItem>
                         </NavigationMenuList>
                       </NavigationMenu>
