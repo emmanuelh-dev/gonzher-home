@@ -18,7 +18,7 @@ const AppOperadores = () => {
                     height={300}
                     src='/mobile-app.png'
                     alt='imagen'
-                    className='mx-auto lg:ml-auto w-full max-w-lg'
+                    className='mx-auto lg:ml-auto w-full max-w-sm'
                   />
                   <div className=' lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] '>
                     <span className=' text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 '>
@@ -28,24 +28,13 @@ const AppOperadores = () => {
                       Líderes en software para transportistas
                     </h2>
                     <p className='text-base text-body-color mb-9 leading-relaxed'>
-                      En Gonzher desarrollamos software de gestión logística que
-                      optimiza procesos operativos de empresas de transporte,
-                      con soluciones todo-en-uno que incluyen rastreo en tiempo
-                      real, planificación de rutas, gestión de flotas, análisis
-                      de indicadores clave y facturación automatizada.
+                    Controla tus viajes en un solo lugar
                     </p>
                     <p className='text-base text-body-color mb-9 leading-relaxed'>
-                      Nos respaldan la administración exitosa de más de 5000
-                      vehículos alrededor del mundo, que mejoraron su
-                      productividad hasta 30% gracias a nuestras innovadoras
-                      apps móviles para conductores y nuestra integración
-                      avanzada con sistemas de contabilidad existentes.
+                    Asistencia las 24/h
                     </p>
                     <p className='text-base text-body-color mb-9 leading-relaxed'>
-                      Operar con Gonzher significa control total sobre la
-                      rentabilidad de tu negocio, toma de decisiones basada en
-                      datos e incremento en la satisfacción del cliente. ¿Listo
-                      para llevar tu empresa de transporte al siguiente nivel?
+                    Ten el control de tus movimientos
                     </p>
                     <a
                       href=''
