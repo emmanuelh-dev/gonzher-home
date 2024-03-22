@@ -25,7 +25,7 @@ const AppOperadores = () => {
                       Acerca de Nosotros
                     </span>
                     <h2 className='font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 '>
-                      Líderes en software para transportistas
+                      App para Operadores!
                     </h2>
                     <p className='text-base text-body-color mb-9 leading-relaxed'>
                     Controla tus viajes en un solo lugar
