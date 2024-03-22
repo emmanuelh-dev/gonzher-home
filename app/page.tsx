@@ -7,6 +7,7 @@ import Pricing from "@/app/sections/pricing";
 import Services from "@/app/sections/services";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import AppOperadores from "@/app/sections/AppOperadores";
 
 export default function Home() {
   return (
@@ -78,6 +79,7 @@ export default function Home() {
       <Features />
       <About />
       <Pricing />
+      <AppOperadores/>
       <FAQ />
       <OurMarkers />
       <Contact />
