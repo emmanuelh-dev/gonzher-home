@@ -1,87 +1,15 @@
 import React from 'react';
 import { BiCheck } from 'react-icons/bi';
-const PRECIOS = [
-  {
-    plan: 'NÓMINA + CONTABLE',
-    precio: '$3,000',
-    descuento: '$2250',
-    moneda: 'MXN',
-    frecuencia: 'x mes',
-    folios: 'ILIMITADOS',
-    funciones: [
-      'TODAS las funciones del plan BÁSICO',
-      'TODAS las funciones del plan NÓMINA',
-      'TODAS las funciones del plan CONTABLE',
-      'Gráficas comparativas en tiempo real',
-      'Soporte gratuito',
-    ],
-    masInformacion: 'Más información',
-    iniciar: 'INICIAR',
-  },
-  {
-    plan: 'NÓMINA',
-    precio: '$1,850',
-    descuento: '$1390',
-    moneda: 'MXN',
-    frecuencia: 'x mes',
-    folios: 'GRATIS*',
-    funciones: [
-      'TODAS las funciones del plan BÁSICO',
-      'Previsualiza los cálculos antes de generar',
-      'Reportes descargables en tiempo real',
-      'Cálculos automáticos',
-      'Reportes históricos de sueldos y asimilados',
-      'Importa y exporta información de empleados',
-      'Factura con fecha diferente',
-      'Soporte gratuito',
-    ],
-    masInformacion: 'Más información',
-    iniciar: 'INICIAR',
-    mejorOpcion: 'MEJOR OPCIÓN',
-  },
-  {
-    plan: 'CONTABLE',
-    precio: '$999',
-    descuento: '$749',
-    moneda: 'MXN',
-    frecuencia: 'x mes',
-    folios: 'GRATIS*',
-    funciones: [
-      'TODAS las funciones del plan BÁSICO',
-      'Cálculo del impuesto según tu régimen',
-      'Amarre contable',
-      'Cierre de periodos automáticamente',
-      'Gráfica de gastos acorde a balanza',
-      'Póliza automática',
-      'Factura con fecha diferente',
-      'Soporte gratuito',
-    ],
-    masInformacion: 'Más información',
-    iniciar: 'INICIAR',
-    mejorOpcion: 'MEJOR OPCIÓN',
-  },
-  {
-    plan: 'BÁSICO',
-    seleccionaFolios: 'Selecciona Folios',
-    precio: '100',
-    descuento: '99',
-    moneda: 'MXN',
-    frecuencia: 'x 12 meses',
-    funciones: [
-      'Emite CFDI (Factura, Carta Porte, Factura Comercio Exterior, Complemento de Pago)',
-      'Descarga SAT',
-      'Catálogos SAT precargados',
-      "Cancela CFDI's",
-      'Estadísticas básicas',
-      'Soporte gratuito',
-    ],
-    comprar: 'COMPRAR',
-  },
-];
-
+interface Producto {
+  id: number;
+  name: string;
+  description: string;
+  price: string;
+  // Agrega las demás propiedades aquí según sea necesario
+}
 const Pricing = async () => {
-  let productos = [];
-  try {
+  let productos: Producto[] = [];
+    try {
     const response = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/productos`,
       {
