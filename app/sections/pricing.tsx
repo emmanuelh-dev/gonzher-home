@@ -1,148 +1,160 @@
-import React from "react";
-import { BiCheck } from "react-icons/bi";
+import React from 'react';
+import { BiCheck } from 'react-icons/bi';
 const PRECIOS = [
   {
-    plan: "NÓMINA + CONTABLE",
-    precio: "$3,000",
-    descuento: "$2250",
-    moneda: "MXN",
-    frecuencia: "x mes",
-    folios: "ILIMITADOS",
+    plan: 'NÓMINA + CONTABLE',
+    precio: '$3,000',
+    descuento: '$2250',
+    moneda: 'MXN',
+    frecuencia: 'x mes',
+    folios: 'ILIMITADOS',
     funciones: [
-      "TODAS las funciones del plan BÁSICO",
-      "TODAS las funciones del plan NÓMINA",
-      "TODAS las funciones del plan CONTABLE",
-      "Gráficas comparativas en tiempo real",
-      "Soporte gratuito",
+      'TODAS las funciones del plan BÁSICO',
+      'TODAS las funciones del plan NÓMINA',
+      'TODAS las funciones del plan CONTABLE',
+      'Gráficas comparativas en tiempo real',
+      'Soporte gratuito',
     ],
-    masInformacion: "Más información",
-    iniciar: "INICIAR",
+    masInformacion: 'Más información',
+    iniciar: 'INICIAR',
   },
   {
-    plan: "NÓMINA",
-    precio: "$1,850",
-    descuento: "$1390",
-    moneda: "MXN",
-    frecuencia: "x mes",
-    folios: "GRATIS*",
+    plan: 'NÓMINA',
+    precio: '$1,850',
+    descuento: '$1390',
+    moneda: 'MXN',
+    frecuencia: 'x mes',
+    folios: 'GRATIS*',
     funciones: [
-      "TODAS las funciones del plan BÁSICO",
-      "Previsualiza los cálculos antes de generar",
-      "Reportes descargables en tiempo real",
-      "Cálculos automáticos",
-      "Reportes históricos de sueldos y asimilados",
-      "Importa y exporta información de empleados",
-      "Factura con fecha diferente",
-      "Soporte gratuito",
+      'TODAS las funciones del plan BÁSICO',
+      'Previsualiza los cálculos antes de generar',
+      'Reportes descargables en tiempo real',
+      'Cálculos automáticos',
+      'Reportes históricos de sueldos y asimilados',
+      'Importa y exporta información de empleados',
+      'Factura con fecha diferente',
+      'Soporte gratuito',
     ],
-    masInformacion: "Más información",
-    iniciar: "INICIAR",
-    mejorOpcion: "MEJOR OPCIÓN",
+    masInformacion: 'Más información',
+    iniciar: 'INICIAR',
+    mejorOpcion: 'MEJOR OPCIÓN',
   },
   {
-    plan: "CONTABLE",
-    precio: "$999",
-    descuento: "$749",
-    moneda: "MXN",
-    frecuencia: "x mes",
-    folios: "GRATIS*",
+    plan: 'CONTABLE',
+    precio: '$999',
+    descuento: '$749',
+    moneda: 'MXN',
+    frecuencia: 'x mes',
+    folios: 'GRATIS*',
     funciones: [
-      "TODAS las funciones del plan BÁSICO",
-      "Cálculo del impuesto según tu régimen",
-      "Amarre contable",
-      "Cierre de periodos automáticamente",
-      "Gráfica de gastos acorde a balanza",
-      "Póliza automática",
-      "Factura con fecha diferente",
-      "Soporte gratuito",
+      'TODAS las funciones del plan BÁSICO',
+      'Cálculo del impuesto según tu régimen',
+      'Amarre contable',
+      'Cierre de periodos automáticamente',
+      'Gráfica de gastos acorde a balanza',
+      'Póliza automática',
+      'Factura con fecha diferente',
+      'Soporte gratuito',
     ],
-    masInformacion: "Más información",
-    iniciar: "INICIAR",
-    mejorOpcion: "MEJOR OPCIÓN",
+    masInformacion: 'Más información',
+    iniciar: 'INICIAR',
+    mejorOpcion: 'MEJOR OPCIÓN',
   },
   {
-    plan: "BÁSICO",
-    seleccionaFolios: "Selecciona Folios",
-    precio: "100",
-    descuento: "99",
-    moneda: "MXN",
-    frecuencia: "x 12 meses",
+    plan: 'BÁSICO',
+    seleccionaFolios: 'Selecciona Folios',
+    precio: '100',
+    descuento: '99',
+    moneda: 'MXN',
+    frecuencia: 'x 12 meses',
     funciones: [
-      "Emite CFDI (Factura, Carta Porte, Factura Comercio Exterior, Complemento de Pago)",
-      "Descarga SAT",
-      "Catálogos SAT precargados",
+      'Emite CFDI (Factura, Carta Porte, Factura Comercio Exterior, Complemento de Pago)',
+      'Descarga SAT',
+      'Catálogos SAT precargados',
       "Cancela CFDI's",
-      "Estadísticas básicas",
-      "Soporte gratuito",
+      'Estadísticas básicas',
+      'Soporte gratuito',
     ],
-    comprar: "COMPRAR",
+    comprar: 'COMPRAR',
   },
 ];
 
-const Pricing = () => {
-  const productos = fetch( `${process.env.NEXT_PUBLIC_API_URL}/productos`)
-  console.log(productos)
+const Pricing = async () => {
+  let productos = [];
+  try {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/productos`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error('Error al obtener los productos');
+    }
+
+    const data = await response.json();
+    productos = data.productos;
+  } catch (error) {
+    console.error('Error al obtener los productos:', error);
+  }
+
   return (
     <div>
       <section
-        id="precios"
-        className=" bg-white pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden "
+        id='precios'
+        className=' bg-white pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden '
       >
-        <div className="container mx-auto">
-          <div className="flex flex-wrap -mx-4">
-            <div className="w-full px-4">
-              <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[800px]">
-                <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
+        <div className='container mx-auto'>
+          <div className='flex flex-wrap -mx-4'>
+            <div className='w-full px-4'>
+              <div className='text-center mx-auto mb-[60px] lg:mb-20 max-w-[800px]'>
+                <h2 className=' font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 '>
                   Conoce nuestros planes
                 </h2>
-                <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
+                <p className=' text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color '>
                   Si tiene alguna pregunta o necesita más información sobre
-                  nuestros costos unitarios, no dude en ponerse en contactanoso con
-                  nuestro equipo de atención al cliente. Estamos aquí para
+                  nuestros costos unitarios, no dude en ponerse en contactanoso
+                  con nuestro equipo de atención al cliente. Estamos aquí para
                   ayudarle a optimizar sus operaciones logísticas y de
                   transporte.
                 </p>
               </div>
             </div>
           </div>
-          <div className="grid gap-8 md:grid-cols-4">
-            {PRECIOS.map((precio, index) => (
-              <div className="w-full" key={index}>
-                <div
-                  className=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp "
-                  data-wow-delay=".15s "
-                >
-                  <span className="text-dark font-medium text-base uppercase block mb-2">
-                    {precio.plan}
-                  </span>
-                  <h2 className="font-semibold text-primary text-[20px] line-through">
-                    {precio.precio}/mes
-                  </h2>
-                  <h3 className="font-semibold text-red-400 mb-9 text-[28px]">
-                    {precio.descuento}/mes
-                  </h3>
-                  <div className="mb-10">
-                    {precio.funciones.map((funcion, index) => (
-                      <p
-                        className=" text-base font-medium text-body-color leading-loose mb-1 flex items-center gap-2 text-left"
-                        key={index}
+          <div className='md:flex gap-6 items-center justify-center flex-wrap'>
+            {productos ?
+              (productos.map((producto) => (
+                <div className='w-full max-w-sm' key={producto.id}>
+                  <div
+                    className=' bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp '
+                    data-wow-delay='.15s '
+                  >
+                    <span className='text-dark font-medium text-base uppercase block mb-2'>
+                      {producto.name}
+                    </span>
+                    <h2 className='font-semibold text-primary text-[20px] line-through'>
+                      {+producto.price + 100}/mes
+                    </h2>
+                    <h3 className='font-semibold text-red-400 mb-9 text-[28px]'>
+                      {producto.price}/mes
+                    </h3>
+                    <div className='mb-10'>{producto.description}</div>
+                    <div className='w-full'>
+                      <a
+                        href=''
+                        className=' inline-block text-base font-medium text-primary bg-transparent border border-[#D4DEFF] rounded-full text-center py-4 px-11 hover:text-white hover:bg-primary hover:border-primary transition duration-300 ease-in-out '
                       >
-                        <BiCheck />{funcion}
-                      </p>
-                    ))}
+                        Comprar Ahora
+                      </a>
+                    </div>
+                    <span className=' absolute left-0 bottom-0 z-[-1] w-14 h-14 rounded-tr-full block bg-primary '></span>
                   </div>
-                  <div className="w-full">
-                    <a
-                      href=""
-                      className=" inline-block text-base font-medium text-primary bg-transparent border border-[#D4DEFF] rounded-full text-center py-4 px-11 hover:text-white hover:bg-primary hover:border-primary transition duration-300 ease-in-out "
-                    >
-                      Comprar Ahora
-                    </a>
-                  </div>
-                  <span className=" absolute left-0 bottom-0 z-[-1] w-14 h-14 rounded-tr-full block bg-primary "></span>
                 </div>
-              </div>
-            ))}
+              ))) : (<div className='flex items-center justify-center text-center w-full'>Proximamente...</div>)}
           </div>
         </div>
       </section>
