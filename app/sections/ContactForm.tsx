@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button";
 import React from "react";
 
 export const ContactForm = () => {
-  const sendMessage = (formData:FormData) => {
+  const sendMessage = (formData: FormData) => {
     const { fullName, phone, company, message } = Object.fromEntries(formData);
     // Construye el enlace de WhatsApp con el mensaje predefinido
     const whatsappLink = `https://wa.me/8128938412?text=${encodeURIComponent(
       `Hola soy ${fullName},
 Telefono: ${phone}
 Company: ${company}
-Mensaje: ${message}`
+Mensaje: ${message}`,
     )}`;
 
     // Abre el enlace en una nueva ventana/tab
@@ -23,15 +23,30 @@ Mensaje: ${message}`
     <form className="space-y-4" action={sendMessage}>
       <div>
         <Label htmlFor="fullName">Nombre Completo*</Label>
-        <Input id="fullName" type="text" name="fullName" placeholder="Adam Gelius" />
+        <Input
+          id="fullName"
+          type="text"
+          name="fullName"
+          placeholder="Adam Gelius"
+        />
       </div>
       <div>
         <Label htmlFor="email">Correo Electrónico*</Label>
-        <Input id="email" type="email" name="email" placeholder="ejemplo@tucorreo.com" />
+        <Input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="ejemplo@tucorreo.com"
+        />
       </div>
       <div>
         <Label htmlFor="company">Compañía*</Label>
-        <Input id="company" type="text" name="company" placeholder="Tu Compañía" />
+        <Input
+          id="company"
+          type="text"
+          name="company"
+          placeholder="Tu Compañía"
+        />
       </div>
       <div>
         <Label htmlFor="phone">Teléfono*</Label>

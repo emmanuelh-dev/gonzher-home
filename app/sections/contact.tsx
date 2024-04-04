@@ -2,7 +2,6 @@ import React from "react";
 import { ContactForm } from "./ContactForm";
 
 const Contacto = () => {
-
   return (
     <section id="contactanos" className="py-20 md:py-[120px] relative">
       <div className="  absolute  z-[-1]  w-full  h-1/2  lg:h-[45%]  xl:h-1/2  bg-primary  top-0  left-0  "></div>
@@ -98,7 +97,7 @@ const Contacto = () => {
               <h3 className="font-semibold mb-8 text-2xl md:text-[26px]">
                 Dejanos un Mensaje
               </h3>
-              <ContactForm/>
+              <ContactForm />
             </div>
           </div>
         </div>

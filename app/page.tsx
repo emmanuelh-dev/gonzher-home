@@ -79,7 +79,7 @@ export default function Home() {
       <Features />
       <About />
       <Pricing />
-      <AppOperadores/>
+      <AppOperadores />
       <FAQ />
       <OurMarkers />
       <Contact />

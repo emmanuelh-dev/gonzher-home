@@ -29,14 +29,16 @@ const FAQs = [
   },
   {
     title: "¿El costo del servicio es por unidad?",
-    description:
-      "Sí, el costo del servicio es por unidad además de la póliza.",
+    description: "Sí, el costo del servicio es por unidad además de la póliza.",
   },
 ];
 
 const FAQ = () => {
   return (
-    <section id="preguntas frecuentes" className="bg-[#b2eced] pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
+    <section
+      id="preguntas frecuentes"
+      className="bg-[#b2eced] pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden"
+    >
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">

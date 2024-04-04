@@ -50,13 +50,13 @@ const About = () => {
                       Más Información
                     </a>
                   </div>
-                      <Image
-                        width={300}
-                        height={300}
-                        src="/nav.png"
-                        alt="imagen"
-                        className="mx-auto lg:ml-auto"
-                      />
+                  <Image
+                    width={300}
+                    height={300}
+                    src="/nav.png"
+                    alt="imagen"
+                    className="mx-auto lg:ml-auto"
+                  />
                 </div>
               </div>
             </div>
