@@ -80,6 +80,8 @@ const PRECIOS = [
 ];
 
 const Pricing = () => {
+  const productos = fetch( `${process.env.NEXT_PUBLIC_API_URL}/productos`)
+  console.log(productos)
   return (
     <div>
       <section
