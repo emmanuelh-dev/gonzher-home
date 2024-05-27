@@ -65,10 +65,10 @@ const Pricing = async () => {
                       {producto.name}
                     </span>
                     <h2 className="font-semibold text-primary text-[20px] line-through">
-                      {+producto.price + 100}/mes
+                      {+producto.price + 100}/Año
                     </h2>
                     <h3 className="font-semibold text-red-400 mb-9 text-[28px]">
-                      {producto.price}/mes
+                      {producto.price}/Año
                     </h3>
                     <div className="mb-10">{producto.description}</div>
                     <div className="w-full">

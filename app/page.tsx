@@ -32,7 +32,7 @@ export default function Home() {
                     title="Formulario de contactanoso"
                     className={buttonVariants({ variant: "default" })}
                   >
-                    Contactanos
+                    Contáctanos
                   </a>
                 </li>
                 <li>

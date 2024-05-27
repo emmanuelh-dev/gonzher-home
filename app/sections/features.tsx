@@ -89,7 +89,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="grid md:grid-cols-4 text-center gap-8 transition duration-700 ease-in-out transform">
+        <div className="flex flex-wrap gap-8 transition duration-700 ease-in-out transform">
           {SERVICES.map((service, index) => (
             <ServiceCard service={service} key={index} />
           ))}
