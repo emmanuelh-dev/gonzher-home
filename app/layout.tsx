@@ -5,6 +5,9 @@ import { Inter } from "next/font/google";
 import WhatsAppIcon from "@/app/sections/wpp-icon";
 import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "./GoogleAnalytics";
+import { usePathname } from "next/navigation";
+import ClientLayout from "./ClientLayout";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -37,6 +40,7 @@ export const metadata = {
     },
   },
 };
+
 export default function RootLayout({
   children,
 }: {
@@ -45,11 +49,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <Header />
-        {children}
-        <WhatsAppIcon />
-        <GoogleAnalytics />
-        <Analytics />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

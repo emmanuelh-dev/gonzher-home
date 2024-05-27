@@ -5,8 +5,6 @@ import Features from '@/app/sections/features';
 import OurMarkers from '@/app/sections/markers';
 import Pricing from '@/app/sections/pricing';
 import Services from '@/app/sections/services';
-import { buttonVariants } from '@/components/ui/button';
-import Image from 'next/image';
 import AppOperadores from '@/app/sections/AppOperadores';
 import Carrousel from './components/Carrousel';
 

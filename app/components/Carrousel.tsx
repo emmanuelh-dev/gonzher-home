@@ -35,7 +35,7 @@ const Carrousel = () => {
     }
 
     const interval = setInterval(() => {
-      let nextIndex = (current % count);
+      let nextIndex = current % count;
       api.scrollTo(nextIndex);
     }, 3000);
 
@@ -172,6 +172,8 @@ const Carrousel = () => {
           </div>
         </CarouselItem>
       </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
     </Carousel>
   );
 };

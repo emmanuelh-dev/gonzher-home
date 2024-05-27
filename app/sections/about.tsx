@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -17,9 +18,9 @@ const About = () => {
               "
                 >
                   <div className=" lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] ">
-                    <span className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 ">
+                    <Link className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 " href="/nosotros">
                       Acerca de Nosotros
-                    </span>
+                    </Link>
                     <h2 className="font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
                       Líderes en software para transportistas
                     </h2>
