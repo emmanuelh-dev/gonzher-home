@@ -48,7 +48,7 @@ const Carrousel = () => {
         <CarouselItem>
           <div className='container mx-auto'>
             <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
-              <div className='text-center max-w-[780px] mx-auto'>
+              <div className='text-center max-w-[780px] lg:w-1/3 mx-auto'>
                 <h2 className='lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
                   Software de Logística y Facturación
                 </h2>
@@ -92,7 +92,7 @@ const Carrousel = () => {
               <Image
                 src='/about.png'
                 alt='Software de logística para transportistas'
-                className='max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover'
+                className='max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover lg:w-2/3'
                 priority
                 width={845}
                 height={560}
@@ -103,7 +103,7 @@ const Carrousel = () => {
         <CarouselItem>
           <div className='container mx-auto'>
             <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
-              <div className='text-center max-w-[780px] mx-auto'>
+              <div className='text-center max-w-[780px] lg:w-1/3 mx-auto'>
                 <h2 className='lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
                   Software GPS avanzado.
                 </h2>
@@ -148,7 +148,7 @@ const Carrousel = () => {
               <Image
                 src='/gps.png'
                 alt='Software de logística para transportistas'
-                className='max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover'
+                className='max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover lg:w-2/3'
                 priority
                 width={845}
                 height={560}
