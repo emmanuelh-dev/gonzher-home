@@ -49,10 +49,10 @@ const Carrousel = () => {
           <div className='container mx-auto'>
             <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
               <div className='text-center max-w-[780px] mx-auto'>
-                <h1 className='font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
+                <h2 className='lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
                   Software de Logística y Facturación
-                </h1>
-                <p className='text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
+                </h2>
+                <p className='lg:text-left text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
                   Optimiza tu logística con Gonzher. Descubre nuestro avanzado
                   software de facturación en línea y soluciones innovadoras para
                   el transporte. ¡Regístrate ahora!
@@ -104,10 +104,10 @@ const Carrousel = () => {
           <div className='container mx-auto'>
             <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
               <div className='text-center max-w-[780px] mx-auto'>
-                <h1 className='font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
+                <h2 className='lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
                   Software GPS avanzado.
-                </h1>
-                <p className='text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
+                </h2>
+                <p className='lg:text-left text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
                   Monitorea y administra fácilmente tu fuerza móvil en todo
                   momento y todo lugar. Da seguimiento a tus unidades de manera
                   práctica y segura. Conoce las ventajas de nuestro sistema.
