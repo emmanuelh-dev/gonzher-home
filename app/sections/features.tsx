@@ -28,7 +28,7 @@ const SERVICES = [
   {
     titulo: "Control de Combustible",
     descripcion:
-      "Sabemos que el combustible es uno de los rubros más costosos en la gestión de la flota, y por eso hemos desarrollado un módulo que te permitirá analizar detalladamente y desde diferentes puntos de vista su rendimiento y costos. Analiza el rendimiento de tus usuarios con el paso del tiempo. Observa las tendencias importantes de cada usuario o de tu flota entera. Nuestro panel personalizable te facilita revisar tu progreso comparado con tu indicador KPI o tus presupuestos, con el análisis instantáneo que te ofrece nuestra app. ¡Conócenos!",
+      "Sabemos que el combustible es uno de los rubros más costosos en la gestión de la flota, desarrollamos un módulo que te permitirá analizar detalladamente y desde diferentes puntos de vista su rendimiento y costos. Nuestro panel personalizable te facilita revisar tu progreso comparado con tu indicador KPI o tus presupuestos, con el análisis instantáneo que te ofrece nuestra app.",
     icon: (
       <FaGasPump
         alt="icono de bomba de compustible"
