@@ -92,7 +92,7 @@ const Carrousel = () => {
               <Image
                 src='/about.png'
                 alt='Software de logística para transportistas'
-                className='max-w-full mx-auto rounded-t-xl rounded-tr-xl h-full object-cover'
+                className='max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover'
                 priority
                 width={845}
                 height={560}
@@ -148,7 +148,7 @@ const Carrousel = () => {
               <Image
                 src='/gps.png'
                 alt='Software de logística para transportistas'
-                className='max-w-full mx-auto rounded-t-xl rounded-tr-xl h-full object-cover'
+                className='max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover'
                 priority
                 width={845}
                 height={560}
