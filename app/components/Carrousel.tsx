@@ -47,7 +47,7 @@ const Carrousel = () => {
       <CarouselContent>
         <CarouselItem>
           <div className='container mx-auto'>
-            <div className='flex flex-wrap items-center mx-4'>
+            <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
               <div className='text-center max-w-[780px] mx-auto'>
                 <h1 className='font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
                   Software de Logística y Facturación
@@ -89,35 +89,29 @@ const Carrousel = () => {
                   </li>
                 </ul>
               </div>
-              <div className='w-full px-4'>
-                <div
-                  className='mx-auto max-w-[50rem] relative z-10 wow fadeInUp'
-                  data-wow-delay='.25s'
-                >
-                  <div className='mt-16'>
-                    <Image
-                      src='/about.png'
-                      alt='Software de logística para transportistas'
-                      className='max-w-full mx-auto rounded-t-xl rounded-tr-xl'
-                      priority
-                      width={845}
-                      height={560}
-                    />
-                  </div>
-                </div>
-              </div>
+              <Image
+                src='/about.png'
+                alt='Software de logística para transportistas'
+                className='max-w-full mx-auto rounded-t-xl rounded-tr-xl h-full object-cover'
+                priority
+                width={845}
+                height={560}
+              />
             </div>
           </div>
         </CarouselItem>
         <CarouselItem>
           <div className='container mx-auto'>
-            <div className='flex flex-wrap items-center mx-4'>
+            <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
               <div className='text-center max-w-[780px] mx-auto'>
                 <h1 className='font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
                   Software GPS avanzado.
                 </h1>
                 <p className='text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
-                  En todo momento, en todo lugar.
+                  Monitorea y administra fácilmente tu fuerza móvil en todo
+                  momento y todo lugar. Da seguimiento a tus unidades de manera
+                  práctica y segura. Conoce las ventajas de nuestro sistema.
+                  Contáctanos para más información
                 </p>
 
                 <ul className='flex flex-wrap items-center justify-center mb-10'>
@@ -151,29 +145,18 @@ const Carrousel = () => {
                   </li>
                 </ul>
               </div>
-              <div className='w-full px-4'>
-                <div
-                  className='mx-auto max-w-[50rem] relative z-10 wow fadeInUp'
-                  data-wow-delay='.25s'
-                >
-                  <div className='mt-16'>
-                    <Image
-                      src='/gps.png'
-                      alt='Software de logística para transportistas'
-                      className='max-w-full mx-auto rounded-t-xl rounded-tr-xl'
-                      priority
-                      width={845}
-                      height={560}
-                    />
-                  </div>
-                </div>
-              </div>
+              <Image
+                src='/gps.png'
+                alt='Software de logística para transportistas'
+                className='max-w-full mx-auto rounded-t-xl rounded-tr-xl h-full object-cover'
+                priority
+                width={845}
+                height={560}
+              />
             </div>
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 };
