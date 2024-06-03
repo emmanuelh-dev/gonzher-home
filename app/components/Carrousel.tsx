@@ -12,38 +12,8 @@ import Image from 'next/image';
 import { buttonVariants } from '@/components/ui/button';
 
 const Carrousel = () => {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on('select', () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
-  }, [api]);
-
-  useEffect(() => {
-    if (!api) {
-      return;
-    }
-
-    const interval = setInterval(() => {
-      let nextIndex = current % count;
-      api.scrollTo(nextIndex);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [api, current, count]);
-
   return (
-    <Carousel setApi={setApi}>
+    <Carousel>
       <CarouselContent>
         <CarouselItem>
           <div className='container mx-auto'>
