@@ -45,7 +45,7 @@ const Pricing = async () => {
                 </h2>
                 <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
                   Si tiene alguna pregunta o necesita más información sobre
-                  nuestros costos unitarios, no dude en ponerse en contactanoso
+                  nuestros costos unitarios, no dude en ponerse en contáctanos
                   con nuestro equipo de atención al cliente. Estamos aquí para
                   ayudarle a optimizar sus operaciones logísticas y de
                   transporte.

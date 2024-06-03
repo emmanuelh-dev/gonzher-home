@@ -62,7 +62,7 @@ const Carrousel = () => {
                   <li>
                     <a
                       href='/#contactanos'
-                      title='Formulario de contactanoso'
+                      title='Formulario de contáctanos'
                       className={buttonVariants({ variant: 'default' })}
                     >
                       Contáctanos
@@ -118,7 +118,7 @@ const Carrousel = () => {
                   <li>
                     <a
                       href='/#contactanos'
-                      title='Formulario de contactanoso'
+                      title='Formulario de contáctanos'
                       className={buttonVariants({ variant: 'default' })}
                     >
                       Contáctanos
