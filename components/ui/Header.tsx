@@ -174,16 +174,15 @@ class Header extends Component<HeaderProps, HeaderState> {
                             </NavigationMenuContent>
                           </NavigationMenuItem>
                           <NavigationMenuItem>
-                            <a href='https://docs.gonzher.com/docs/intro'>
-                              <NavigationMenuLink
-                                className={`buttonVariants ${buttonVariants({
-                                  variant: 'link',
-                                })} ${!this.state.scrolled && 'text-white'}`}
-                              >
-                                Documentación
-                              </NavigationMenuLink>
-                            </a>
-                          </NavigationMenuItem>
+                          <NavigationMenuLink
+                            href='https://docs.gonzher.com/docs/intro'
+                            className={`buttonVariants ${buttonVariants({
+                              variant: 'link',
+                            })} ${!this.state.scrolled && 'text-white'}`}
+                          >
+                            Documentación
+                          </NavigationMenuLink>
+                        </NavigationMenuItem>
                         </NavigationMenuList>
                       </NavigationMenu>
                     </ul>

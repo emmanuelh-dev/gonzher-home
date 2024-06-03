@@ -21,7 +21,7 @@ const About = () => {
                     <Link className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 " href="/nosotros">
                       Acerca de Nosotros
                     </Link>
-                    <h2 className="font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
+                    <h2 className="animate-fade-up font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
                       Líderes en software para transportistas
                     </h2>
                     <p className="text-base text-body-color mb-9 leading-relaxed">

@@ -83,7 +83,7 @@ const Features = () => {
               <span className="font-semibold text-lg text-primary mb-2 block">
                 Caracteristicas
               </span>
-              <h2 className=" font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4 font-title">
+              <h2 className=" font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4 font-title animate-fade-up animate-duration-1000 animate-delay-300">
                 Tu socio en el camino a la excelencia operativa
               </h2>
             </div>

@@ -40,7 +40,7 @@ const Pricing = async () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[800px]">
-                <h2 className=" font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 ">
+                <h2 className="animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 animate-fade-up">
                   Conoce nuestros planes
                 </h2>
                 <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
@@ -56,7 +56,7 @@ const Pricing = async () => {
           <div className="md:flex gap-6 items-center justify-center flex-wrap">
             {productos ? (
               productos.map((producto) => (
-                <div className="w-full max-w-sm" key={producto.id}>
+                <div className="w-full max-w-sm animate-fade-up" key={producto.id}>
                   <div
                     className=" bg-white rounded-xl relative z-10 overflow-hidden border border-primary border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 text-center wow fadeInUp "
                     data-wow-delay=".15s "
