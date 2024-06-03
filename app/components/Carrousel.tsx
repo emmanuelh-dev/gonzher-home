@@ -20,7 +20,7 @@ const Carrousel = () => {
             <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
               <div className='text-center max-w-[780px] lg:w-1/3 mx-auto'>
                 <h2 className='lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
-                  Software de Logística y Facturación
+                  Software de Facturación y Logística
                 </h2>
                 <p className='lg:text-left text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
                   Optimiza tu logística con Gonzher. Descubre nuestro avanzado
@@ -75,13 +75,13 @@ const Carrousel = () => {
             <div className='flex flex-col lg:flex-row items-center mx-4 gap-10'>
               <div className='text-center max-w-[780px] lg:w-1/3 mx-auto'>
                 <h2 className='lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title'>
-                  Software GPS avanzado.
+                  Software GPS avanzado
                 </h2>
                 <p className='lg:text-left text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]'>
                   Monitorea y administra fácilmente tu fuerza móvil en todo
                   momento y todo lugar. Da seguimiento a tus unidades de manera
                   práctica y segura. Conoce las ventajas de nuestro sistema.
-                  Contáctanos para más información
+                  Contáctanos para más información.
                 </p>
 
                 <ul className='flex flex-wrap items-center justify-center mb-10'>
