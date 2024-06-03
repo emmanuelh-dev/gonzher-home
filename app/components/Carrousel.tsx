@@ -28,18 +28,15 @@ const Carrousel = () => {
                   el transporte. ¡Regístrate ahora!
                 </p>
 
-                <ul className='flex flex-wrap items-center justify-center mb-10'>
-                  <li>
-                    <a
+                <div className='flex flex-wrap items-center justify-center mb-10'>
+                <a
                       href='/#contactanos'
                       title='Formulario de contáctanos'
                       className={buttonVariants({ variant: 'default' })}
                     >
                       Contáctanos
                     </a>
-                  </li>
-                  <li>
-                    <a
+                  <a
                       href='https://system.gonzher.com/login'
                       target='_blank'
                       className='text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white'
@@ -56,8 +53,8 @@ const Carrousel = () => {
                         </svg>
                       </span>
                     </a>
-                  </li>
-                </ul>
+
+                </div>
               </div>
               <Image
                 src='/about.png'
@@ -84,18 +81,15 @@ const Carrousel = () => {
                   Contáctanos para más información.
                 </p>
 
-                <ul className='flex flex-wrap items-center justify-center mb-10'>
-                  <li>
-                    <a
+                <div className='flex flex-wrap items-center justify-center mb-10'>
+                <a
                       href='/#contactanos'
                       title='Formulario de contáctanos'
                       className={buttonVariants({ variant: 'default' })}
                     >
                       Contáctanos
                     </a>
-                  </li>
-                  <li>
-                    <a
+                  <a
                       href='https://api.gonzher.com'
                       target='_blank'
                       className='text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white'
@@ -112,8 +106,7 @@ const Carrousel = () => {
                         </svg>
                       </span>
                     </a>
-                  </li>
-                </ul>
+                </div>
               </div>
               <Image
                 src='/gps.png'

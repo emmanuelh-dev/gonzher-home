@@ -21,9 +21,6 @@ const AppOperadores = () => {
                     className="mx-auto lg:ml-auto w-full max-w-sm"
                   />
                   <div className=" lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] ">
-                    <span className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 ">
-                      Acerca de Nosotros
-                    </span>
                     <h2 className="font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
                       App para Operadores!
                     </h2>
