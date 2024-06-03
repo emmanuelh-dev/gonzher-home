@@ -27,7 +27,7 @@ const About = () => {
                     <p className="text-base text-body-color mb-9 leading-relaxed">
                       En Gonzher desarrollamos software de gestión logística que
                       optimiza procesos operativos de empresas de transporte,
-                      con soluciones todo-en-uno que incluyen rastreo en tiempo
+                      con soluciones todo en uno que incluyen rastreo en tiempo
                       real, planificación de rutas, gestión de flotas, análisis
                       de indicadores clave y facturación automatizada.
                     </p>
