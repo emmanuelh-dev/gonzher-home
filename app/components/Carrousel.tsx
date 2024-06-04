@@ -120,6 +120,10 @@ const Carrousel = () => {
           </div>
         </CarouselItem>
       </CarouselContent>
+      <div className="text-center">
+      <CarouselPrevious/>
+      <CarouselNext/>
+      </div>
     </Carousel>
   );
 };
