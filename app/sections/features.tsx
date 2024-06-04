@@ -73,7 +73,7 @@ const SERVICES = [
 const Features = () => {
   return (
     <section
-      className="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px] container mx-auto"
+      className="pt-20 lg:pt-[120px] pb-8 lg:pb-[70px] mx-auto pattern"
       id="caracteristicass"
     >
       <div className="container">
@@ -81,7 +81,7 @@ const Features = () => {
           <div className="w-full px-4">
             <div className="mb-12 lg:mb-20 max-w-[800px]">
               <span className="font-semibold text-lg text-primary mb-2 block">
-                Caracteristicas
+                Características
               </span>
               <h2 className=" font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4 font-title animate-fade-up animate-duration-1000 animate-delay-300">
                 Tu socio en el camino a la excelencia operativa

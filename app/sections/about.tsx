@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <section
         id="acerca-de"
-        className="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-primary"
+        className="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-gradient-to-l from-primary to-teal-700"
       >
         <div className="container mx-auto">
           <div className="bg-white wow fadeInUp" data-wow-delay=".2s">
@@ -33,7 +33,7 @@ const About = () => {
                     </p>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
                       Nos respaldan la administración exitosa de más de 5000
-                      vehículos alrededor del mundo, que mejoraron su
+                      vehículos alrededor de todo México, que mejoraron su
                       productividad hasta 30% gracias a nuestras innovadoras
                       apps móviles para conductores y nuestra integración
                       avanzada con sistemas de contabilidad existentes.
