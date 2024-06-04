@@ -7,13 +7,16 @@ import Pricing from "@/app/sections/pricing";
 import Services from "@/app/sections/services";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import Potencial from "./potencial";
+import Objetivos from "./objetivos";
 
 export default function Home() {
   return (
     <div>
         <div className="relative pt-[120px] md:pt-[130px] lg:pt-[160px]">
-        <div className="container mx-auto">
-          Nosotros
+        <div className="container mx-auto space-y-12">
+          <Objetivos/>
+          <Potencial/>
         </div>
       </div>
     </div>

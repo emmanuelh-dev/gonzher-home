@@ -182,6 +182,14 @@ class Header extends Component<HeaderProps, HeaderState> {
                           >
                             Documentación
                           </NavigationMenuLink>
+                          <Link
+                            href='/nosotros'
+                            className={`buttonVariants ${buttonVariants({
+                              variant: 'link',
+                            })} ${!this.state.scrolled && 'text-white'}`}
+                          >
+                            Nosotros
+                          </Link>
                         </NavigationMenuItem>
                         </NavigationMenuList>
                       </NavigationMenu>
