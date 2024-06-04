@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AppOperadores = () => {
@@ -18,12 +19,12 @@ const AppOperadores = () => {
                       App para
                       <span className='block'>Operadores!</span>
                     </h2>
-                    <a
-                      href=''
+                    <Link
+                      href='/app-operadores'
                       className='animate-fade-up inline-flex items-center justify-center py-4 px-6 rounded text-white bg-primary text-base font-medium hover:bg-opacity-90 hover:shadow-lg transition duration-300 ease-in-out   '
                     >
                       Más Información
-                    </a>
+                    </Link>
                   </div>
                   <Image
                     width={300}
