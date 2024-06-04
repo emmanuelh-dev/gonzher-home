@@ -11,7 +11,7 @@ import Carrousel from './components/Carrousel';
 export default function Home() {
   return (
     <div>
-      <div className='relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-primary'>
+      <div className='relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-gradient-to-r from-primary to-teal-800'>
         <Carrousel />
       </div>
       <Features />

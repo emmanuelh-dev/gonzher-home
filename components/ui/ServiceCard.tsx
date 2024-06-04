@@ -13,7 +13,7 @@ export default function ServiceCard({ service, children }: Props) {
   const [open, setOpen] = useState(false);
   const { titulo, descripcion, icon } = service;
   return (
-    <div className="mb-12 p-8 bg-primary rounded-2xl text-white flex flex-col items-center justify-center max-w-[20rem] mx-auto">
+    <div className="mb-12 p-8 bg-primary rounded-2xl text-white flex flex-col items-center justify-center max-w-[20rem] mx-auto hover:-translate-y-5 transition-all duration-500">
       {icon}
       <h4 className="font-bold text-2xl text-dark mb-3  text-center">{titulo}</h4>
       <p
