@@ -31,13 +31,13 @@ const potenciales = [
 export default function Potencial() {
   return (
     <div className='max-w-4xl mx-auto'>
-      <h2 className='text-center text-4xl lg:text-6xl font-bold font-title py-10 mt-20'>
+      <h2 className='text-center text-4xl lg:text-6xl font-bold font-title py-10 mt-20 animate-fade-up'>
         El potencial de Gonzher
         <span className='text-teal-500 block'>para tu negocio</span>
       </h2>
       <div className='space-y-10 mt-20'>
         {potenciales.map((potencial) => (
-          <div className='lg:flex gap-8 mx-auto' key={potencial.title}>
+          <div className='lg:flex gap-8 mx-auto animate-fade-up' key={potencial.title}>
             <div className='lg:w-1/3 flex items-center justify-center'>
               <Image
                 src={potencial.image}

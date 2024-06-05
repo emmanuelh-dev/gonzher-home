@@ -39,14 +39,14 @@ const objetivos = [
 export default function Objetivos() {
   return (
     <div className='mx-auto'>
-      <h2 className='text-center text-4xl lg:text-6xl font-bold font-title'>
+      <h2 className='text-center text-4xl lg:text-6xl font-bold font-title animate-fade-up'>
         Nuestros Objetivos
       </h2>
       <div className=' max-w-[65rem] mx-auto'>
         <div className="mt-20 grid lg:grid-cols-3 gap-10">
         {objetivos.map((potencial) => (
           <div
-            className='flex flex-col items-center text-center gap-8 w-64 mx-auto'
+            className='flex flex-col items-center text-center gap-8 w-64 mx-auto animate-fade-up'
             key={potencial.title}
           >
             <div className='flex items-center justify-center'>
