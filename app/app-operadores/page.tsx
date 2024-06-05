@@ -7,15 +7,12 @@ import Pricing from "@/app/sections/pricing";
 import Services from "@/app/sections/services";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
+import AppOperadores from "../sections/AppOperadores";
 
 export default function Home() {
   return (
-    <div>
-        <div className="relative pt-[120px] md:pt-[130px] lg:pt-[160px]">
-        <div className="container mx-auto">
-          Nosotros
-        </div>
-      </div>
+    <div className="pt-14">
+        <AppOperadores/>
     </div>
   );
 }

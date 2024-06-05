@@ -4,7 +4,7 @@ import { ContactForm } from "./ContactForm";
 const Contacto = () => {
   return (
     <section id="contactanos" className="py-20 md:py-[120px] relative">
-      <div className="  absolute  z-[-1]  w-full  h-1/2  lg:h-[45%]  xl:h-1/2  bg-primary  top-0  left-0  "></div>
+      <div className="  absolute  z-[-1]  w-full  h-1/2  lg:h-[45%]  xl:h-1/2  bg-gradient-to-b from-primary to-teal-700  top-0  left-0  "></div>
       <div className="container px-4">
         <div className="flex flex-wrap items-center -mx-4">
           <div className="px-4 w-full lg:w-7/12 xl:w-8/12">
@@ -91,7 +91,7 @@ const Contacto = () => {
           </div>
           <div className="px-4 w-full lg:w-5/12 xl:w-4/12">
             <div
-              className="  shadow-testimonial  rounded-lg  bg-white  py-10  px-8  md:p-[60px]  lg:p-10  2xl:p-[60px]  sm:py-12 sm:px-10  lg:py-12 lg:px-10  wow  fadeInUp    "
+              className="shadow-md rounded-lg bg-white py-10 px-8 md:p-[60px] lg:p-10  2xl:p-[60px]  sm:py-12 sm:px-10  lg:py-12 lg:px-10  wow  fadeInUp    "
               data-wow-delay=".2s    "
             >
               <h3 className="font-semibold mb-8 text-2xl md:text-[26px]">

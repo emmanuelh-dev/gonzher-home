@@ -11,11 +11,11 @@ import ClientLayout from "./ClientLayout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Software de Logística y Facturación En Linea - Gonzher",
+  title: "Software de Logística y Facturación En Linea - Sistemas Gonzher",
   description:
     "Optimiza tu logística con el software de Gonzher. Facturación en línea, seguimiento de pedidos y más para transportistas.",
   keywords:
-    "software logístico, facturación en línea, seguimiento de pedidos, soluciones para transportistas, eficiencia logística, Gonzher",
+    "software logístico, facturación en línea, soluciones para transportistas, eficiencia logística, Gonzher",
   canonical: "https://www.gonzher.com",
   meta: {
     "application-name": "Gonzher - Software de Logística y Facturación",

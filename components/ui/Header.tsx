@@ -66,7 +66,7 @@ class Header extends Component<HeaderProps, HeaderState> {
         ? scrolled
           ? 'bg-white fixed top-0 left-0 z-40 w-screen text-dark'
           : 'bg-transparent fixed top-0 left-0 z-40 w-screen text-white'
-        : 'bg-white fixed top-0 left-0 z-40 w-screen text-dark';
+        : 'fixed top-0 left-0 z-40 w-screen text-dark';
     const hiddePhone = scrolled ? 'h-0 overflow-hidden' : 'h-auto';
     return (
       <div className={`transition-all ${headerClasses}`}>
@@ -154,7 +154,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                                 this.state.scrolled ? undefined : 'text-white'
                               }
                             >
-                              Secciones
+                              Apartados
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                               <ul className='grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] '>
