@@ -18,9 +18,9 @@ const About = () => {
               "
                 >
                   <div className=" lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] ">
-                    <Link className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 " href="/nosotros">
+                    <span className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 ">
                       Acerca de Nosotros
-                    </Link>
+                    </span>
                     <h2 className="animate-fade-up font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
                       Líderes en software para transportistas
                     </h2>
@@ -44,12 +44,12 @@ const About = () => {
                       datos e incremento en la satisfacción del cliente. ¿Listo
                       para llevar tu empresa de transporte al siguiente nivel?
                     </p>
-                    <a
-                      href=""
+                    <Link
+                       href="/nosotros"
                       className=" inline-flex items-center justify-center py-4 px-6 rounded text-white bg-primary text-base font-medium hover:bg-opacity-90 hover:shadow-lg transition duration-300 ease-in-out   "
                     >
                       Más Información
-                    </a>
+                    </Link>
                   </div>
                   <Image
                     width={300}

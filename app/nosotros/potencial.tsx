@@ -3,29 +3,35 @@ import React from 'react';
 
 const potenciales = [
   {
-    title: 'Llega a tus clientes estén donde estén',
+    title: 'Consumo Anual',
     description:
-      'Muestra tus anuncios en el lugar y momento adecuados gracias a Gonzher Ads. Deja que la automatización de Gonzher encuentre los formatos de anuncios con mejor rendimiento en YouTube, Discover, Búsqueda y más para maximizar las conversiones de tu negocio.',
-    image: '/facturacion.png',
+      'Identifica cualquier factor que pueda haber influido en los cambios de consumo de tus unidades a lo largo del año. Por ejemplo, eventos especiales, falta de mantenimientos o robo de gasolina.',
+    image: '/graphs/2.png',
   },
   {
-    title: 'Registra, aprende y optimiza el ROI',
+    title: 'Facturación Anual',
     description:
-      'Registra las conversiones para obtener información de tu público objetivo. La optimización automática del presupuesto de Gonzher te permite captar clientes nuevos con el ROI más alto.',
-    image: '/consumos.png',
+      'Analiza las tendencias generales que se observan en la gráfica. ¿Hay picos en ciertos meses? ¿Hay algún patrón de aumento o disminución a lo largo del año? Identifica cualquier punto clave que desees resaltar, como el mes con la facturación más alta, el mes con la facturación más baja, o cualquier mes que haya experimentado un cambio significativo en comparación con los demás.',
+    image: '/graphs/3.png',
   },
   {
     title: 'Controla tu presupuesto',
     description:
-      'Obtén recomendaciones, raliza ajustes y decide tu presupuesto mensual. La tecnología de Gonzher te permite medir resultados y aprovechar tu inversión publicitaria de la mejor manera.',
-    image: '/facturacion.png',
+      'Examina cualquier factor que pueda haber influido en los cambios de actividad de viaje a lo largo del año. Analiza los patrones generales de viaje a lo largo del año y como mejorarlos.',
+    image: '/graphs/4.png',
+  },
+  {
+    title: 'Mantenimientos Anuales',
+    description:
+      'Anticipa tus unidades con el control de mantenimientos. Uno de los principales objetivos del mantenimiento de automóviles es garantizar la seguridad del conductor y otros usuarios de la carretera. El mantenimiento preventivo puede requerir una inversión inicial, a largo plazo puede ayudar a reducir los costos de reparación',
+    image: '/graphs/5.png',
   },
 ];
 
 export default function Potencial() {
   return (
     <div className='max-w-4xl mx-auto'>
-      <h2 className='text-center text-4xl font-bold font-title'>
+      <h2 className='text-center text-4xl lg:text-6xl font-bold font-title py-10 mt-20'>
         El potencial de Gonzher
         <span className='text-teal-500 block'>para tu negocio</span>
       </h2>
