@@ -7,6 +7,7 @@ import Pricing from '@/app/sections/pricing';
 import Services from '@/app/sections/services';
 import AppOperadores from '@/app/sections/AppOperadores';
 import Carrousel from './components/Carrousel';
+import Modulos from './sections/Modulos';
 
 export default function Home() {
   return (

@@ -6,17 +6,17 @@ import { FaRobot, FaRegSmile, FaLightbulb, FaRegClock, FaChartLine, FaRegThumbsU
 const objetivos = [
   {
     title: 'Automatización',
-    description: ' Implementamos sistemas automatizados para reducir la carga manual y aumentar la productividad.',
+    description: ' Implementar sistemas automatizados para reducir la carga manual y aumentar la productividad.',
     icon: <div className='bg-blue-600 rounded-full p-6'><FaRobot className='size-10 text-white'/></div>,
   },
   {
     title: 'Satisfacción del cliente',
-    description: 'Ofrecemos un servicio al cliente excepcional, resolviendo cualquier problema de manera rápida y eficaz.',
+    description: 'Ofrecer un servicio al cliente excepcional, resolviendo cualquier problema de manera rápida y eficaz.',
     icon: <div className='bg-amber-300 rounded-full p-6'><FaRegSmile className='size-10 text-white'/></div>,
   },
   {
     title: 'Innovación',
-    description: 'Implementamos y aprovechamos las últimas tecnologías para mejorar todos nuestros servicios.',
+    description: 'Impelemntar y aprovechar las últimas tecnologías para mejorar todos nuestros servicios.',
     icon: <div className='bg-amber-400 rounded-full p-6'><FaLightbulb className='size-10 text-white'/></div>,
   },
   {

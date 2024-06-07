@@ -8,11 +8,13 @@ import Services from "@/app/sections/services";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import AppOperadores from "../sections/AppOperadores";
+import { CarrouselApp } from "../sections/CarouselApp";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="pt-14">
         <AppOperadores/>
+        <CarrouselApp/>
     </div>
   );
 }
