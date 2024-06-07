@@ -13,9 +13,9 @@ import Image from 'next/image';
 export function CarrouselApp() {
   return (
     <div>
-      <div className='container mx-auto'>
+      <div className='flex flex-col container mx-auto min-h-screen items-center justify-center'>
         <h2 className='text-4xl lg:text-6xl py-12 font-title font-bold'>
-          Navega en Nuestra App
+          Conoce en Nuestra App
         </h2>
         <p>
           En Gonzher desarrollamos software de gestión logística que optimiza
@@ -34,13 +34,14 @@ export function CarrouselApp() {
             {Array.from({ length: 5 }).map((_, index) => (
               <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/3'>
                 <div className='p-4'>
-                  <CardContent className='flex aspect-square items-center justify-center p-6'>
+                  <CardContent className='p-6'>
                     <Image
                       src={`/app/${index+1}.jpeg`}
                       width={300}
                       height={300}
                       alt='Imagen app operadores Gonzher'
                     />
+                    <p className='block py-2'>Texto prueba mamalon</p>
                   </CardContent>
                 </div>
               </CarouselItem>
