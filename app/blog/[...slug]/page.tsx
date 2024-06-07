@@ -7,19 +7,20 @@ import { MDXLayoutRenderer } from 'pliny/mdx-components.js'
 import { sortPosts, coreContent, allCoreContent } from 'pliny/utils/contentlayer.js'
 import { allBlogs, allAuthors } from 'contentlayer/generated'
 import type { Authors, Blog } from 'contentlayer/generated'
-import PostSimple from '@/layouts/PostSimple'
-import PostLayout from '@/layouts/PostLayout'
-import PostBanner from '@/layouts/PostBanner'
+// import PostSimple from '@/layouts/PostSimple'
+// import PostLayout from '@/layouts/PostLayout'
+import PostLayout  from '@/layouts/PostLayout'
+// import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
 
-const defaultLayout = 'PostLayout'
-const layouts = {
-  PostSimple,
-  PostLayout,
-  PostBanner,
-}
+// const defaultLayout = 'PostLayout'
+// const layouts = {
+//   PostSimple,
+//   PostLayout,
+//   PostBanner,
+// }
 
 export async function generateMetadata({
   params,
@@ -106,7 +107,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
     }
   })
 
-  const Layout = layouts[post.layout || defaultLayout]
+  // const Layout  = layouts[post.layout || defaultLayout]
 
   return (
     <>
@@ -114,9 +115,9 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
+      <PostLayout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
-      </Layout>
+      </PostLayout>
     </>
   )
 }
