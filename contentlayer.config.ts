@@ -133,22 +133,22 @@ export const Authors = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'data',
   documentTypes: [Blog, Authors],
-  mdx: {
-    cwd: process.cwd(),
-    remarkPlugins: [
-      remarkExtractFrontmatter,
-      remarkGfm,
-      remarkCodeTitles,
-      remarkMath,
-      remarkImgToJsx,
-    ],
-    rehypePlugins: [
-      rehypeSlug,
-      rehypeAutolinkHeadings,
-      [rehypeCitation, { path: path.join(root, 'data') }],
-      [rehypePrismPlus, { defaultLanguage: 'js', ignoreMissing: true }],
-    ],
-  },
+  // mdx: {
+  //   cwd: process.cwd(),
+  //   remarkPlugins: [
+  //     remarkExtractFrontmatter,
+  //     remarkGfm,
+  //     remarkCodeTitles,
+  //     remarkMath,
+  //     remarkImgToJsx,
+  //   ],
+  //   rehypePlugins: [
+  //     rehypeSlug,
+  //     rehypeAutolinkHeadings,
+  //     [rehypeCitation, { path: path.join(root, 'data') }],
+  //     [rehypePrismPlus, { defaultLanguage: 'js', ignoreMissing: true }],
+  //   ],
+  // },
   onSuccess: async (importData) => {
     const { allBlogs } = await importData();
     createTagCount(allBlogs);
