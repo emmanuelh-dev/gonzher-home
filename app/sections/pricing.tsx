@@ -100,7 +100,7 @@ const Pricing = async () => {
                   Pesonaliza tu plan
                 </span>
                 <h2 className='font-semibold text-primary text-[20px] mb-4'>
-                  Enterprise
+                  Personalizado
                 </h2>
                 <div className='mb-10'>
                   Contáctanos para personalizar tu plan de acuerdo a tus

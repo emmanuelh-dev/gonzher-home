@@ -9,3 +9,9 @@
   background-size: 100px 100px;
   background-position: -5px -5px;
 }
+
+.lazo {
+  background-image: url('/lazo.svg');
+  background-size: 1000px 1000px;
+  background-position: center center;
+}

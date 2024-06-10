@@ -30,7 +30,7 @@ const potenciales = [
 
 export default function Potencial() {
   return (
-    <div className='max-w-4xl mx-auto'>
+    <div className='max-w-4xl mx-auto lazo'>
       <h2 className='text-center text-4xl lg:text-6xl font-bold font-title py-10 mt-20 animate-fade-up'>
         El potencial de Gonzher
         <span className='text-teal-500 block'>para tu negocio</span>
