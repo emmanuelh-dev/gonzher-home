@@ -31,21 +31,123 @@ export function CarrouselApp() {
           className='w-full max-w-4xl mx-auto'
         >
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/3'>
-                <div className='p-4'>
-                  <CardContent className='p-6'>
-                    <Image
-                      src={`/app/${index+1}.jpeg`}
-                      width={300}
-                      height={300}
-                      alt='Imagen app operadores Gonzher'
-                    />
-                    <p className='block py-2'>Texto prueba mamalon</p>
-                  </CardContent>
-                </div>
-              </CarouselItem>
-            ))}
+            <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+              <div className='p-4'>
+                <CardContent className='p-6'>
+                  <Image
+                    src={`/app/1.jpeg`}
+                    width={300}
+                    height={300}
+                    alt='Imagen app operadores Gonzher'
+                  />
+                  <p className='block py-2'>Ingresa y crea un nuevo viaje</p>
+                </CardContent>
+              </div>
+            </CarouselItem>
+            <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+              <div className='p-4'>
+                <CardContent className='p-6'>
+                  <Image
+                    src={`/app/2.jpeg`}
+                    width={300}
+                    height={300}
+                    alt='Imagen app operadores Gonzher'
+                  />
+                  <p className='block py-2'>Agrega las fotos</p>
+                </CardContent>
+              </div>
+            </CarouselItem>
+            <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/3.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Agrega la informacion</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
+          <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/4.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Selecciona el Origen</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
+          <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/5.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Selecciona el destino</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
+          <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/6.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Confirmalo</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
+          <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/7.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Inicia el viaje</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
+          <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/8.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Finalizalo</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
+          <CarouselItem className='md:basis-1/2 lg:basis-1/3'>
+            <div className='p-4'>
+              <CardContent className='p-6'>
+                <Image
+                  src={`/app/9.jpeg`}
+                  width={300}
+                  height={300}
+                  alt='Imagen app operadores Gonzher'
+                />
+                <p className='block py-2'>Viaje exitoso</p>
+              </CardContent>
+            </div>
+          </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
