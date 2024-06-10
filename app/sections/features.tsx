@@ -79,7 +79,7 @@ const Features = () => {
       <div className="container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
-            <div className="mb-12 lg:mb-20 max-w-[800px]">
+            <div className="mb-12 lg:mb-20 text-center">
               <span className="font-semibold text-lg text-primary mb-2 block">
                 Características
               </span>
@@ -89,7 +89,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap gap-8 transition duration-700 ease-in-out transform">
+        <div className="flex flex-wrap gap-8 transition duration-700 ease-in-out transform max-w-2xl mx-auto">
           {SERVICES.map((service, index) => (
             <ServiceCard service={service} key={index} />
           ))}

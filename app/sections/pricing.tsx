@@ -5,6 +5,7 @@ interface Producto {
   name: string;
   description: string;
   price: string;
+  original_price: number;
   // Agrega las demás propiedades aquí según sea necesario
 }
 const Pricing = async () => {
@@ -53,7 +54,7 @@ const Pricing = async () => {
               </div>
             </div>
           </div>
-          <div className='md:flex gap-6 items-center justify-center flex-wrap'>
+          <div className='md:flex gap-6 items-center justify-center flex-wrap max-w-4xl mx-auto'>
             {productos ? (
               productos.map((producto) => (
                 <div
@@ -68,7 +69,7 @@ const Pricing = async () => {
                       {producto.name}
                     </span>
                     <h2 className='font-semibold text-primary text-[20px] line-through'>
-                      {+producto.price + 100}/Año
+                      {producto?.original_price ?? +producto.price + 100}/Año
                     </h2>
                     <h3 className='font-semibold text-red-400 mb-9 text-[28px]'>
                       {producto.price}/Año
