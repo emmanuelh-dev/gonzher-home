@@ -66,7 +66,7 @@ export function CarrouselApp() {
                   height={300}
                   alt='Imagen app operadores Gonzher'
                 />
-                <p className='block py-2'>Agrega la informacion</p>
+                <p className='block py-2'>Agrega la información</p>
               </CardContent>
             </div>
           </CarouselItem>
@@ -105,7 +105,7 @@ export function CarrouselApp() {
                   height={300}
                   alt='Imagen app operadores Gonzher'
                 />
-                <p className='block py-2'>Confirmalo</p>
+                <p className='block py-2'>Confirma tu viaje</p>
               </CardContent>
             </div>
           </CarouselItem>
@@ -131,7 +131,7 @@ export function CarrouselApp() {
                   height={300}
                   alt='Imagen app operadores Gonzher'
                 />
-                <p className='block py-2'>Finalizalo</p>
+                <p className='block py-2'>Finaliza tu viaje</p>
               </CardContent>
             </div>
           </CarouselItem>
