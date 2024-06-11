@@ -5,40 +5,41 @@ const reviews = [
   {
     name: 'Carlos',
     username: '@carlos',
-    body: 'El sistema de GPS es increíblemente preciso. Ha mejorado la eficiencia de nuestra flota significativamente.',
+    body: 'El GPS es súper preciso, ha hecho maravillas con nuestra flota.',
     img: 'https://avatar.vercel.sh/carlos',
   },
   {
     name: 'Luisa',
     username: '@luisa',
-    body: 'La herramienta de facturación es muy intuitiva y nos ha ahorrado mucho tiempo en la gestión de documentos.',
+    body: 'La facturación es tan fácil de usar, nos ha salvado un montón de tiempo con los papeleos.',
     img: 'https://avatar.vercel.sh/luisa',
   },
   {
     name: 'Miguel',
     username: '@miguel',
-    body: 'Poder monitorear todo el flujo de la flota desde una única plataforma ha revolucionado nuestra operación logística.',
+    body: 'Ahora monitorear la flota es pan comido con esta plataforma, es una locura.',
     img: 'https://avatar.vercel.sh/miguel',
   },
   {
     name: 'Ana',
     username: '@ana',
-    body: 'Nunca había visto un software de logística tan completo. El GPS y la facturación están perfectamente integrados.',
+    body: 'Este software de logística es una joya, el GPS y la facturación se llevan de maravilla.',
     img: 'https://avatar.vercel.sh/ana',
   },
   {
     name: 'Santiago',
     username: '@santiago',
-    body: 'El sistema de monitoreo en tiempo real es impresionante. Ahora podemos tomar decisiones más rápidas y efectivas.',
+    body: 'El monitoreo en tiempo real es de otro nivel. ¡Nos ha hecho tomar decisiones a una velocidad impresionante!',
     img: 'https://avatar.vercel.sh/santiago',
   },
   {
     name: 'María',
     username: '@maria',
-    body: 'El software ha mejorado nuestra logística de una manera que no imaginábamos. Es indispensable para nuestro negocio.',
+    body: 'Este software ha mejorado tanto nuestra logística que ya no podemos vivir sin él. Es una pieza clave en nuestro negocio.',
     img: 'https://avatar.vercel.sh/maria',
   },
 ];
+
 
 const firstRow = reviews.slice(0, reviews.length / 2);
 const secondRow = reviews.slice(reviews.length / 2);
