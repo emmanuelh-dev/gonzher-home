@@ -58,10 +58,7 @@ const ReviewCard = ({
     <figure
       className={cn(
         'relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4',
-        // light styles
-        'border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]',
-        // dark styles
-        'dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]'
+        'border-gray-50/[.1] bg-gray-50/[.10] hover:bg-gray-50/[.15] shadow'
       )}
     >
       <div className='flex flex-row items-center gap-2'>
@@ -79,7 +76,7 @@ const ReviewCard = ({
 
 const NosAman = () => {
   return (
-    <section className='relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background py-20 md:shadow-xl'>
+    <section className='relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border py-20 md:shadow-xl lazo'>
       <div className='flex flex-wrap -mx-4'>
         <div className='w-full px-4'>
           <div className='text-center mx-auto mb-[60px] lg:mb-20 max-w-[600px] text-pretty'>
