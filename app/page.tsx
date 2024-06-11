@@ -8,6 +8,7 @@ import Services from '@/app/sections/services';
 import AppOperadores from '@/app/sections/AppOperadores';
 import Carrousel from './components/Carrousel';
 import Modulos from './sections/Modulos';
+import NosAman from './sections/NosAman';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <AppOperadores />
       <FAQ />
       <OurMarkers />
+      <NosAman />
       <Contact />
     </div>
   );

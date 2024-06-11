@@ -41,7 +41,7 @@ const Pricing = async () => {
           <div className='flex flex-wrap -mx-4'>
             <div className='w-full px-4'>
               <div className='text-center mx-auto mb-[60px] lg:mb-20 max-w-[800px]'>
-                <h2 className='animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 animate-fade-up'>
+                <h2 className='animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 animate-fade-up font-title'>
                   Conoce nuestros planes
                 </h2>
                 <p className=' text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color '>
