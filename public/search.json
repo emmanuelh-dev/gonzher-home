@@ -1,1 +1,70 @@
-[{"title":"The Time Machine","date":"2018-08-15T00:00:00.000Z","tags":["writings","book","reflection"],"draft":false,"summary":"The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...","type":"Blog","readingTime":{"text":"2 min read","minutes":1.74,"time":104400,"words":348},"slug":"el-buzon-tributario","path":"blog/el-buzon-tributario","filePath":"blog/el-buzon-tributario.mdx","toc":[{"value":"¿Qué es el Buzón Tributario?","url":"#qué-es-el-buzón-tributario","depth":2},{"value":"Algunos de los trámites que puedes hacer en el Buzón Tributario son:","url":"#algunos-de-los-trámites-que-puedes-hacer-en-el-buzón-tributario-son","depth":2},{"value":"¿Cómo registrarte?","url":"#cómo-registrarte","depth":2}],"structuredData":{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Time Machine","datePublished":"2018-08-15T00:00:00.000Z","dateModified":"2018-08-15T00:00:00.000Z","description":"The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...","image":"/static/images/twitter-card.png","url":"https://emmanuelh.dev/blog/el-buzon-tributario"}},{"title":"The Time Machine","date":"2018-08-15T00:00:00.000Z","tags":["writings","book","reflection"],"draft":false,"summary":"The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...","type":"Blog","readingTime":{"text":"0 min read","minutes":0,"time":0,"words":0},"slug":"the-time-machine","path":"blog/the-time-machine","filePath":"blog/the-time-machine.mdx","toc":[],"structuredData":{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Time Machine","datePublished":"2018-08-15T00:00:00.000Z","dateModified":"2018-08-15T00:00:00.000Z","description":"The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...","image":"/static/images/twitter-card.png","url":"https://emmanuelh.dev/blog/the-time-machine"}}]
+[
+  {
+    "title": "The Time Machine",
+    "date": "2018-08-15T00:00:00.000Z",
+    "tags": ["writings", "book", "reflection"],
+    "draft": false,
+    "summary": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...",
+    "type": "Blog",
+    "readingTime": {
+      "text": "2 min read",
+      "minutes": 1.74,
+      "time": 104400,
+      "words": 348
+    },
+    "slug": "el-buzon-tributario",
+    "path": "blog/el-buzon-tributario",
+    "filePath": "blog/el-buzon-tributario.mdx",
+    "toc": [
+      {
+        "value": "¿Qué es el Buzón Tributario?",
+        "url": "#qué-es-el-buzón-tributario",
+        "depth": 2
+      },
+      {
+        "value": "Algunos de los trámites que puedes hacer en el Buzón Tributario son:",
+        "url": "#algunos-de-los-trámites-que-puedes-hacer-en-el-buzón-tributario-son",
+        "depth": 2
+      },
+      { "value": "¿Cómo registrarte?", "url": "#cómo-registrarte", "depth": 2 }
+    ],
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Time Machine",
+      "datePublished": "2018-08-15T00:00:00.000Z",
+      "dateModified": "2018-08-15T00:00:00.000Z",
+      "description": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...",
+      "image": "/static/images/twitter-card.png",
+      "url": "https://emmanuelh.dev/blog/el-buzon-tributario"
+    }
+  },
+  {
+    "title": "The Time Machine",
+    "date": "2018-08-15T00:00:00.000Z",
+    "tags": ["writings", "book", "reflection"],
+    "draft": false,
+    "summary": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...",
+    "type": "Blog",
+    "readingTime": {
+      "text": "0 min read",
+      "minutes": 0,
+      "time": 0,
+      "words": 0
+    },
+    "slug": "the-time-machine",
+    "path": "blog/the-time-machine",
+    "filePath": "blog/the-time-machine.mdx",
+    "toc": [],
+    "structuredData": {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Time Machine",
+      "datePublished": "2018-08-15T00:00:00.000Z",
+      "dateModified": "2018-08-15T00:00:00.000Z",
+      "description": "The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His pale grey eyes shone and twinkled, and his usually pale face was flushed and animated...",
+      "image": "/static/images/twitter-card.png",
+      "url": "https://emmanuelh.dev/blog/the-time-machine"
+    }
+  }
+]

@@ -13,10 +13,10 @@ import Objetivos from "./objetivos";
 export default function Home() {
   return (
     <div>
-        <div className="relative pt-[120px] md:pt-[130px] lg:pt-[160px]">
+      <div className="relative pt-[120px] md:pt-[130px] lg:pt-[160px]">
         <div className="container mx-auto space-y-12">
-          <Objetivos/>
-          <Potencial/>
+          <Objetivos />
+          <Potencial />
         </div>
       </div>
     </div>

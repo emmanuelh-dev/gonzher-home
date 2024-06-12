@@ -1,13 +1,13 @@
-'use client'
-import React, { useEffect } from 'react'
+"use client";
+import React, { useEffect } from "react";
 
 const AdComponent: React.FC = () => {
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ;((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({})
-  }, [])
+    ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+  }, []);
 
-  return <></>
-}
+  return <></>;
+};
 
-export default AdComponent
+export default AdComponent;

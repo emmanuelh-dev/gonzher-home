@@ -12,7 +12,7 @@ export const ContactForm = () => {
       `Hola soy ${fullName},
 Telefono: ${phone}
 Company: ${company}
-Mensaje: ${message}`,
+Mensaje: ${message}`
     )}`;
 
     // Abre el enlace en una nueva ventana/tab

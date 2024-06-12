@@ -13,8 +13,8 @@ import { CarrouselApp } from "../sections/CarouselApp";
 export default function Page() {
   return (
     <div className="pt-14">
-        <AppOperadores/>
-        <CarrouselApp/>
+      <AppOperadores />
+      <CarrouselApp />
     </div>
   );
 }

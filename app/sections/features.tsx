@@ -84,7 +84,7 @@ const Features = () => {
                 Características
               </span>
               <h2 className="font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4 font-title animate-fade-up animate-duration-1000 animate-delay-300 text-balance">
-              El potencial de <strong>Gonzher</strong> para tu negocio
+                El potencial de <strong>Gonzher</strong> para tu negocio
               </h2>
             </div>
           </div>

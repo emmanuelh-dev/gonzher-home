@@ -11,7 +11,7 @@
 }
 
 .lazo {
-  background-image: url('/lazo.svg');
+  background-image: url("/lazo.svg");
   background-size: 1000px 1000px;
   background-position: center center;
   background-repeat: no-repeat;
