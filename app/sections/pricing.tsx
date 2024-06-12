@@ -40,16 +40,12 @@ const Pricing = async () => {
         <div className='container mx-auto'>
           <div className='flex flex-wrap -mx-4'>
             <div className='w-full px-4'>
-              <div className='text-center mx-auto mb-[60px] lg:mb-20 max-w-[800px]'>
-                <h2 className='animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 animate-fade-up font-title'>
+              <div className='text-center mx-auto mb-[60px] lg:mb-20 max-w-[600px]'>
+                <h2 className='animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 text-balance font-title'>
                   Conoce nuestros planes
                 </h2>
                 <p className=' text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color '>
-                  Si tiene alguna pregunta o necesita más información sobre
-                  nuestros costos unitarios, no dude en ponerse en contáctanos
-                  con nuestro equipo de atención al cliente. Estamos aquí para
-                  ayudarle a optimizar sus operaciones logísticas y de
-                  transporte.
+                En Gonzher, nos esforzamos por ofrecerte un servicio excepcional. Disponemos de planes personalizados para ti y toda tu flota.
                 </p>
               </div>
             </div>
