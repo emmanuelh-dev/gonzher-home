@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import GoogleAnalytics from "./GoogleAnalytics";
 import { usePathname } from "next/navigation";
 import ClientLayout from "./ClientLayout";
+import Contacto from "./sections/contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,6 +51,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={inter.className}>
         <ClientLayout>{children}</ClientLayout>
+        <Contacto />
       </body>
     </html>
   );

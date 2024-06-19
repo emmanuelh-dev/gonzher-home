@@ -123,7 +123,6 @@ export default function ListLayout({
           </div>
         </div>
         <ul>
-          {!filteredBlogPosts.length && "No posts found."}
           {displayPosts.map((post) => {
             const { path, date, title, summary, tags } = post;
             return (

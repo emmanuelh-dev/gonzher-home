@@ -60,14 +60,12 @@ class Header extends Component<HeaderProps, HeaderState> {
   render() {
     const { scrolled } = this.state;
     const { pathName } = this.props;
+    const validPathsNames = ["/app-operadores", "/"]
+    const headerClasses = validPathsNames.includes(pathName) ? "bg-transparent fixed top-0 left-0 z-40 w-screen text-white" : scrolled ? 'bg-white fixed top-0 left-0 z-40 w-screen text-black' :
+      "bg-white fixed top-0 left-0 z-40 w-screen text-black";
 
-    const headerClasses =
-      pathName === "/"
-        ? scrolled
-          ? "bg-white fixed top-0 left-0 z-40 w-screen text-dark"
-          : "bg-transparent fixed top-0 left-0 z-40 w-screen text-white"
-        : "fixed top-0 left-0 z-40 w-screen text-dark";
     const hiddePhone = scrolled ? "h-0 overflow-hidden" : "h-auto";
+    const text = validPathsNames.includes(pathName) ? "text-white" : scrolled ? 'tex-white' : 'text-black'
     return (
       <div className={`transition-all ${headerClasses}`}>
         <div
@@ -107,9 +105,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                         <NavigationMenuList>
                           <NavigationMenuItem>
                             <NavigationMenuTrigger
-                              className={
-                                this.state.scrolled ? undefined : "text-white"
-                              }
+                              className={text}
                             >
                               Productos
                             </NavigationMenuTrigger>
@@ -150,9 +146,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                           </NavigationMenuItem>
                           <NavigationMenuItem>
                             <NavigationMenuTrigger
-                              className={
-                                this.state.scrolled ? undefined : "text-white"
-                              }
+                              className={text}
                             >
                               Apartados
                             </NavigationMenuTrigger>
@@ -167,7 +161,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                                       {
                                         variant: "link",
                                       }
-                                    )} text-white`}
+                                    )}`}
                                   ></ListItem>
                                 ))}
                               </ul>
@@ -178,7 +172,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                               href="https://docs.gonzher.com/docs/intro"
                               className={`buttonVariants ${buttonVariants({
                                 variant: "link",
-                              })} ${!this.state.scrolled && "text-white"}`}
+                              })} ${text}`}
                             >
                               Documentación
                             </NavigationMenuLink>
@@ -186,7 +180,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                               href="/nosotros"
                               className={`buttonVariants ${buttonVariants({
                                 variant: "link",
-                              })} ${!this.state.scrolled && "text-white"}`}
+                              })} ${text}`}
                             >
                               Nosotros
                             </Link>

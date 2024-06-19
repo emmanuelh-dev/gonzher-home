@@ -23,7 +23,6 @@ export default function Home() {
       <FAQ />
       <OurMarkers />
       <NosAman />
-      <Contact />
     </div>
   );
 }
