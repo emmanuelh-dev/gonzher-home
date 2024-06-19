@@ -61,11 +61,19 @@ class Header extends Component<HeaderProps, HeaderState> {
     const { scrolled } = this.state;
     const { pathName } = this.props;
     const validPathsNames = ["/app-operadores", "/"]
-    const headerClasses = validPathsNames.includes(pathName) ? "bg-transparent fixed top-0 left-0 z-40 w-screen text-white" : scrolled ? 'bg-white fixed top-0 left-0 z-40 w-screen text-black' :
-      "bg-white fixed top-0 left-0 z-40 w-screen text-black";
+    const headerClasses = scrolled ?
+      'bg-white fixed top-0 left-0 z-40 w-screen text-black' :
+      validPathsNames.includes(pathName) ?
+        "bg-transparent fixed top-0 left-0 z-40 w-screen text-white" :
+        "bg-white fixed top-0 left-0 z-40 w-screen text-black";
 
     const hiddePhone = scrolled ? "h-0 overflow-hidden" : "h-auto";
-    const text = validPathsNames.includes(pathName) ? "text-white" : scrolled ? 'tex-white' : 'text-black'
+
+    const text = scrolled ?
+      'text-black' :
+      validPathsNames.includes(pathName) ?
+        "text-white" :
+        'text-dark';
     return (
       <div className={`transition-all ${headerClasses}`}>
         <div
