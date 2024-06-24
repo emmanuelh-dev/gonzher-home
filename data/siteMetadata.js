@@ -1,12 +1,12 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "emmanuelhdev blog",
-  author: "emmanuelhdev",
+  title: "gonzher",
+  author: "gonzher",
   headerTitle: "",
-  description: "Live a life you will remember",
-  language: "en-us",
-  theme: "system", // system, dark or light
-  siteUrl: "https://emmanuelh.dev",
+  description: "Software de Facturación y Logística",
+  language: "es-MX",
+  theme: "light", // system, dark or light
+  siteUrl: "https://www.gonzher.com",
   siteRepo: "https://github.com/emmanuelh-dev/emmanuelhdev",
   siteLogo: "/static/images/logo.png",
   socialBanner: "/static/images/twitter-card.png",
