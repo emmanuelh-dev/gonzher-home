@@ -46,49 +46,6 @@ export default function PostLayout({
       <article>
         <div className="xl:divide-y xl:divide-gray-200">
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
-            <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11">
-              <dt className="sr-only">Authors</dt>
-              <dd>
-                <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
-                  {authorDetails.map((author) => (
-                    <li
-                      className="flex items-center space-x-2"
-                      key={author.name}
-                    >
-                      {author.avatar && (
-                        <Image
-                          src={author.avatar}
-                          width={38}
-                          height={38}
-                          alt="avatar"
-                          className="h-10 w-10 rounded-full"
-                        />
-                      )}
-                      <dl className="text-md whitespace-nowrap font-medium leading-5">
-                        <dt className="sr-only">Name</dt>
-                        <dd className="text-gray-90">
-                          {author.name}
-                        </dd>
-                        <dt className="sr-only">Twitter</dt>
-                        <dd>
-                          {author.twitter && (
-                            <Link
-                              href={author.twitter}
-                              className="text-primary-500 hover:text-primary-600"
-                            >
-                              {author.twitter.replace(
-                                "https://twitter.com/",
-                                "@"
-                              )}
-                            </Link>
-                          )}
-                        </dd>
-                      </dl>
-                    </li>
-                  ))}
-                </ul>
-              </dd>
-            </dl>
             <div className="divide-y divide-gray-200 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <header className="pt-6 xl:pb-6">
                 <div className="space-y-1">
@@ -162,14 +119,49 @@ export default function PostLayout({
                   &larr; Volver al blog
                 </Link>
               </div>
-              <ins
-                className="adsbygoogle"
-                style={{ display: "block" }}
-                data-ad-client="ca-pub-3646138644530578"
-                data-ad-slot="9734184827"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-              ></ins>
+              <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11">
+                <dt className="sr-only">Authors</dt>
+                <dd>
+                  <ul className="flex flex-wrap justify-center gap-4 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8">
+                    {authorDetails.map((author) => (
+                      <li
+                        className="flex items-center space-x-2"
+                        key={author.name}
+                      >
+                        {author.avatar && (
+                          <Image
+                            src={author.avatar}
+                            width={38}
+                            height={38}
+                            alt="avatar"
+                            className="h-10 w-10 rounded-full"
+                          />
+                        )}
+                        <dl className="text-md whitespace-nowrap font-medium leading-5">
+                          <dt className="sr-only">Name</dt>
+                          <dd className="text-gray-90">
+                            {author.name}
+                          </dd>
+                          <dt className="sr-only">Twitter</dt>
+                          <dd>
+                            {author.twitter && (
+                              <Link
+                                href={author.twitter}
+                                className="text-primary-500 hover:text-primary-600"
+                              >
+                                {author.twitter.replace(
+                                  "https://twitter.com/",
+                                  "@"
+                                )}
+                              </Link>
+                            )}
+                          </dd>
+                        </dl>
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </dl>
             </footer>
           </div>
         </div>
