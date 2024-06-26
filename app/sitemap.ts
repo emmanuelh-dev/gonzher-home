@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const pagesRoutes = allPages.map(page => ({
-    url: `${siteUrl}/${page.path}`,
+    url: `${siteUrl}/${page.path.replace('/pages', '')}`,
     lastModified: new Date().toISOString().split("T")[0],
   }))
 
