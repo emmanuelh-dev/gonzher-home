@@ -130,9 +130,18 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }));
 
+export const Pages = defineDocumentType(() => ({
+  name: "Page",
+  filePathPattern: "pages/**/*.mdx",
+  contentType: "mdx",
+  fields: {
+  },
+  computedFields,
+}));
+
 export default makeSource({
   contentDirPath: "data",
-  documentTypes: [Blog, Authors],
+  documentTypes: [Blog, Authors, Pages],
   // mdx: {
   //   cwd: process.cwd(),
   //   remarkPlugins: [
@@ -150,8 +159,9 @@ export default makeSource({
   //   ],
   // },
   onSuccess: async (importData) => {
-    const { allBlogs } = await importData();
+    const { allBlogs, allPages } = await importData();
     createTagCount(allBlogs);
     createSearchIndex(allBlogs);
+    createSearchIndex(allPages);
   },
 });
