@@ -9,7 +9,6 @@ import PostLayout from "@/layouts/PostSimple";
 import type { Page } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 
-
 export default async function Page({ params }: { params: { slug: string[] } }) {
   const slug = decodeURI(params.slug.join("/"));
 

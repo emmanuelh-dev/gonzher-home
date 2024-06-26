@@ -134,8 +134,7 @@ export const Pages = defineDocumentType(() => ({
   name: "Page",
   filePathPattern: "pages/**/*.mdx",
   contentType: "mdx",
-  fields: {
-  },
+  fields: {},
   computedFields,
 }));
 

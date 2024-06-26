@@ -67,9 +67,7 @@ export default function PostLayout({
                   </div>
                 </div>
               </header>
-              <div className="prose max-w-none pb-8 pt-10">
-                {children}
-              </div>
+              <div className="prose max-w-none pb-8 pt-10">{children}</div>
             </div>
             <footer>
               <div className="text-md divide-gray-200 font-medium leading-5 xl:col-start-1 xl:row-start-2 xl:divide-y">
@@ -139,9 +137,7 @@ export default function PostLayout({
                         )}
                         <dl className="text-md whitespace-nowrap font-medium leading-5">
                           <dt className="sr-only">Name</dt>
-                          <dd className="text-gray-90">
-                            {author.name}
-                          </dd>
+                          <dd className="text-gray-90">{author.name}</dd>
                           <dt className="sr-only">Twitter</dt>
                           <dd>
                             {author.twitter && (

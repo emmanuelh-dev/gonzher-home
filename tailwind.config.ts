@@ -87,28 +87,31 @@ const config: Config = {
         DEFAULT: {
           css: {
             a: {
-              color: '#000',
-              '&:hover': {
-                color: `${theme('colors.primary.600')}`,
+              color: "#000",
+              "&:hover": {
+                color: `${theme("colors.primary.600")}`,
               },
-              code: { color: theme('colors.primary.400') },
+              code: { color: theme("colors.primary.400") },
             },
-            'h1,h2': {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
+            "h1,h2": {
+              fontWeight: "700",
+              letterSpacing: theme("letterSpacing.tight"),
             },
             h3: {
-              fontWeight: '600',
+              fontWeight: "600",
             },
             code: {
-              color: theme('colors.indigo.500'),
+              color: theme("colors.indigo.500"),
             },
           },
         },
       }),
     },
   },
-  plugins: [require("tailwindcss-animate"), require("tailwindcss-animated"), require('@tailwindcss/typography'),
+  plugins: [
+    require("tailwindcss-animate"),
+    require("tailwindcss-animated"),
+    require("@tailwindcss/typography"),
   ],
 };
 export default config;

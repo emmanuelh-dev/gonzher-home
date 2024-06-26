@@ -60,20 +60,20 @@ class Header extends Component<HeaderProps, HeaderState> {
   render() {
     const { scrolled } = this.state;
     const { pathName } = this.props;
-    const validPathsNames = ["/app-operadores", "/"]
-    const headerClasses = scrolled ?
-      'bg-white fixed top-0 left-0 z-40 w-screen text-black' :
-      validPathsNames.includes(pathName) ?
-        "bg-transparent fixed top-0 left-0 z-40 w-screen text-white" :
-        "bg-white fixed top-0 left-0 z-40 w-screen text-black";
+    const validPathsNames = ["/app-operadores", "/"];
+    const headerClasses = scrolled
+      ? "bg-white fixed top-0 left-0 z-40 w-screen text-black"
+      : validPathsNames.includes(pathName)
+      ? "bg-transparent fixed top-0 left-0 z-40 w-screen text-white"
+      : "bg-white fixed top-0 left-0 z-40 w-screen text-black";
 
     const hiddePhone = scrolled ? "h-0 overflow-hidden" : "h-auto";
 
-    const text = scrolled ?
-      'text-black' :
-      validPathsNames.includes(pathName) ?
-        "text-white" :
-        'text-dark';
+    const text = scrolled
+      ? "text-black"
+      : validPathsNames.includes(pathName)
+      ? "text-white"
+      : "text-dark";
     return (
       <div className={`transition-all ${headerClasses}`}>
         <div
@@ -112,9 +112,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                       <NavigationMenu>
                         <NavigationMenuList>
                           <NavigationMenuItem>
-                            <NavigationMenuTrigger
-                              className={text}
-                            >
+                            <NavigationMenuTrigger className={text}>
                               Productos
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
@@ -153,9 +151,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                             </NavigationMenuContent>
                           </NavigationMenuItem>
                           <NavigationMenuItem>
-                            <NavigationMenuTrigger
-                              className={text}
-                            >
+                            <NavigationMenuTrigger className={text}>
                               Apartados
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
