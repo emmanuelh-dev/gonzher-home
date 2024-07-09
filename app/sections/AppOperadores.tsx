@@ -26,7 +26,7 @@ const AppOperadores = () => {
                       >
                         Más Información
                       </Link>
-                      <a href="https://play.google.com/store/apps/details?id=com.gonzher.app">
+                      <a href="https://play.google.com/store/apps/details?id=com.gonzher.app" target="_blank">
                         <div className="flex max-w-48 h-12 px-3 gap-2 rounded-xl items-center justify-center bg-black text-white dark:text-black dark:bg-white sm:h-14">
                           <svg
                             className="w-5 sm:w-7"
@@ -51,7 +51,7 @@ const AppOperadores = () => {
                           </svg>
                           <div>
                             <div className="text-[.5rem] sm:text-xs">
-                              GET IT ON
+                              Descargar
                             </div>
                             <div className="text-sm font-semibold font-sans -mt-1 sm:text-xl">
                               Google Play
@@ -60,7 +60,7 @@ const AppOperadores = () => {
                         </div>
                       </a>
 
-                      <a href="https://play.google.com/store/apps/details?id=com.gonzher.app">
+                      <a href="https://apps.apple.com/mx/app/gonzher/id6448482872" target="_blank">
                         <div className="flex max-w-48 h-12 px-3 gap-2 rounded-xl items-center justify-center bg-black text-white dark:text-black dark:bg-white  sm:gap-3 sm:h-14">
                           <svg className="w-5 sm:w-7" viewBox="0 0 384 512">
                             <path
@@ -70,7 +70,7 @@ const AppOperadores = () => {
                           </svg>
                           <div>
                             <div className="text-[.5rem] sm:text-xs">
-                              Download on the
+                              Descargar
                             </div>
                             <div className="text-lg font-semibold font-sans -mt-1 sm:text-2xl">
                               App Store

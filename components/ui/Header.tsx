@@ -155,17 +155,13 @@ class Header extends Component<HeaderProps, HeaderState> {
                               Apartados
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
-                              <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
+                              <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
                                 {headerNavLinks.map((link) => (
                                   <ListItem
                                     key={link.title}
                                     title={link.title}
                                     href={link.href}
-                                    className={`buttonVariants ${buttonVariants(
-                                      {
-                                        variant: "link",
-                                      }
-                                    )}`}
+                                    className="text-white"
                                   ></ListItem>
                                 ))}
                               </ul>
@@ -188,6 +184,14 @@ class Header extends Component<HeaderProps, HeaderState> {
                             >
                               Nosotros
                             </Link>
+                            <NavigationMenuLink
+                              href="/app-operadores"
+                              className={`buttonVariants ${buttonVariants({
+                                variant: "link",
+                              })} ${text}`}
+                            >
+                              App Operadores
+                            </NavigationMenuLink>
                           </NavigationMenuItem>
                         </NavigationMenuList>
                       </NavigationMenu>
