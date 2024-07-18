@@ -182,13 +182,13 @@ const About = () => {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z"
                         ></path>
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z"
                         ></path>
                       </svg>
@@ -207,8 +207,8 @@ const About = () => {
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                           d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                         ></path>
                       </svg>
