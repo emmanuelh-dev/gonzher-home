@@ -3,10 +3,98 @@ import { Input } from "@/components/ui/Input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gonzher Transports",
+  "url": "https://www.gonzhertransports.com",
+  "logo": "https://www.gonzhertransports.com/logo.png",
+  "description": "Nuestra flota de camiones de carga pesada y conductores experimentados está lista para manejar todas sus necesidades de transporte de carga.",
+  "sameAs": [
+    "https://www.facebook.com/gonzhertransports",
+    "https://www.instagram.com/gonzhertransports",
+    "https://www.twitter.com/gonzhertransports"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-555-5555",
+    "contactType": "Customer Service",
+    "areaServed": "US",
+    "availableLanguage": ["en", "es"]
+  },
+  "service": [
+    {
+      "@type": "Service",
+      "name": "Entrega Local",
+      "description": "Entregas locales rápidas y confiables dentro de su ciudad o región."
+    },
+    {
+      "@type": "Service",
+      "name": "Transporte de Larga Distancia",
+      "description": "Servicios de transporte de carga entre estados y de larga distancia."
+    },
+    {
+      "@type": "Service",
+      "name": "Transporte Especializado",
+      "description": "Soluciones de transporte para carga sobredimensionada, pesada o frágil."
+    },
+    {
+      "@type": "Service",
+      "name": "Almacenamiento",
+      "description": "Servicios de almacenamiento y distribución seguros para su carga."
+    },
+    {
+      "@type": "Service",
+      "name": "Gestión de Flotas",
+      "description": "Soluciones integrales de gestión de flotas para su negocio."
+    },
+    {
+      "@type": "Service",
+      "name": "Soporte 24/7",
+      "description": "Soporte al cliente disponible las 24 horas del día, los 7 días de la semana."
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Nuestra Flota",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Camión Semi",
+          "description": "Nuestra flota de camiones semi son perfectos para el transporte de carga de larga distancia.",
+          "image": "https://www.gonzhertransports.com/images/semi-truck.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Camión Volquete",
+          "description": "Ideal para transportar materiales pesados o voluminosos, como suministros de construcción.",
+          "image": "https://www.gonzhertransports.com/images/dump-truck.jpg"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Camión Plataforma",
+          "description": "Nuestros camiones plataforma pueden manejar cargas sobredimensionadas o de formas irregulares.",
+          "image": "https://www.gonzhertransports.com/images/flatbed-truck.jpg"
+        }
+      }
+    ]
+  }
+}
 export default function Page() {
   return (
     <div className="flex flex-col min-h-dvh">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <main className="flex-1">
         <section className="w-full min-h-screen md:pt-24 lg:pt-32 bg-primary">
           <div className="container px-4 md:px-6 space-y-10 xl:space-y-16 pt-32 lg:pt-24 text-white">
@@ -24,7 +112,7 @@ export default function Page() {
                 </div>
               </div>
               <div>
-              <Image
+                <Image
                   src="/placeholder.svg"
                   width={400}
                   height={300}
