@@ -20,7 +20,7 @@ Mensaje: ${message}`
   };
 
   return (
-    <form className="space-y-4" action={sendMessage}>
+    <form className="space-y-4">
       <div>
         <Label htmlFor="fullName">Nombre Completo*</Label>
         <Input
