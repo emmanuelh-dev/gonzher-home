@@ -107,7 +107,7 @@ export default function Page() {
                 </div>
                 <div className="flex flex-col items-start space-y-4">
                   <p className="mx-auto max-w-[700px] text-primary-foreground md:text-xl pt-6">
-                    Nuestra flota de camiones de carga pesada y conductores experimentados está lista para manejar todas sus necesidades de transporte de carga.
+                    Nuestra flota de camiones de carga pesada y conductores experimentados está lista para manejar todas sus necesidades de transporte de carga. Nos especializamos en camiones 3/5.
                   </p>
                 </div>
               </div>
