@@ -9,6 +9,12 @@ import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Potencial from "./potencial";
 import Objetivos from "./objetivos";
+import { Metadata } from "next";
+import { genPageMetadata } from "../seo";
+
+export const metadata:Metadata = genPageMetadata({
+  title: "Sobre Nosotros",
+})
 
 export default function Home() {
   return (
