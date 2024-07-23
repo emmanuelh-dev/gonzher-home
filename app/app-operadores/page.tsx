@@ -1,14 +1,12 @@
-import About from "@/app/sections/about";
-import Contact from "@/app/sections/contact";
-import FAQ from "@/app/sections/faq";
-import Features from "@/app/sections/features";
-import OurMarkers from "@/app/sections/markers";
-import Pricing from "@/app/sections/pricing";
-import Services from "@/app/sections/services";
-import { buttonVariants } from "@/components/ui/button";
-import Image from "next/image";
 import AppOperadores from "../sections/AppOperadores";
 import { CarrouselApp } from "../sections/CarouselApp";
+import { genPageMetadata } from "../seo";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'App para Operadores',
+  description: 'En Gonzher desarrollamos software de gestión logística que optimiza procesos operativos de empresas de transporte, con soluciones todo en uno que incluyen rastreo en tiempo real, planificación de rutas, gestión de flotas, análisis de indicadores clave y facturación automatizada.',
+}
 
 export default function Page() {
   return (
