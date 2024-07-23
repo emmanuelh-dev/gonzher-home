@@ -60,7 +60,7 @@ class Header extends Component<HeaderProps, HeaderState> {
   render() {
     const { scrolled } = this.state;
     const { pathName } = this.props;
-    const validPathsNames = ["/app-operadores", "/"];
+    const validPathsNames = ["/app-operadores", "/", "/gonzher-transports"];
     const headerClasses = scrolled
       ? "bg-white fixed top-0 left-0 z-40 w-screen text-black"
       : validPathsNames.includes(pathName)
