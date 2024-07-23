@@ -95,7 +95,7 @@ const Contacto = () => {
               data-wow-delay=".2s    "
             >
               <h3 className="font-semibold mb-8 text-2xl md:text-[26px]">
-                Dejanos un Mensaje
+                Déjanos un mensaje
               </h3>
               <ContactForm />
             </div>
