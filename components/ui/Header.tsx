@@ -141,7 +141,7 @@ class Header extends Component<HeaderProps, HeaderState> {
                                   en Línea.
                                 </ListItem>
                                 <ListItem
-                                  href="https://api.gonzher.com"
+                                  href="https://gps.gonzher.com"
                                   title="GPS Gonzher"
                                 >
                                   Monitorea y administra fácilmente tu fuerza

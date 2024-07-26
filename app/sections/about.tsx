@@ -119,7 +119,7 @@ const About = () => {
 
                     <a
                       className="group flex items-center space-x-3 rounded-xl border border-transparent px-4 py-1.5 font-medium text-slate-600 transition hover:bg-slate-100 active:border-slate-200 active:text-slate-900:bg-slate-900/50:border-slate-700/50:text-slate-100"
-                      href="https://api.gonzher.com"
+                      href="https://gps.gonzher.com"
                       target="blank"
                     >
                       <svg

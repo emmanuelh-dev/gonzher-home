@@ -89,7 +89,7 @@ const Carrousel = () => {
                     Contáctanos
                   </a>
                   <a
-                    href="https://api.gonzher.com"
+                    href="https://gps.gonzher.com"
                     target="_blank"
                     className="text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white"
                   >
