@@ -131,7 +131,7 @@ export default function Page() {
                   width="140"
                   height="70"
                   alt="Logo"
-                  className="aspect-[2/1] overflow-hidden rounded-lg object-cover object-center"
+                  className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                 />
                 <span>Gonzher</span>
               </div>
