@@ -6,7 +6,7 @@ import Globe from '@/components/magicui/globe'
 import { genPageMetadata } from '../seo'
 
 export const metadata = genPageMetadata({
-  title: "Soluciones de rastreo y seguimiento en tiempo real para tu flota",
+  title: "GPS - Gonzher Soluciones de rastreo y seguimiento en tiempo real para tu flota",
   description: "Mejora la eficiencia operativa de tu negocio con nuestras soluciones de rastreo y seguimiento en tiempo real."
 })
 
