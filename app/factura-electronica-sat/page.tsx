@@ -4,6 +4,7 @@ import { FileIcon, FileTextIcon, PuzzleIcon, ReceiptIcon, TruckIcon, UsersIcon }
 import Image from 'next/image'
 import React from 'react'
 import { genPageMetadata } from '../seo'
+import { Beam } from './Beam'
 
 export const metadata = genPageMetadata({
   title: "Facturar en línea CFDI | Sistema de Facturación Electrónica",
@@ -77,9 +78,9 @@ export default function Page() {
                 <p className="text-4xl font-bold tracking-tighter sm:text-5xl">Características</p>
               </div>
               <p>
-                Nuestra plataforma de facturación es 100% en línea. <strong>Tus facturas electrónicas, complementos, recibos, catálogos de clientes y productos quedan almacenados en la nube</strong>.
+                Nuestra plataforma de facturación es 100% en línea. <strong>Tus facturas electrónicas, complementos de pago, recibos, catálogos de clientes y productos quedarán almacenados en la nube.</strong>.
               </p>
-              <p>Nuestro portal permite que emitas todo tipo de comprobantes fiscales, desde CFDI 4.0 hasta los complementos de pago más avanzados, cómo <strong>carta porte 3.0</strong> o complementos de comercio exterior, sin descargar programas o software complicado y sin plazos forzosos, paga cuando lo necesites.</p>
+              <p>uestro portal permite que emitas todo tipo de comprobantes fiscales, desde CFDI 4.0 hasta los complementos de pago más avanzados; cómo <strong>carta porte 3.0</strong> o complementos de comercio exterior, sin descargar programas o software complicado y sin plazos forzosos, paga cuando lo necesites.</p>
               <p>
                 <strong>Conoce todos los servicios de facturación en la nube que tenemos para ti: </strong>
               </p>
@@ -134,7 +135,7 @@ export default function Page() {
       </section>
       <section className="bg-gradient-to-b lg:bg-gradient-to-r from-teal-900 to-primary py-20 text-primary-foreground">
         <div className="container flex flex-col items-center gap-6 px-4 sm:px-6 md:px-8 md:flex-row md:items-start md:justify-between">
-          <div className="max-w-2xl space-y-4 text-center md:text-left">
+          <div className="max-w-2xl space-y-4 text-center md:text-left my-auto">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">Simplifica tu Facturación Logística</h1>
             <p className="text-lg text-neutral-200">
               Optimiza tu proceso de facturación y realiza el seguimiento de tus envíos con nuestra potente plataforma de facturación logística.
@@ -146,13 +147,7 @@ export default function Page() {
               </Button>
             </div>
           </div>
-          <Image
-            src="/placeholder.svg"
-            width={500}
-            height={400}
-            alt="Facturación Logística"
-            className="max-w-[400px] aspect-video object-cover rounded-lg shadow-lg"
-          />
+          <Beam />
         </div>
       </section>
 
@@ -201,7 +196,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
     </main>
   )
 }
