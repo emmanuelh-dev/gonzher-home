@@ -92,12 +92,6 @@ export default function Page() {
               </p>
             </div>
             <div className="grid gap-1">
-              <h3 className="text-lg font-bold">Integración de API</h3>
-              <p className="text-sm text-muted-foreground">
-                Integre nuestra plataforma con sus sistemas existentes a través de nuestra API abierta y flexible.
-              </p>
-            </div>
-            <div className="grid gap-1">
               <h3 className="text-lg font-bold">Soporte Técnico</h3>
               <p className="text-sm text-muted-foreground">
                 Cuente con nuestro equipo de expertos para brindarle asistencia técnica y personalización de acuerdo a
