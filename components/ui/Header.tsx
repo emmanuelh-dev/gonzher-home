@@ -152,6 +152,29 @@ class Header extends Component<HeaderProps, HeaderState> {
                           </NavigationMenuItem>
                           <NavigationMenuItem>
                             <NavigationMenuTrigger className={text}>
+                              Nuestros Productos
+                            </NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                <ListItem
+                                  href="https://gps.gonzher.com"
+                                  title="GPS Gonzher"
+                                >
+                                  Monitorea y administra fácilmente tu fuerza
+                                  móvil de trabajadores.
+                                </ListItem>
+                                <ListItem
+                                  href="/soluciones-de-rastreo-y-seguimiento-en-tiempo-real-para-tu-flota"
+                                  title="GPS Gonzher"
+                                >
+                                  Monitorea y administra fácilmente tu fuerza
+                                  móvil de trabajadores.
+                                </ListItem>
+                              </ul>
+                            </NavigationMenuContent>
+                          </NavigationMenuItem>
+                          <NavigationMenuItem>
+                            <NavigationMenuTrigger className={text}>
                               Apartados
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
