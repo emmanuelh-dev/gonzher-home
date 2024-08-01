@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <main>
       <section className="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-gradient-to-r from-primary to-teal-800">
-        <div className="container mx-auto pt-24 py-6">
+        <div className="container mx-auto py-16">
           <div className="flex flex-col lg:flex-row items-center mx-4 gap-10">
             <div className="lg:w-1/2 mx-auto">
               <h1 className='text-white'>Sistema de facturación electrónica CFDI 4.0 en México</h1>
@@ -70,16 +70,22 @@ export default function Page() {
       <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="space-y-2">
-              <h2 className="inline-block rounded-lg bg-muted py-1 text-sm">Mejor sistema para facturas en línea 4.0
-                válidas ante el SAT</h2>
-              <p className="text-3xl font-bold tracking-tighter sm:text-5xl">Características</p>
+            <div className="space-y-4">
+              <div className=' py-4'>
+                <h2 className="inline-block rounded-lg bg-muted py-1 text-sm text-neutral-400">Mejor sistema para facturas en línea 4.0
+                  válidas ante el SAT</h2>
+                <p className="text-4xl font-bold tracking-tighter sm:text-5xl">Características</p>
+              </div>
               <p>
-                Nuestra plataforma de facturación es 100% en línea. <strong>Tus facturas electrónicas, complementos, recibos, catálogos de clientes y productos quedan almacenados en la nube</strong>. Nuestro portal permite que emitas todo tipo de comprobantes fiscales, desde CFDI 4.0 hasta los complementos de pago más avanzados, cómo <strong>carta porte 3.0</strong> o complementos de comercio exterior, sin descargar programas o software complicado y sin plazos forzosos, paga cuando lo necesites. <strong>Conoce todos los servicios de facturación en la nube que tenemos para ti: </strong>
+                Nuestra plataforma de facturación es 100% en línea. <strong>Tus facturas electrónicas, complementos, recibos, catálogos de clientes y productos quedan almacenados en la nube</strong>.
+              </p>
+              <p>Nuestro portal permite que emitas todo tipo de comprobantes fiscales, desde CFDI 4.0 hasta los complementos de pago más avanzados, cómo <strong>carta porte 3.0</strong> o complementos de comercio exterior, sin descargar programas o software complicado y sin plazos forzosos, paga cuando lo necesites.</p>
+              <p>
+                <strong>Conoce todos los servicios de facturación en la nube que tenemos para ti: </strong>
               </p>
             </div>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 py-14">
+          <div className="grid gap-16 lg:gap-8 md:grid-cols-2 lg:grid-cols-4 py-14">
             <div className="grid gap-4">
               <div className="flex items-center gap-4">
                 <div className="rounded-full bg-primary p-3 text-primary-foreground">
@@ -120,7 +126,7 @@ export default function Page() {
                 <h3 className="text-lg font-semibold">Cotizaciones</h3>
               </div>
               <p className="text-muted-foreground">
-                Genera cotizaciones y conviértelas en facturas en línea con un solo clic.
+                Genera cotizaciones y conviértelas en facturas en línea con un sólo clic.
               </p>
             </div>
           </div>
