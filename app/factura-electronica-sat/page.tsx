@@ -5,6 +5,7 @@ import Image from 'next/image'
 import React from 'react'
 import { genPageMetadata } from '../seo'
 import { Beam } from './Beam'
+import Link from 'next/link'
 
 export const metadata = genPageMetadata({
   title: "Facturar en línea CFDI | Sistema de Facturación Electrónica",
@@ -141,7 +142,7 @@ export default function Page() {
               Optimiza tu proceso de facturación y realiza el seguimiento de tus envíos con nuestra potente plataforma de facturación logística.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button className="w-full sm:w-auto">Solicitar Demo</Button>
+              <Link href="#contactanos" className={`${buttonVariants({variant:'default'})} w-full sm:w-auto`}>Solicitar Demo</Link>
               <Button variant="outline" className="w-full sm:w-auto">
                 Más Información
               </Button>
