@@ -154,7 +154,7 @@ export default function Page() {
 
       <section id="features" className="py-20">
         <div className="container space-y-12 px-4 sm:px-6 md:px-8">
-          <div className="text-center">
+          <div>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Optimiza la Facturación de tus viajes </h2>
             <p className="mt-4 text-muted-foreground">
               Nuestra plataforma ofrece una variedad de características para simplificar tu proceso de facturación y mejorar tus operaciones logísticas.
