@@ -5,6 +5,14 @@ import Image from 'next/image'
 import Container from '@/components/ui/container'
 import Globe from '@/components/magicui/globe'
 import NosAman from '../sections/NosAman'
+import { genPageMetadata } from '../seo'
+
+export const metadata = genPageMetadata({
+  title: "Facturación automatizada para flotas de vehículos",
+  description: "Facturación automática de viajes, generación automática de remisiones y gestión de camiones todo en uno."
+})
+
+
 export default function Page() {
   return (
     <main>
