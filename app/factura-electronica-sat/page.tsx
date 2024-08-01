@@ -137,7 +137,7 @@ export default function Page() {
       <section className="bg-gradient-to-b lg:bg-gradient-to-r from-teal-900 to-primary py-20 text-primary-foreground">
         <div className="container flex flex-col items-center gap-6 px-4 sm:px-6 md:px-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-2xl space-y-4 text-center md:text-left my-auto">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">Simplifica tu Facturación Logística</h1>
+            <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">Simplifica la facturación de tus viajes</h2>
             <p className="text-lg text-neutral-200">
               Optimiza tu proceso de facturación y realiza el seguimiento de tus envíos con nuestra potente plataforma de facturación logística.
             </p>
