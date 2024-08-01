@@ -74,7 +74,7 @@ const ReviewCard = ({
 
 const NosAman = () => {
   return (
-    <section className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg border py-20 md:shadow-xl lazo">
+    <section className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-lg py-44 md:shadow-xl lazo">
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[600px] text-pretty">

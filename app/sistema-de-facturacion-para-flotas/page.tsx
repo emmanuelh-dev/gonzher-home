@@ -4,6 +4,7 @@ import { buttonVariants } from '@/components/ui/button'
 import Image from 'next/image'
 import Container from '@/components/ui/container'
 import Globe from '@/components/magicui/globe'
+import NosAman from '../sections/NosAman'
 export default function Page() {
   return (
     <main>
@@ -59,7 +60,7 @@ export default function Page() {
           </div>
         </Container>
       </section>
-      <section id="fleet" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+      <section id="fleet">
         <Container>
           <div className="flex flex-col space-y-4">
             <div className="space-y-2">
@@ -104,6 +105,7 @@ export default function Page() {
           </div>
         </Container>
       </section>
+      <NosAman />
     </main>
   )
 }
