@@ -60,7 +60,7 @@ class Header extends Component<HeaderProps, HeaderState> {
   render() {
     const { scrolled } = this.state;
     const { pathName } = this.props;
-    const validPathsNames = ["/app-operadores", "/", "/gonzher-transports"];
+    const validPathsNames = ["/app-operadores", "/", "/gonzher-transports", "/factura-electronica-sat"];
     const headerClasses = scrolled
       ? "bg-white fixed top-0 left-0 z-40 w-screen text-black"
       : validPathsNames.includes(pathName)
@@ -157,11 +157,10 @@ class Header extends Component<HeaderProps, HeaderState> {
                             <NavigationMenuContent>
                               <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                 <ListItem
-                                  href="https://gps.gonzher.com"
-                                  title="GPS Gonzher"
+                                  href="/factura-electronica-sat"
+                                  title="Sistema de Facturación en linea"
                                 >
-                                  Monitorea y administra fácilmente tu fuerza
-                                  móvil de trabajadores.
+                                 Sistema de facturación electrónica CFDI 4.0
                                 </ListItem>
                                 <ListItem
                                   href="/soluciones-de-rastreo-y-seguimiento-en-tiempo-real-para-tu-flota"
