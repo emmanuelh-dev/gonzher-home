@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Button, buttonVariants } from '@/components/ui/button'
 import Globe from '@/components/magicui/globe'
 import { genPageMetadata } from '../seo'
+import Container from '@/components/ui/container'
 
 export const metadata = genPageMetadata({
   title: "GPS - Gonzher Soluciones de rastreo y seguimiento en tiempo real para tu flota",
@@ -14,8 +15,8 @@ export default function Page() {
   return (
     <main>
       <section className="w-full pt-24">
-        <div className="space-y-10 xl:space-y-16 container px-4 py-16 lg:py-24">
-          <div className="grid gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+        <Container className='space-y-10 xl:space-y-16 py-16 lg:py-24'>
+          <div className="grid gap-4 md:grid-cols-2 md:gap-16">
             <div>
               <h1 className="lg:leading-tighter font-bold tracking-tighter text-5xl md:text-6xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
                 Soluciones de rastreo y seguimiento en tiempo real para tu flota
@@ -46,10 +47,10 @@ export default function Page() {
               {/* <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" /> */}
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
+        <Container className="space-y-12">
           <div>
             <div className="space-y-4">
               <div className="inline-block rounded-lg bg-muted text-sm">Características Clave</div>
@@ -99,7 +100,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">

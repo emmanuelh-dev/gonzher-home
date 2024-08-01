@@ -10,14 +10,15 @@ import React, { useEffect, useState } from "react";
 import { type CarouselApi } from "@/components/ui/carousel";
 import Image from "next/image";
 import { buttonVariants } from "@/components/ui/button";
+import Container from "@/components/ui/container";
 
 const Carrousel = () => {
   return (
     <Carousel>
       <CarouselContent>
         <CarouselItem>
-          <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row items-center mx-4 gap-10">
+          <Container>
+            <div className="flex flex-col lg:flex-row items-center gap-10">
               <div className="text-center max-w-[780px] lg:w-1/3 mx-auto">
                 <h2 className="animate-fade-up lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title">
                   Software de Facturación y Logística
@@ -28,7 +29,7 @@ const Carrousel = () => {
                   el transporte. ¡Regístrate ahora!
                 </p>
 
-                <div className="flex flex-wrap items-center justify-center mb-10">
+                <div className="flex flex-wrap  items-center gap-4 mb-10">
                   <a
                     href="/#contactanos"
                     title="Formulario de contáctanos"
@@ -39,7 +40,7 @@ const Carrousel = () => {
                   <a
                     href="https://system.gonzher.com/login"
                     target="_blank"
-                    className="text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white"
+                    className={buttonVariants({ variant: "outline" })}
                   >
                     Iniciar Sesión
                     <span className="pl-2">
@@ -64,11 +65,11 @@ const Carrousel = () => {
                 height={560}
               />
             </div>
-          </div>
+          </Container>
         </CarouselItem>
         <CarouselItem>
-          <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row items-center mx-4 gap-10">
+          <Container>
+            <div className="flex flex-col lg:flex-row items-center gap-10">
               <div className="text-center max-w-[780px] lg:w-1/3 mx-auto">
                 <h2 className="animate-fade-up lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title">
                   Software GPS avanzado
@@ -80,7 +81,7 @@ const Carrousel = () => {
                   Contáctanos para más información.
                 </p>
 
-                <div className="flex flex-wrap items-center justify-center mb-10">
+                <div className="flex flex-wrap  items-center gap-4 mb-10">
                   <a
                     href="/#contactanos"
                     title="Formulario de contáctanos"
@@ -91,7 +92,7 @@ const Carrousel = () => {
                   <a
                     href="https://gps.gonzher.com"
                     target="_blank"
-                    className="text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white"
+                    className={buttonVariants({variant: "outline"})}
                   >
                     Iniciar Sesión
                     <span className="pl-2">
@@ -116,7 +117,7 @@ const Carrousel = () => {
                 height={560}
               />
             </div>
-          </div>
+          </Container>
         </CarouselItem>
       </CarouselContent>
       <div className="text-center">

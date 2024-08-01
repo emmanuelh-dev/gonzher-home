@@ -18,6 +18,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { useRouter } from "next/router";
+import Container from "./container";
 
 interface HeaderProps {
   pathName: string;
@@ -64,37 +65,39 @@ class Header extends Component<HeaderProps, HeaderState> {
     const headerClasses = scrolled
       ? "bg-white fixed top-0 left-0 z-40 w-screen text-black"
       : validPathsNames.includes(pathName)
-      ? "bg-transparent fixed top-0 left-0 z-40 w-screen text-white"
-      : "bg-white fixed top-0 left-0 z-40 w-screen text-black";
+        ? "bg-transparent fixed top-0 left-0 z-40 w-screen text-white"
+        : "bg-white fixed top-0 left-0 z-40 w-screen text-black";
 
-    const hiddePhone = scrolled ? "h-0 overflow-hidden" : "h-auto";
+    const hiddePhone = scrolled ? "h-0 overflow-hidden" : "h-12";
 
     const text = scrolled
       ? "text-black"
       : validPathsNames.includes(pathName)
-      ? "text-white"
-      : "text-dark";
+        ? "text-white"
+        : "text-dark";
     return (
       <div className={`transition-all ${headerClasses}`}>
-        <div
-          className={`${hiddePhone} container justify-end flex items-center gap-4 transition-all duration-300`}
-        >
-          <a
-            href="tel:+528112918108"
-            className="justify-end flex items-center py-4"
-            title="Número de teléfono de Gonzher"
+        <Container>
+          <div
+            className={`${hiddePhone} container justify-end flex items-center gap-4 transition-all duration-300`}
           >
-            <FaPhoneAlt className="mr-2" title="Icono de teléfono" />
-            +52 8112918108
-          </a>
-          <a href="https://system.gonzher.com/login" title="Sistemas Gonzher">
-            Iniciar sesión
-          </a>
-        </div>
+            <a
+              href="tel:+528112918108"
+              className="justify-end flex items-center py-4"
+              title="Número de teléfono de Gonzher"
+            >
+              <FaPhoneAlt className="mr-2" title="Icono de teléfono" />
+              +52 8112918108
+            </a>
+            <a href="https://system.gonzher.com/login" title="Sistemas Gonzher">
+              Iniciar sesión
+            </a>
+          </div>
+        </Container>
 
         <hr className="container" />
-        <div className="container mx-auto">
-          <div className="px-4 w-full flex items-center justify-between">
+        <Container>
+          <div className="w-full flex items-center justify-between">
             <Link href="/" className="py-5 flex items-center font-title">
               <BiSolidMap className="text-3xl" /> GONZHER
             </Link>
@@ -160,14 +163,19 @@ class Header extends Component<HeaderProps, HeaderState> {
                                   href="/factura-electronica-sat"
                                   title="Sistema de Facturación en linea"
                                 >
-                                 Sistema de facturación electrónica CFDI 4.0
+                                  Sistema de facturación electrónica <strong>CFDI 4.0</strong>
+                                </ListItem>
+                                <ListItem
+                                  href="/sistema-de-facturacion-para-flotas"
+                                  title="Sistema de Facturación para Flotas"
+                                >
+                                  Sistema de facturación <strong>Carta Porte 3.1</strong>
                                 </ListItem>
                                 <ListItem
                                   href="/soluciones-de-rastreo-y-seguimiento-en-tiempo-real-para-tu-flota"
                                   title="GPS Gonzher"
                                 >
-                                  Monitorea y administra fácilmente tu fuerza
-                                  móvil de trabajadores.
+                                  Monitorea y administra fácilmente tu flota.
                                 </ListItem>
                               </ul>
                             </NavigationMenuContent>
@@ -223,7 +231,7 @@ class Header extends Component<HeaderProps, HeaderState> {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     );
   }

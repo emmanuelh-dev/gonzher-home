@@ -9,7 +9,7 @@ const SERVICES = [
   {
     titulo: "Facturación Electrónica",
     descripcion:
-      "Sistema en la nube que facilita tu Facturación en Línea. Genera tus Comprobantes Fiscales Digitales por Internet (CFDI) de una forma fácil, rápida y segura. Emite facturas, notas de crédito, recibos de honorarios, complementos de pago, carta porte, cualquier tipo de CFDI.  Siempre estamos actualizándonos. ¡Conócenos!",
+      "Sistema en la nube que facilita tu Facturación en Línea. Genera tus Comprobantes Fiscales Digitales por Internet (CFDI) de una forma fácil, rápida y segura. Emite facturas, notas de crédito, recibos de honorarios, complementos de pago, carta porte 3.1, cualquier tipo de CFDI.  Siempre estamos actualizándonos. ¡Conócenos!",
     icon: (
       <AiOutlineFileText
         alt="icono de factura"

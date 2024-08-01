@@ -42,7 +42,7 @@ export default function Page() {
                 <a
                   href="https://system.gonzher.com/login"
                   target="_blank"
-                  className="text-base font-medium py-4 px-6 sm:px-10 flex items-center hover:opacity-70 transition duration-300 ease-in-out text-white"
+                  className={buttonVariants({ variant: "outline" })}
                 >
                   Iniciar Sesión
                   <span className="pl-2">
@@ -81,7 +81,7 @@ export default function Page() {
               <p>
                 Nuestra plataforma de facturación es 100% en línea. <strong>Tus facturas electrónicas, complementos de pago, recibos, catálogos de clientes y productos quedarán almacenados en la nube.</strong>.
               </p>
-              <p>uestro portal permite que emitas todo tipo de comprobantes fiscales, desde CFDI 4.0 hasta los complementos de pago más avanzados; cómo <strong>carta porte 3.0</strong> o complementos de comercio exterior, sin descargar programas o software complicado y sin plazos forzosos, paga cuando lo necesites.</p>
+              <p>uestro portal permite que emitas todo tipo de comprobantes fiscales, desde CFDI 4.0 hasta los complementos de pago más avanzados; cómo <strong>carta porte 3.1</strong> o complementos de comercio exterior, sin descargar programas o software complicado y sin plazos forzosos, paga cuando lo necesites.</p>
               <p>
                 <strong>Conoce todos los servicios de facturación en la nube que tenemos para ti: </strong>
               </p>
@@ -142,7 +142,7 @@ export default function Page() {
               Optimiza tu proceso de facturación y realiza el seguimiento de tus envíos con nuestra potente plataforma de facturación logística.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Link href="#contactanos" className={`${buttonVariants({variant:'default'})} w-full sm:w-auto`}>Solicitar Demo</Link>
+              <Link href="#contactanos" className={`${buttonVariants({ variant: 'default' })} w-full sm:w-auto`}>Solicitar Demo</Link>
               <Button variant="outline" className="w-full sm:w-auto">
                 Más Información
               </Button>
