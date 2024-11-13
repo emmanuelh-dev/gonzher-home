@@ -31,7 +31,7 @@ export default function Page() {
                 de facturas en México.
               </p>
 
-              <div className="flex flex-wrap items-center mb-10">
+              <div className="flex flex-wrap items-center mb-10 gap-4">
                 <a
                   href="#contactanos"
                   title="Formulario de contáctanos"

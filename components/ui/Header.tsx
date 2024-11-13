@@ -1,12 +1,19 @@
-"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import React, { Component } from "react";
 import { BiSolidMap } from "react-icons/bi";
-import MobileNav from "./MobileNav";
-import { headerNavLinks } from "@/data/headerNavLinks";
-import { buttonVariants } from "./button";
-import { FaPhoneAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaFileInvoiceDollar,
+  FaTruck,
+  FaMapMarkerAlt,
+  FaDownload,
+  FaBook,
+  FaUsers,
+  FaMobile
+} from "react-icons/fa";
 
+import MobileNav from "./MobileNav";
+import { Button, buttonVariants } from "./button";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -15,234 +22,212 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { useRouter } from "next/router";
 import Container from "./container";
+
+// Estructura de navegación completa
+const navigationSections = [
+  {
+    id: 'products',
+    title: 'Productos',
+    type: 'dropdown',
+    layout: 'grid',
+    columns: 'lg:grid-cols-2',
+    width: 'w-[600px]',
+    items: [
+      {
+        href: "https://system.gonzher.com",
+        title: "Facturación",
+        description: "Sistema de CFDI 4.0",
+        icon: FaFileInvoiceDollar
+      },
+      {
+        href: "https://gps.gonzher.com",
+        title: "GPS Gonzher",
+        description: "Monitorea y administra tu flota.",
+        icon: FaMapMarkerAlt
+      },
+      {
+        href: "/app-operadores",
+        title: "App Operadores",
+        description: "Automatiza tus de logística.",
+        icon: FaMapMarkerAlt
+      }
+    ]
+  },
+  {
+    id: 'products',
+    title: 'Descargas',
+    type: 'dropdown',
+    layout: 'grid',
+    columns: 'lg:grid-cols-2',
+    width: 'w-[600px]',
+    items: [
+      {
+        href: "https://play.google.com/store/apps/details?id=org.gonzher.manager",
+        title: "GPS GONZHER",
+        description: "Android",
+        icon: FaMapMarkerAlt
+      },
+      {
+        href: "https://apps.apple.com/mx/app/gonzher/id6448482872",
+        title: "GPS GONZHER",
+        description: "IOS",
+        icon: FaMapMarkerAlt
+      },
+      {
+        href: "https://play.google.com/store/apps/details?id=com.gonzher.app",
+        title: "APP OPERADORES",
+        description: "Android",
+        icon: FaMapMarkerAlt
+      },
+      {
+        href: "https://apps.apple.com/mx/app/gonzher/id6448482872",
+        title: "APP OPERADORES",
+        description: "IOs",
+        icon: FaMapMarkerAlt
+      },
+    ]
+  },
+  {
+    id: 'links',
+    type: 'links',
+    items: [
+      {
+        href: "https://docs.gonzher.com/docs/intro",
+        title: "Documentación",
+        variant: "link"
+      },
+      {
+        href: "/nosotros",
+        title: "Nosotros",
+        variant: "link"
+      },
+      {
+        href: "/app-operadores",
+        title: "App Operadores",
+        variant: "link"
+      }
+    ]
+  }
+];
+
+const validPathsNames = ["/app-operadores", "/", "/gonzher-transports", "/factura-electronica-sat"];
 
 interface HeaderProps {
   pathName: string;
 }
 
-interface HeaderState {
-  scrolled: boolean;
-}
+const Header = ({ pathName }: HeaderProps) => {
+  const [scrolled, setScrolled] = useState(false);
 
-class Header extends Component<HeaderProps, HeaderState> {
-  constructor(props: HeaderProps) {
-    super(props);
-    this.state = {
-      scrolled: false, // Inicialmente, no se ha desplazado
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY >= 100);
     };
-  }
 
-  componentDidMount() {
-    // Agrega un event listener para el evento de scroll cuando el componente se monta
-    window.addEventListener("scroll", this.handleScroll);
-  }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  componentWillUnmount() {
-    // Asegúrate de eliminar el event listener cuando el componente se desmonte para evitar pérdidas de memoria
-    window.removeEventListener("scroll", this.handleScroll);
-  }
+  const headerClasses = scrolled
+    ? "bg-white text-black"
+    : validPathsNames.includes(pathName)
+      ? "bg-transparent text-white"
+      : "bg-white text-black";
 
-  handleScroll = () => {
-    // Verifica la posición del scroll para determinar si se ha desplazado cierta cantidad
-    const scrollY = window.scrollY;
-    const scrollThreshold = 100; // Actualiza la altura para cambiar el fondo
+  const textColor = scrolled
+    ? "text-black"
+    : validPathsNames.includes(pathName)
+      ? "text-white"
+      : "text-dark";
 
-    if (scrollY >= scrollThreshold) {
-      this.setState({ scrolled: true });
-    } else {
-      this.setState({ scrolled: false });
+  const renderNavigationItem = (section: any) => {
+    if (section.type === 'dropdown') {
+      return (
+        <NavigationMenuItem key={section.id}>
+          <NavigationMenuTrigger className={textColor}>
+            {section.title}
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className={`grid gap-3 p-4 ${section.width} ${section.columns}`}>
+              {section.items.map((item: any) => (
+                <ListItem
+                  key={item.href}
+                  href={item.href}
+                  title={item.title}
+                  icon={item.icon}
+                >
+                  {item.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      );
+    }
+
+    if (section.type === 'links') {
+      return (
+        <NavigationMenuItem key={section.id}>
+          {section.items.map((link: any) => (
+            <NavigationMenuLink
+              key={link.href}
+              href={link.href}
+              className={`${buttonVariants({ variant: link.variant })} ${textColor}`}
+            >
+              {link.title}
+            </NavigationMenuLink>
+          ))}
+        </NavigationMenuItem>
+      );
     }
   };
 
-  render() {
-    const { scrolled } = this.state;
-    const { pathName } = this.props;
-    const validPathsNames = ["/app-operadores", "/", "/gonzher-transports", "/factura-electronica-sat"];
-    const headerClasses = scrolled
-      ? "bg-white fixed top-0 left-0 z-40 w-screen text-black"
-      : validPathsNames.includes(pathName)
-        ? "bg-transparent fixed top-0 left-0 z-40 w-screen text-white"
-        : "bg-white fixed top-0 left-0 z-40 w-screen text-black";
+  return (
+    <div className={`transition-all fixed top-0 left-0 z-40 w-screen ${headerClasses}`}>
+      <Container>
+        <div className={`${scrolled ? 'h-0 overflow-hidden' : 'h-12'} container justify-end flex items-center gap-4 transition-all duration-300`}>
+          <a href="tel:+528112918108" className="justify-end flex items-center py-4" title="Número de teléfono de Gonzher">
+            <FaPhoneAlt className="mr-2" title="Icono de teléfono" />
+            +52 8112918108
+          </a>
+          <a href="https://system.gonzher.com/login" title="Sistemas Gonzher">
+            Iniciar sesión
+          </a>
+        </div>
+      </Container>
 
-    const hiddePhone = scrolled ? "h-0 overflow-hidden" : "h-12";
+      <hr className="container" />
+      <Container>
+        <div className="w-full flex items-center justify-between">
+          <Link href="/" className="py-5 flex items-center font-title">
+            <BiSolidMap className="text-3xl" /> GONZHER
+          </Link>
 
-    const text = scrolled
-      ? "text-black"
-      : validPathsNames.includes(pathName)
-        ? "text-white"
-        : "text-dark";
-    return (
-      <div className={`transition-all ${headerClasses}`}>
-        <Container>
-          <div
-            className={`${hiddePhone} container justify-end flex items-center gap-4 transition-all duration-300`}
-          >
-            <a
-              href="tel:+528112918108"
-              className="justify-end flex items-center py-4"
-              title="Número de teléfono de Gonzher"
-            >
-              <FaPhoneAlt className="mr-2" title="Icono de teléfono" />
-              +52 8112918108
-            </a>
-            <a href="https://system.gonzher.com/login" title="Sistemas Gonzher">
-              Iniciar sesión
-            </a>
+          <div className="md:hidden">
+            <MobileNav />
           </div>
-        </Container>
 
-        <hr className="container" />
-        <Container>
-          <div className="w-full flex items-center justify-between">
-            <Link href="/" className="py-5 flex items-center font-title">
-              <BiSolidMap className="text-3xl" /> GONZHER
-            </Link>
-            <div className="md:hidden">
-              <MobileNav />
-            </div>
-            <div className="md:flex -mx-4 items-center justify-between hidden">
-              <div className="flex px-4 justify-between items-center w-full">
-                <div>
-                  <nav
-                    id="navbarCollapse"
-                    className="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none"
-                  >
-                    <ul className="block lg:flex gap-8">
-                      <NavigationMenu>
-                        <NavigationMenuList>
-                          <NavigationMenuItem>
-                            <NavigationMenuTrigger className={text}>
-                              Productos
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                                <li className="row-span-3">
-                                  <NavigationMenuLink asChild>
-                                    <a
-                                      className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                      href="/"
-                                    >
-                                      <div className="mb-2 mt-4 text-lg font-medium font-title">
-                                        GONZHER
-                                      </div>
-                                      <p className="text-sm leading-tight text-muted-foreground">
-                                        Logística y Facturación para
-                                        Transportistas
-                                      </p>
-                                    </a>
-                                  </NavigationMenuLink>
-                                </li>
-                                <ListItem
-                                  href="https://system.gonzher.com"
-                                  title="Factuación Gonzher"
-                                >
-                                  Sistema en la nube que facilita tu Facturación
-                                  en Línea.
-                                </ListItem>
-                                <ListItem
-                                  href="https://gps.gonzher.com"
-                                  title="GPS Gonzher"
-                                >
-                                  Monitorea y administra fácilmente tu fuerza
-                                  móvil de trabajadores.
-                                </ListItem>
-                              </ul>
-                            </NavigationMenuContent>
-                          </NavigationMenuItem>
-                          <NavigationMenuItem>
-                            <NavigationMenuTrigger className={text}>
-                              Nuestros Productos
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                              <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                                <ListItem
-                                  href="/factura-electronica-sat"
-                                  title="Sistema de Facturación en linea"
-                                >
-                                  Sistema de facturación electrónica <strong>CFDI 4.0</strong>
-                                </ListItem>
-                                <ListItem
-                                  href="/sistema-de-facturacion-para-flotas"
-                                  title="Sistema de Facturación para Flotas"
-                                >
-                                  Sistema de facturación <strong>Carta Porte 3.1</strong>
-                                </ListItem>
-                                <ListItem
-                                  href="/soluciones-de-rastreo-y-seguimiento-en-tiempo-real-para-tu-flota"
-                                  title="GPS Gonzher"
-                                >
-                                  Monitorea y administra fácilmente tu flota.
-                                </ListItem>
-                              </ul>
-                            </NavigationMenuContent>
-                          </NavigationMenuItem>
-                          <NavigationMenuItem>
-                            <NavigationMenuTrigger className={text}>
-                              Apartados
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                              <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px]">
-                                {headerNavLinks.map((link) => (
-                                  <ListItem
-                                    key={link.title}
-                                    title={link.title}
-                                    href={link.href}
-                                    className="text-white"
-                                  ></ListItem>
-                                ))}
-                              </ul>
-                            </NavigationMenuContent>
-                          </NavigationMenuItem>
-                          <NavigationMenuItem>
-                            <NavigationMenuLink
-                              href="https://docs.gonzher.com/docs/intro"
-                              className={`buttonVariants ${buttonVariants({
-                                variant: "link",
-                              })} ${text}`}
-                            >
-                              Documentación
-                            </NavigationMenuLink>
-                            <Link
-                              href="/nosotros"
-                              className={`buttonVariants ${buttonVariants({
-                                variant: "link",
-                              })} ${text}`}
-                            >
-                              Nosotros
-                            </Link>
-                            <NavigationMenuLink
-                              href="/app-operadores"
-                              className={`buttonVariants ${buttonVariants({
-                                variant: "link",
-                              })} ${text}`}
-                            >
-                              App Operadores
-                            </NavigationMenuLink>
-                          </NavigationMenuItem>
-                        </NavigationMenuList>
-                      </NavigationMenu>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+          <div className="md:flex -mx-4 items-center justify-between hidden">
+            <div className="flex px-4 justify-between items-center w-full">
+              <NavigationMenu>
+                <NavigationMenuList>
+                  {navigationSections.map(section => renderNavigationItem(section))}
+                </NavigationMenuList>
+              </NavigationMenu>
             </div>
           </div>
-        </Container>
-      </div>
-    );
-  }
-}
-
-export default Header;
+        </div>
+      </Container>
+    </div>
+  );
+};
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ComponentType<any> }
+>(({ className, title, children, icon: Icon, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -254,13 +239,24 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground font-light">
-            {children}
-          </p>
+          <div className="flex items-center gap-2">
+            {Icon && <div className="p-2 border border-teal-300 rounded-md"><Icon className="text-lg" /></div>}
+            <div>
+              <div className="flex items-center gap-2">
+                <div className="text-sm font-semibold">{title}</div>
+              </div>
+              {children && (
+                <p className="line-clamp-2 text-[0.8rem] leading-snug text-muted-foreground font-light">
+                  {children}
+                </p>
+              )}
+            </div>
+          </div>
         </a>
       </NavigationMenuLink>
     </li>
   );
 });
 ListItem.displayName = "ListItem";
+
+export default Header;
