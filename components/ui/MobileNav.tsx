@@ -1,82 +1,120 @@
 import { useState } from "react";
-import { headerNavLinks } from "@/data/headerNavLinks";
 import Link from "next/link";
+import { ChevronDown, X, Menu } from "lucide-react";
+import { navigationSections } from "@/data/navigation";
 
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);
+  const [expandedSections, setExpandedSections] = useState<string[]>([]);
 
   const onToggleNav = () => {
     setNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = "auto";
-      } else {
-        // Prevent scrolling
-        document.body.style.overflow = "hidden";
-      }
+      document.body.style.overflow = !status ? "hidden" : "auto";
       return !status;
     });
+  };
+
+  const toggleSection = (sectionId: string) => {
+    setExpandedSections(current =>
+      current.includes(sectionId)
+        ? current.filter(id => id !== sectionId)
+        : [...current, sectionId]
+    );
+  };
+
+  const renderMobileNavItems = (section: any) => {
+    const isExpanded = expandedSections.includes(section.id);
+
+    if (section.type === 'dropdown') {
+      return (
+        <div key={section.id} className="border-b border-gray-200">
+          <button
+            onClick={() => toggleSection(section.id)}
+            className="flex w-full items-center justify-between px-6 py-4 hover:bg-gray-50"
+          >
+            <span className="text-lg font-semibold text-gray-800">
+              {section.title}
+            </span>
+            <ChevronDown
+              className={`h-5 w-5 text-gray-500 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''
+                }`}
+            />
+          </button>
+          {isExpanded && (
+            <div className="bg-gray-50">
+              {section.items.map((item: any) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="block border-l-4 border-transparent px-6 py-3 hover:border-blue-500 hover:bg-blue-50"
+                  onClick={onToggleNav}
+                >
+                  <div className="flex items-center gap-3">
+                    {item.icon && (
+                      <item.icon className="h-5 w-5 text-blue-600" />
+                    )}
+                    <div>
+                      <div className="font-medium text-gray-800">
+                        {item.title}
+                      </div>
+                      {item.description && (
+                        <div className="mt-1 text-sm text-gray-600">
+                          {item.description}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    if (section.type === 'links') {
+      return section.items.map((link: any) => (
+        <div key={link.href} className="border-b border-gray-200">
+          <Link
+            href={link.href}
+            className="block px-6 py-4 text-lg font-medium text-gray-800 hover:bg-gray-50"
+            onClick={onToggleNav}
+          >
+            {link.title}
+          </Link>
+        </div>
+      ));
+    }
   };
 
   return (
     <div className="sm:hidden">
       <button
         type="button"
-        className="ml-1 mr-1 h-8 w-8 rounded py-1"
+        className="ml-1 mr-1 h-8 w-8 rounded p-1 hover:bg-gray-100"
         aria-label="Toggle Menu"
         onClick={onToggleNav}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          className="text-gray-900 dark:text-gray-100"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
+        <Menu className="h-full w-full text-neutral-300" />
       </button>
+
       <div
-        className={`fixed left-0 top-0 z-10 h-full w-full transform bg-gray-200 opacity-95 duration-300 ease-in-out dark:bg-gray-800 ${
-          navShow ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed left-0 top-0 z-50 h-full w-full transform bg-white shadow-xl transition-transform duration-300 ease-in-out ${navShow ? "translate-x-0" : "translate-x-full"
+          }`}
       >
-        <div className="flex justify-end">
+        <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4">
+          <div className="text-xl font-bold text-gray-800">Menú</div>
           <button
             type="button"
-            className="mr-5 mt-11 h-8 w-8 rounded"
-            aria-label="Toggle Menu"
+            className="rounded-full p-2 hover:bg-gray-100"
+            aria-label="Cerrar menú"
             onClick={onToggleNav}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="text-gray-900 dark:text-gray-100"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <X className="h-6 w-6 text-gray-600" />
           </button>
         </div>
-        <nav className="fixed mt-8 h-full">
-          {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12 py-4">
-              <Link
-                href={link.href}
-                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
-                onClick={onToggleNav}
-                title={link.title}
-              >
-                {link.title}
-              </Link>
-            </div>
-          ))}
+        <nav className="h-[calc(100vh-4rem)] overflow-y-auto pb-20">
+          {navigationSections.map(section => renderMobileNavItems(section))}
         </nav>
       </div>
     </div>
