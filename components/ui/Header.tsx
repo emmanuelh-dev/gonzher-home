@@ -64,7 +64,7 @@ const Header = ({ pathName }: HeaderProps) => {
             {section.title}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className={`grid gap-3 p-4 ${section.width} ${section.columns}`}>
+            <ul className={`grid gap-3 p-4 w-[500px] grid-cols-2`}>
               {section.items.map((item: any) => (
                 <ListItem
                   key={item.href}

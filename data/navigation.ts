@@ -18,7 +18,7 @@ export const navigationSections = [
       {
         href: "https://gps.gonzher.com",
         title: "GPS Gonzher",
-        description: "Monitorea y administra tu flota.",
+        description: "Administra tu flota.",
         icon: FaMapMarkerAlt
       },
       {
