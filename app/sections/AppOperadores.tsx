@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const AppOperadores = () => {
+const AppOperadores = ({ className }: { className?: string }) => {
   return (
     <div>
       <section
         id="acerca-de"
-        className="pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-gradient-to-br from-primary to-teal-700"
+        className={`${className} "pt-20 lg:pt-[120px] pb-20 lg:pb-[120px] bg-gradient-to-br from-primary to-teal-700"`}
       >
         <div className="container mx-auto">
           <div className="fadeInUp" data-wow-delay=".2s">
@@ -26,7 +26,10 @@ const AppOperadores = () => {
                       >
                         Más Información
                       </Link>
-                      <a href="https://play.google.com/store/apps/details?id=com.gonzher.app" target="_blank">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.gonzher.app"
+                        target="_blank"
+                      >
                         <div className="flex max-w-48 h-12 px-3 gap-2 rounded-xl items-center justify-center bg-black text-white dark:text-black dark:bg-white sm:h-14">
                           <svg
                             className="w-5 sm:w-7"
@@ -60,7 +63,10 @@ const AppOperadores = () => {
                         </div>
                       </a>
 
-                      <a href="https://apps.apple.com/mx/app/gonzher/id6448482872" target="_blank">
+                      <a
+                        href="https://apps.apple.com/mx/app/gonzher/id6448482872"
+                        target="_blank"
+                      >
                         <div className="flex max-w-48 h-12 px-3 gap-2 rounded-xl items-center justify-center bg-black text-white dark:text-black dark:bg-white  sm:gap-3 sm:h-14">
                           <svg className="w-5 sm:w-7" viewBox="0 0 384 512">
                             <path
