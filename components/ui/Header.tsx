@@ -9,7 +9,7 @@ import {
   FaDownload,
   FaBook,
   FaUsers,
-  FaMobile
+  FaMobile,
 } from "react-icons/fa";
 
 import MobileNav from "./MobileNav";
@@ -26,7 +26,12 @@ import {
 import Container from "./container";
 import { navigationSections } from "@/data/navigation";
 
-const validPathsNames = ["/app-operadores", "/", "/gonzher-transports", "/factura-electronica-sat"];
+const validPathsNames = [
+  "/app-operadores",
+  "/",
+  "/gonzher-transports",
+  "/factura-electronica-sat",
+];
 
 interface HeaderProps {
   pathName: string;
@@ -47,17 +52,17 @@ const Header = ({ pathName }: HeaderProps) => {
   const headerClasses = scrolled
     ? "bg-white text-black"
     : validPathsNames.includes(pathName)
-      ? "bg-transparent text-white"
-      : "bg-white text-black";
+    ? "bg-transparent text-white"
+    : "bg-white text-black";
 
   const textColor = scrolled
     ? "text-black"
     : validPathsNames.includes(pathName)
-      ? "text-white"
-      : "text-dark";
+    ? "text-white"
+    : "text-dark";
 
   const renderNavigationItem = (section: any) => {
-    if (section.type === 'dropdown') {
+    if (section.type === "dropdown") {
       return (
         <NavigationMenuItem key={section.id}>
           <NavigationMenuTrigger className={textColor}>
@@ -65,30 +70,49 @@ const Header = ({ pathName }: HeaderProps) => {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className={`grid gap-3 p-4 w-[500px] grid-cols-2`}>
-              {section.items.map((item: any) => (
-                <ListItem
-                  key={item.href}
-                  href={item.href}
-                  title={item.title}
-                  icon={item.icon}
-                >
-                  {item.description}
-                </ListItem>
-              ))}
+              {section.sections &&
+                section.sections.map((subSection: any) => (
+                  <div key={subSection.title}>
+                    <h3 className="ml-4 font-semibold text-white/90">{subSection.title}</h3>
+                    {subSection.items.map((item: any) => (
+                      <ListItem
+                        key={item.href}
+                        href={item.href}
+                        title={item.title}
+                        icon={item.icon}
+                      >
+                        {item.description}
+                      </ListItem>
+                    ))}
+                  </div>
+                ))}
+              {section.items &&
+                section.items.map((item: any) => (
+                  <ListItem
+                    key={item.href}
+                    href={item.href}
+                    title={item.title}
+                    icon={item.icon}
+                  >
+                    {item.description}
+                  </ListItem>
+                ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
       );
     }
 
-    if (section.type === 'links') {
+    if (section.type === "links") {
       return (
         <NavigationMenuItem key={section.id}>
           {section.items.map((link: any) => (
             <NavigationMenuLink
               key={link.href}
               href={link.href}
-              className={`${buttonVariants({ variant: link.variant })} ${textColor}`}
+              className={`${buttonVariants({
+                variant: link.variant,
+              })} ${textColor}`}
             >
               {link.title}
             </NavigationMenuLink>
@@ -99,10 +123,20 @@ const Header = ({ pathName }: HeaderProps) => {
   };
 
   return (
-    <div className={`transition-all fixed top-0 left-0 z-40 w-screen ${headerClasses}`}>
+    <div
+      className={`transition-all fixed top-0 left-0 z-40 w-screen ${headerClasses}`}
+    >
       <Container>
-        <div className={`${scrolled ? 'h-0 overflow-hidden' : 'h-12'} container justify-end flex items-center gap-4 transition-all duration-300`}>
-          <a href="tel:+528112918108" className="justify-end flex items-center py-4" title="Número de teléfono de Gonzher">
+        <div
+          className={`${
+            scrolled ? "h-0 overflow-hidden" : "h-12"
+          } container justify-end flex items-center gap-4 transition-all duration-300`}
+        >
+          <a
+            href="tel:+528112918108"
+            className="justify-end flex items-center py-4"
+            title="Número de teléfono de Gonzher"
+          >
             <FaPhoneAlt className="mr-2" title="Icono de teléfono" />
             +52 8112918108
           </a>
@@ -127,7 +161,9 @@ const Header = ({ pathName }: HeaderProps) => {
             <div className="flex px-4 justify-between items-center w-full">
               <NavigationMenu>
                 <NavigationMenuList>
-                  {navigationSections.map(section => renderNavigationItem(section))}
+                  {navigationSections.map((section) =>
+                    renderNavigationItem(section)
+                  )}
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
@@ -154,7 +190,11 @@ const ListItem = React.forwardRef<
           {...props}
         >
           <div className="flex items-center gap-2">
-            {Icon && <div className="p-2 border border-teal-300 rounded-md"><Icon className="text-lg" /></div>}
+            {Icon && (
+              <div className="p-2 border border-teal-300 rounded-md">
+                <Icon className="text-lg" />
+              </div>
+            )}
             <div>
               <div className="flex items-center gap-2">
                 <div className="text-sm font-semibold">{title}</div>
