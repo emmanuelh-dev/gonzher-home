@@ -2,6 +2,7 @@ import "@/css/globals.css";
 import { Inter } from "next/font/google";
 import ClientLayout from "./ClientLayout";
 import Contacto from "./sections/contact";
+import SEOFooterLinks from "./components/SEOFooterLinks";
 
 import { Metadata } from "next";
 
@@ -41,12 +42,12 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
-}) {
-  return (
+}) {  return (
     <html lang="es">
       <body className={inter.className}>
         <ClientLayout>{children}</ClientLayout>
         <Contacto />
+        <SEOFooterLinks />
       </body>
     </html>
   );
