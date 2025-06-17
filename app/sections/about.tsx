@@ -17,32 +17,20 @@ const About = () => {
                   className=" lg:flex items-center justify-between border overflow-hidden
               "
                 >
-                  <div className=" lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] ">
-                    <span className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 ">
-                      Acerca de Nosotros
+                  <div className=" lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] ">                    <span className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 ">
+                      Software de Gestión de Flotas
                     </span>
                     <h2 className="animate-fade-up font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
-                      Líderes en software para transportistas
+                      Líderes en Software Control de Flotas y Facturación Combustible
                     </h2>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      En Gonzher desarrollamos software de gestión logística que
-                      optimiza procesos operativos de empresas de transporte,
-                      con soluciones todo en uno que incluyen rastreo en tiempo
-                      real, planificación de rutas, gestión de flotas, análisis
-                      de indicadores clave y facturación automatizada.
+                      En Gonzher desarrollamos software de gestión de flotas especializado en facturación combustible flotas y facturación gasolina flotas. Nuestro sistema de control de flotas incluye control GPS flotas, software para control de flotas, sistema facturación en línea CFDI y administración de flota GPS todo en uno.
                     </p>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      Nos respaldan la administración exitosa de más de 5000
-                      vehículos alrededor de todo México, que mejoraron su
-                      productividad hasta 30% gracias a nuestras innovadoras
-                      apps móviles para conductores y nuestra integración
-                      avanzada con sistemas de contabilidad existentes.
+                      Nos respaldan más de 5000 vehículos en México que utilizan nuestro software control de flotas. Empresas mejoraron su productividad hasta 30% con nuestro programa control de flotas que incluye control de flotillas software, software manejo de flotas y plataforma de facturación electrónica integrada.
                     </p>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      Operar con Gonzher significa control total sobre la
-                      rentabilidad de tu negocio, toma de decisiones basada en
-                      datos e incremento en la satisfacción del cliente. ¿Listo
-                      para llevar tu empresa de transporte al siguiente nivel?
+                      Nuestro software para gestión de flotas ofrece control total sobre rentabilidad con software de rastreo de flotas GPS, gestión de flotas por GPS y sistemas de facturación electrónica en línea. ¿Listo para optimizar tu flota con el mejor software para flotillas?
                     </p>
                     <Link
                       href="/nosotros"

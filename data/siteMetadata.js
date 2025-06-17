@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "gonzher",
+  title: "Gonzher - Facturación Combustible Flotas | Software Gestión Flotas GPS",
   author: "gonzher",
   headerTitle: "",
-  description: "Software de Facturación y Logística",
+  description: "Software de gestión de flotas especializado en facturación combustible flotas, facturación gasolina flotas y control GPS flotas. Sistema facturación en línea CFDI y administración de flotillas profesional.",
   language: "es-MX",
   theme: "light", // system, dark or light
   siteUrl: "https://www.gonzher.com",

@@ -5,71 +5,67 @@ import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaGasPump } from "react-icons/fa";
 import { BiMap } from "react-icons/bi";
 import ServiceCard from "@/components/ui/ServiceCard";
+
 const SERVICES = [
   {
-    titulo: "Facturación Electrónica",
+    titulo: "Facturación Combustible Flotas",
     descripcion:
-      "Sistema en la nube que facilita tu Facturación en Línea. Genera tus Comprobantes Fiscales Digitales por Internet (CFDI) de una forma fácil, rápida y segura. Emite facturas, notas de crédito, recibos de honorarios, complementos de pago, carta porte 3.1, cualquier tipo de CFDI.  Siempre estamos actualizándonos. ¡Conócenos!",
-    icon: (
+      "Sistema de facturación electrónica CFDI especializado en facturación combustible flotas y facturación gasolina flotas. Plataforma de facturación en línea que genera Comprobantes Fiscales Digitales por Internet de forma fácil, rápida y segura. Sistema facturación en línea con carta porte 3.1 y sistemas de facturación electrónica en línea siempre actualizados.",    icon: (
       <AiOutlineFileText
-        alt="icono de factura"
         className="text-5xl text-white mb-8 mx-auto"
       />
     ),
   },
   {
-    titulo: "Rastreo Satélital",
+    titulo: "Control GPS Flotas",
     descripcion:
-      "Monitorea y administra fácilmente tu fuerza móvil de trabajadores. Ten una vista de 360º en casi tiempo real de las maniobras diarias de tu flota, para reducir costos, aumentar la productividad, estar al día con el mantenimiento del vehículo y sacar el máximo provecho a cada día de trabajo.",
+      "Software de gestión de flotas con control GPS flotas en tiempo real. Nuestro sistema de control de flotas te permite monitorear y administrar tu flota con administración de flota GPS. Software para control de flotas que reduce costos, aumenta productividad y optimiza el mantenimiento vehicular con control de flotas GPS profesional.",
     icon: (
-      <BiMap alt="icono de gps" className="text-5xl text-white mb-8 mx-auto " />
+      <BiMap className="text-5xl text-white mb-8 mx-auto " />
     ),
   },
   {
-    titulo: "Control de Combustible",
+    titulo: "Software Control Combustible",
     descripcion:
-      "Sabemos que el combustible es uno de los rubros más costosos en la gestión de la flota, desarrollamos un módulo que te permitirá analizar detalladamente y desde diferentes puntos de vista su rendimiento y costos. Nuestro panel personalizable te facilita revisar tu progreso comparado con tu indicador KPI o tus presupuestos, con el análisis instantáneo que te ofrece nuestra app.",
+      "Software especializado para control de flotas enfocado en combustible. El combustible es uno de los rubros más costosos en la gestión de flotas. Nuestro software de gestión de flotas incluye módulo de control de combustible que permite analizar detalladamente rendimiento y costos con paneles KPI personalizables y análisis instantáneo.",
     icon: (
       <FaGasPump
-        alt="icono de bomba de compustible"
         className="text-5xl text-white mb-8 mx-auto "
       />
     ),
   },
   {
-    titulo: "Control de Viajes",
+    titulo: "Software Gestión de Flotas",
     descripcion:
-      "De punto A a punto B tu entrega segura! Con nuestra app podrás monitorear en tiempo real el estatus de tus viajes. Podrás ahorrar tiempo, dinero y operación logística con nuestra tecnología. Además, notifica a tus clientes sobre el estatus de sus traslados hasta la entrega.",
+      "Software para gestión de flotas completo de punto A a punto B. Con nuestro programa control de flotas podrás monitorear en tiempo real el estatus de tus viajes. Software manejo de flotas que ahorra tiempo, dinero y optimiza la operación logística con tecnología avanzada de seguimiento y notificaciones automáticas a clientes.",
     icon: (
       <HiOutlineLocationMarker
-        alt="icono de gps"
         className="text-5xl text-white mb-8 mx-auto"
       />
     ),
   },
   {
-    titulo: "App para Operadores",
+    titulo: "App Control de Flotillas",
     descripcion:
-      "Conoce los beneficios de nuestra tecnología, tus operadores podrán descargar nuestra app disponible en sistema operativo ANDROID o iOS. Podrás visualizar en tiempo real cada detalle de los viajes realizados. - Horario de carga- Horario de salida - Fotos - Horario de llegada  -Horario de descarga",
+      "Aplicación móvil para administración de flotillas software. Operadores pueden descargar nuestra app disponible en Android e iOS. Control de flotillas software que visualiza en tiempo real detalles de viajes: horario de carga, salida, fotos, llegada y descarga. Software control de flotillas con tecnología móvil avanzada.",
     icon: (
       <IoLogoApple
-        alt="icono del logo de apple"
         className="text-5xl text-white mb-8 mx-auto"
       />
     ),
   },
   {
-    titulo: "Control de Mantenimientos",
+    titulo: "Software para Flotillas",
     descripcion:
-      "Conoce nuestro apartado para control de mantenimientos. Anticípate a las fallas y evita paradas no planificadas o accidentes.  Nuestro sistema esta diseñado para optimizar tus gastos y aumentar la productividad de tus vehículos. Crea y ejecuta tus propios planes de mantenimiento de acuerdo con tu operación.",
+      "Sistema de gestión de flotas para control de mantenimientos. Anticípate a fallas y evita paradas no planificadas con nuestro software para flotillas. Sistema diseñado para optimizar gastos y aumentar productividad vehicular. Crea y ejecuta planes de mantenimiento personalizados con software de administración de flotillas.",
     icon: (
       <AiFillTool
-        alt="icono de logo de mantenimiento"
         className="text-5xl text-white mb-8 mx-auto "
       />
     ),
   },
 ];
+
 const Features = () => {
   return (
     <section
@@ -78,14 +74,16 @@ const Features = () => {
     >
       <div className="container">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4">
-            <div className="mb-12 lg:mb-20 text-center max-w-[800px] mx-auto">
+          <div className="w-full px-4">            <div className="mb-12 lg:mb-20 text-center max-w-[800px] mx-auto">
               <span className="font-semibold text-lg text-primary mb-2 block">
-                Características
+                Software de Gestión de Flotas
               </span>
               <h2 className="font-bold text-3xl sm:text-4xl md:text-[42px] text-dark mb-4 font-title animate-fade-up animate-duration-1000 animate-delay-300 text-balance">
-                El potencial de <strong>Gonzher</strong> para tu negocio
+                Facturación Combustible Flotas y Control GPS - <strong>Gonzher</strong>
               </h2>
+              <p className="text-lg text-gray-600 mt-4">
+                Software para control de flotas especializado en facturación gasolina flotas, control de flotas GPS y sistema facturación en línea CFDI. Plataforma completa de administración de flotillas.
+              </p>
             </div>
           </div>
         </div>

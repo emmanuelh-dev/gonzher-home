@@ -18,15 +18,12 @@ const Carrousel = () => {
       <CarouselContent>
         <CarouselItem>
           <Container>
-            <div className="flex flex-col lg:flex-row items-center gap-10">
-              <div className="text-center max-w-[780px] lg:w-1/3 mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-10">              <div className="text-center max-w-[780px] lg:w-1/3 mx-auto">
                 <h2 className="animate-fade-up lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title">
-                  Software de Facturación y Logística
+                  Facturación Combustible Flotas y Software Control GPS
                 </h2>
                 <p className="lg:text-left text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]">
-                  Optimiza tu logística con Gonzher. Descubre nuestro avanzado
-                  software de facturación en línea y soluciones innovadoras para
-                  el transporte. ¡Regístrate ahora!
+                  Software de gestión de flotas especializado en facturación gasolina flotas, control GPS flotas y sistema facturación en línea CFDI. Optimiza tu administración de flota GPS con Gonzher.
                 </p>
 
                 <div className="flex flex-wrap  items-center gap-4 mb-10">
