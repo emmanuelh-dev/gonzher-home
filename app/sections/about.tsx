@@ -18,19 +18,19 @@ const About = () => {
               "
                 >
                   <div className=" lg:max-w-[565px] xl:max-w-[640px] w-full py-12 px-7 sm:px-12 md:p-16 lg:py-9 lg:px-16 xl:p-[70px] ">                    <span className=" text-sm font-medium text-white py-2 px-5 bg-primary inline-block mb-5 ">
-                      Software de Gestión de Flotas
+                      Control de Flotas GPS | Software de Gestión de Flotas
                     </span>
                     <h2 className="animate-fade-up font-title font-bold text-3xl sm:text-4xl 2xl:text-[40px] sm:leading-snug text-dark mb-6 ">
-                      Líderes en Software Control de Flotas y Facturación Combustible
+                      Líderes en Control de Flotas GPS y Facturación Combustible para Flotillas
                     </h2>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      En Gonzher desarrollamos software de gestión de flotas especializado en facturación combustible flotas y facturación gasolina flotas. Nuestro sistema de control de flotas incluye control GPS flotas, software para control de flotas, sistema facturación en línea CFDI y administración de flota GPS todo en uno.
+                      En Gonzher desarrollamos software de gestión de flotas especializado en facturación combustible para flotillas y facturación gasolina para flotillas. Nuestro sistema control de flotas incluye control de flotas GPS, software para control de flotas, sistema de facturación en línea CFDI y administración de flota GPS todo en uno.
                     </p>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      Nos respaldan más de 5000 vehículos en México que utilizan nuestro software control de flotas. Empresas mejoraron su productividad hasta 30% con nuestro programa control de flotas que incluye control de flotillas software, software manejo de flotas y plataforma de facturación electrónica integrada.
+                      Nos respaldan más de 5000 vehículos en México que utilizan nuestro software control de flotas. Empresas mejoraron su productividad hasta 30% con nuestro programa control de flotas que incluye control de flotillas software, software manejo de flotas y plataforma de facturación electrónica integrada con monitoreo de flotas 24/7.
                     </p>
                     <p className="text-base text-body-color mb-9 leading-relaxed">
-                      Nuestro software para gestión de flotas ofrece control total sobre rentabilidad con software de rastreo de flotas GPS, gestión de flotas por GPS y sistemas de facturación electrónica en línea. ¿Listo para optimizar tu flota con el mejor software para flotillas?
+                      Nuestro software para gestión de flotas ofrece control total sobre rentabilidad con software de rastreo de flotas GPS, gestión de flotas por GPS y sistemas de facturación electrónica en línea. Control de flotas GPS gratis para optimizar tu flota con el mejor software de gestión de flotillas disponible.
                     </p>
                     <Link
                       href="/nosotros"

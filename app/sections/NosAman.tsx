@@ -5,37 +5,37 @@ const reviews = [
   {
     name: 'Transportes THT',
     username: '@Transportes THT',
-    body: 'El GPS es preciso, la plataforma es sencilla y de fácil acceso.',
+    body: 'El control de flotas GPS es preciso, la plataforma de software de gestión de flotas es sencilla y de fácil acceso.',
     img: 'https://avatar.vercel.sh/carlos',
   },
   {
     name: 'Legs',
     username: '@Legs',
-    body: 'La facturación es fácil de usar, nos ha salvado un montón de tiempo con los papeleos.',
+    body: 'La facturación combustible para flotillas es fácil de usar, nos ha salvado un montón de tiempo con los papeleos del sistema de facturación CFDI.',
     img: 'https://avatar.vercel.sh/luisa',
   },
   {
     name: 'Autoexpress Guzmán',
     username: '@miguel',
-    body: 'Monitorear las unidades con su GPS ahora es más fácil.',
+    body: 'El monitoreo de flotas con control de flotas GPS gratis ahora es más fácil que nunca.',
     img: 'https://avatar.vercel.sh/miguel',
   },
   {
     name: 'Gabriel',
     username: '@Gabriel',
-    body: 'Este software de logística es una joya, el GPS y la facturación se llevan de maravilla.',
+    body: 'Este software de gestión de flotas es una joya, el control GPS flotas y la facturación gasolina para flotillas se llevan de maravilla.',
     img: 'https://avatar.vercel.sh/ana',
   },
   {
     name: 'Santiago',
     username: '@Santiago',
-    body: 'El monitoreo en tiempo real es de otro nivel. ¡Nos ha hecho tomar decisiones a una velocidad impresionante!',
+    body: 'El software control de flotas con monitoreo en tiempo real es de otro nivel. ¡Nos ha hecho tomar decisiones a una velocidad impresionante!',
     img: 'https://avatar.vercel.sh/santiago',
   },
   {
     name: 'Fovi',
     username: '@Fovi',
-    body: 'Este software ha mejorado mucho nuestra logística. Es una pieza clave en nuestro negocio, completamente recomendado.',
+    body: 'Este software para gestión de flotas ha mejorado mucho nuestra logística. Es una pieza clave en nuestro negocio, completamente recomendado.',
     img: 'https://avatar.vercel.sh/maria',
   },
 ];
@@ -79,11 +79,10 @@ const NosAman = () => {
         <div className="w-full px-4">
           <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[600px] text-pretty">
             <h2 className="animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 font-title">
-              Los transportistas nos aman
+              Los transportistas aman nuestro Software de Gestión de Flotas
             </h2>
             <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
-              Los transportistas elogian cómo ha transformado sus operaciones y
-              mejorado su eficiencia.
+              Los transportistas elogian cómo nuestro control de flotas GPS y facturación combustible para flotillas ha transformado sus operaciones y mejorado su eficiencia logística.
             </p>
           </div>
         </div>

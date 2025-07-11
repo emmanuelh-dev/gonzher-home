@@ -41,10 +41,10 @@ const Pricing = async () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">              <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[600px]">
                 <h2 className="animate-fade-up font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 text-balance font-title">
-                  Planes Software Control de Flotas GPS
+                  Planes Control de Flotas GPS | Software de Gestión de Flotas
                 </h2>
                 <p className=" text-lg sm:text-xl leading-relaxed sm:leading-relaxed text-body-color ">
-                  Gonzher ofrece planes personalizados de software de gestión de flotas con facturación combustible flotas, control GPS flotas y sistema facturación en línea CFDI. Software para control de flotas adaptado a tu flota.
+                  Gonzher ofrece planes personalizados de software de gestión de flotas con facturación combustible para flotillas, control de flotas GPS gratis, monitoreo de flotas y sistema de facturación electrónica CFDI. Software control de flotas adaptado a tu empresa.
                 </p>
               </div>
             </div>

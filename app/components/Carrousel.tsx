@@ -20,10 +20,10 @@ const Carrousel = () => {
           <Container>
             <div className="flex flex-col lg:flex-row items-center gap-10">              <div className="text-center max-w-[780px] lg:w-1/3 mx-auto">
                 <h2 className="animate-fade-up lg:text-left font-bold text-3xl sm:text-4xl md:text-[45px] leading-snug sm:leading-snug md:leading-snug mb-8 text-white font-title">
-                  Facturación Combustible Flotas y Software Control GPS
+                  Control de Flotas GPS | Facturación Combustible para Flotillas
                 </h2>
                 <p className="lg:text-left text-base sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed mx-auto mb-10 text-neutral-100 max-w-[600px]">
-                  Software de gestión de flotas especializado en facturación gasolina flotas, control GPS flotas y sistema facturación en línea CFDI. Optimiza tu administración de flota GPS con Gonzher.
+                  Software de gestión de flotas líder en control de flotas GPS gratis, facturación gasolina para flotillas y sistema de facturación electrónica CFDI. Optimiza tu administración de flotillas software con monitoreo de flotas en tiempo real.
                 </p>
 
                 <div className="flex flex-wrap  items-center gap-4 mb-10">
@@ -55,7 +55,7 @@ const Carrousel = () => {
               </div>
               <Image
                 src="/about.png"
-                alt="Software de logística para transportistas"
+                alt="Control de Flotas GPS | Software de Gestión de Flotas y Facturación Combustible"
                 className="max-w-full mx-auto lg:rounded-xl rounded-t-xl rounded-tr-xl h-full object-cover lg:w-2/3"
                 priority
                 width={845}

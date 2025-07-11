@@ -16,8 +16,8 @@ const AppOperadores = ({ className }: { className?: string }) => {
                 <div className="lg:flex items-center justify-between overflow-hidden space-y-20">
                   <div className="lg:w-2/3">
                     <h2 className="font-title text-center lg:text-left font-bold lg:text-8xl text-4xl sm:leading-snug text-white mb-6 animate-fade-up ">
-                      App para
-                      <span className="block">Operadores!</span>
+                      App Control de Flotillas
+                      <span className="block">para Operadores!</span>
                     </h2>
                     <div className="flex flex-col lg:flex-row items-center gap-4">
                       <Link
