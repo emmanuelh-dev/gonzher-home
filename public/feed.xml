@@ -1,0 +1,44 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Gonzher - Facturación Combustible Flotas | Software Gestión Flotas GPS</title>
+      <link>https://www.gonzher.com/blog</link>
+      <description>Software de gestión de flotas especializado en facturación combustible flotas, facturación gasolina flotas y control GPS flotas. Sistema facturación en línea CFDI y administración de flotillas profesional.</description>
+      <language>es-MX</language>
+      <managingEditor>e805177@gmail.com (gonzher)</managingEditor>
+      <webMaster>e805177@gmail.com (gonzher)</webMaster>
+      <lastBuildDate>Thu, 01 May 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://www.gonzher.com/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://www.gonzher.com/blog/monitoreo-temperatura-cadena-fria-gps</guid>
+    <title>Monitoreo de temperatura en cadena fría con GPS: cómo lo hacemos en Gonzher</title>
+    <link>https://www.gonzher.com/blog/monitoreo-temperatura-cadena-fria-gps</link>
+    <description>Si tu empresa transporta alimentos o productos farmacéuticos, un solo viaje fuera de rango puede costarte toda la mercancía. En Gonzher integramos el sensor inalámbrico EN12830 de Teltonika directamente en tu plataforma GPS para tener posición y temperatura en un solo lugar.</description>
+    <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+    <author>e805177@gmail.com (gonzher)</author>
+    <category>gps</category><category>cadena-fria</category><category>teltonika</category><category>temperatura</category><category>logistica</category>
+  </item>
+
+  <item>
+    <guid>https://www.gonzher.com/blog/gonzher-software-para-control-de-flotas</guid>
+    <title>Gonzher Software para Control de Flotas</title>
+    <link>https://www.gonzher.com/blog/gonzher-software-para-control-de-flotas</link>
+    <description>Nos dedicamos a crear software de calidad, y nuestro software especializado en control de flotas y logística no es la excepción.</description>
+    <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
+    <author>e805177@gmail.com (gonzher)</author>
+    <category>logistica</category><category>facturacion</category>
+  </item>
+
+  <item>
+    <guid>https://www.gonzher.com/blog/el-buzon-tributario</guid>
+    <title>El buzon Tributario</title>
+    <link>https://www.gonzher.com/blog/el-buzon-tributario</link>
+    <description>En México, pagar impuestos es una obligación que todos los ciudadanos debemos cumplir. El dinero recaudado por los impuestos es fundamental para que el gobierno pueda financiar y operar los servicios públicos que brindan las instituciones en todo el país.</description>
+    <pubDate>Wed, 15 Aug 2018 00:00:00 GMT</pubDate>
+    <author>e805177@gmail.com (gonzher)</author>
+    <category>sat</category>
+  </item>
+
+    </channel>
+  </rss>

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "sed -i.bak 's/assert { type: \\x27json\\x27 }/with { type: \\x27json\\x27 }/g' node_modules/@contentlayer/core/dist/generation/generate-dotpkg.js"
   },
   "dependencies": {
     "@pliny/installer": "^0.0.6",
@@ -55,10 +56,10 @@
     "@types/react": "18.2.25",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.18",
     "postcss": "latest",
     "tailwindcss": "latest",
-    "typescript": "5.2.2"
+    "typescript": "^5.4.5"
   }
 }
